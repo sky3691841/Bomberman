@@ -1,0 +1,10 @@
+*.suo
+*.db
+*.ipch
+*.vcxproj
+*.filters
+*.user
+Bomb/Debug/
+*.dll
+Debug/
+packages/

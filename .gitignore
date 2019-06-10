@@ -8,3 +8,4 @@ Bomb/Debug/
 *.dll
 Debug/
 packages/
+*.opendb

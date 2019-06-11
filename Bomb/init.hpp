@@ -23,7 +23,7 @@
 extern bool debug_mode;
 
 // ENUMS
-enum STATE{ MAINMENU, GAMESCREEN, VICTORY, GAMEOVER };
+enum STATE{ MAINMENU, GAMESCENE, VICTORY, GAMEOVER };
 enum DIRECTION { UP = 0, DOWN = 1, LEFT = 2, RIGHT = 3 };
 
 // Globals

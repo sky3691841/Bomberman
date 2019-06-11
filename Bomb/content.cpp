@@ -47,6 +47,7 @@ ALLEGRO_FONT* font_menu;
 
 ///Sounds======================
 ALLEGRO_SAMPLE* BGM_mainmenu;
+ALLEGRO_SAMPLE_ID BGM_mainmenu_id;
 ALLEGRO_SAMPLE* SFX_menusound1;
 ALLEGRO_SAMPLE* SFX_menusound2;
 

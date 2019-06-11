@@ -5,6 +5,7 @@
 
 class MenuScene {
 private:
+	// variables
 	bool exit_scene;
 	bool play;
 

@@ -54,6 +54,7 @@ extern ALLEGRO_FONT* font_menu;
 
 ///SONS=====================================================
 extern ALLEGRO_SAMPLE* BGM_mainmenu;
+extern ALLEGRO_SAMPLE_ID BGM_mainmenu_id;
 extern ALLEGRO_SAMPLE* SFX_menusound1;
 extern ALLEGRO_SAMPLE* SFX_menusound2;
 

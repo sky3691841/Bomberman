@@ -4,7 +4,7 @@
 
 MenuScene::MenuScene() {
 	LoadMainmenuContent();
-	al_play_sample(BGM_mainmenu, volBGM / 3, 0, 1, ALLEGRO_PLAYMODE_LOOP, NULL);
+	al_play_sample(BGM_mainmenu, volBGM / 3, 0, 1, ALLEGRO_PLAYMODE_LOOP, &BGM_mainmenu_id);
 	exit_scene = false;
 	play = true;
 	color_black = al_map_rgb(0, 0, 0);
@@ -14,7 +14,9 @@ MenuScene::MenuScene() {
 }
 
 MenuScene::~MenuScene() {
+	al_stop_sample(&BGM_mainmenu_id);
 	al_stop_timer(timer_FPS);
+
 	UnloadMainmenuContent();
 }
 
@@ -74,7 +76,7 @@ void MenuScene::on_key_down(int keycode) {
 			exit_program = true;
 		else {
 			exit_scene = true;
-			screenstate = GAMESCREEN;
+			screenstate = GAMESCENE;
 		}
 	}
 }

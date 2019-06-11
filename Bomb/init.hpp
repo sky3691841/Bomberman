@@ -31,6 +31,7 @@ const int SCREEN_W = 950;
 const int SCREEN_H = 750;
 const double FPS = 60;
 extern int screenstate;
+extern bool key_state[ALLEGRO_KEY_MAX];
 extern bool exit_program;
 extern int redraws;
 extern float volBGM;

@@ -2,6 +2,7 @@
 
 // Globals =======================
 int screenstate;
+bool key_state[ALLEGRO_KEY_MAX];
 bool exit_program;
 int redraws;
 float volBGM;

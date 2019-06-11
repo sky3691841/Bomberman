@@ -7,8 +7,11 @@ int main()
 
     while(!exit_program)
     {
-       if(screenstate == MAINMENU)
-        mainmenu();
+		if (screenstate == MAINMENU) {
+			MenuScene menu;
+			menu.start();
+		}
+			
        /*else if(screenstate == GAMESCREEN)
         gamescreen();
        else if(screenstate == GAMEOVER)

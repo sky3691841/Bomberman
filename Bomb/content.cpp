@@ -105,7 +105,7 @@ void LoadMainmenuContent()
 	main_title = al_load_bitmap("Sprites/MAINMENU/title.png");
 
 	//SOUNDS
-	BGM_mainmenu = al_load_sample("Sons/BGM/mainmenu.ogg");
+	BGM_mainmenu = al_load_sample("Sounds/BGM/mainmenu.ogg");
 }
 
 void UnloadMainmenuContent()

@@ -9,11 +9,10 @@ class GameScene {
 private:
 	// objects
 	Tilemap map;
-	Enemy enemy;
 
 	// groups
 	std::list<Enemy> enemy_list;
-	std::list<Enemy> enemy_it;
+	std::list<Enemy>::iterator enemy_it;
 
 	// variables
 	bool exit_scene;

@@ -4,11 +4,27 @@ GameScene::GameScene() {
 	LoadGameSceneContent();
 	exit_scene = false;
 	
+	// init tile map
 	map.init();
-	enemy.init(9, 5);
+
+	// init enemy group
+	for (int i = 0; i < ENEMY_NUM; i++) {
+		Enemy enemy;
+		switch (i) {
+		case(0):
+			enemy.init(9, 5);
+			break;
+		case(1):
+			enemy.init(1, 7);
+			break;
+		case(2):
+			enemy.init(8, 11);
+			break;
+		}
+		enemy_list.push_back(enemy);
+	}
 	
 	// play sample
-
 }
 
 GameScene::~GameScene() {
@@ -68,7 +84,13 @@ void GameScene::update() {
 
 void GameScene::draw() {
 	al_clear_to_color(al_map_rgb(0, 0, 0));
+	// draw tilemap
 	map.draw();
-	enemy.draw();
+
+	// draw enemy group
+	for (enemy_it = enemy_list.begin(); enemy_it != enemy_list.end(); enemy_it++) {
+		(*enemy_it).draw();
+	}
+
 	al_flip_display();
 }

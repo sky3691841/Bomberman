@@ -11,6 +11,7 @@ enum TILE_ID {GRASS = 0, BRICK = 1, BLOCK = 2};
 
 class Tilemap {
 private:
+	// Tilemap background
 	FILE* map_txt;
 	int map[TILES_H][TILES_W];
 

@@ -1,10 +1,10 @@
 #include "content.hpp"
 #include <iostream>
-<<<<<<< HEAD
-=======
+//<<<<<<< HEAD
+//=======
 
 using namespace std;
->>>>>>> b9248a469353020b2e917b2652eff477e18ad878
+//>>>>>>> b9248a469353020b2e917b2652eff477e18ad878
 
 ///BITMAPS===================
 ALLEGRO_BITMAP* main_bg;
@@ -261,4 +261,4 @@ void UnloadVictoryContent()
 <<<<<<< HEAD
 =======
 */
->>>>>>> b9248a469353020b2e917b2652eff477e18ad878
+//>>>>>>> b9248a469353020b2e917b2652eff477e18ad878

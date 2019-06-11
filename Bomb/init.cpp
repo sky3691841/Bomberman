@@ -1,8 +1,18 @@
 #include "init.hpp"
+<<<<<<< HEAD
+#include <allegro5/allegro.h>
+#include <allegro5/allegro_image.h>
+#include <allegro5/allegro_primitives.h>
+#include <allegro5/allegro_ttf.h>
+#include <iostream>
+///GLOBAIS=========================
+int screenstate;
+=======
 
 // Globals =======================
 int scenestate;
 bool key_state[ALLEGRO_KEY_MAX];
+>>>>>>> b9248a469353020b2e917b2652eff477e18ad878
 bool exit_program;
 int redraws;
 float volBGM;
@@ -26,10 +36,11 @@ void init()
     //al_install_mouse();
     al_install_keyboard();
     al_install_joystick();
+
     al_install_audio();
     al_init_acodec_addon();
-    al_init_ttf_addon();
     al_init_font_addon();
+    al_init_ttf_addon();
     al_init_image_addon();
     al_init_primitives_addon();
 

@@ -1,7 +1,10 @@
 #include "content.hpp"
 #include <iostream>
+<<<<<<< HEAD
+=======
 
 using namespace std;
+>>>>>>> b9248a469353020b2e917b2652eff477e18ad878
 
 ///BITMAPS===================
 ALLEGRO_BITMAP* main_bg;
@@ -103,6 +106,7 @@ void UnloadDefaultContent()
 void LoadMainmenuContent()
 {
 	//BITMAPS
+
 	main_bg = al_load_bitmap("Sprites/MAINMENU/bg.png");
 	main_title = al_load_bitmap("Sprites/MAINMENU/title.png");
 
@@ -254,4 +258,7 @@ void UnloadVictoryContent()
 	//Sounds
 	al_destroy_sample(BGM_victory);
 }
+<<<<<<< HEAD
+=======
 */
+>>>>>>> b9248a469353020b2e917b2652eff477e18ad878

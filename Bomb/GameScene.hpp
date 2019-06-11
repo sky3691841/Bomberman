@@ -7,9 +7,15 @@
 
 class GameScene {
 private:
-	// variables
+	// objects
 	Tilemap map;
 	Enemy enemy;
+
+	// groups
+	std::list<Enemy> enemy_list;
+	std::list<Enemy> enemy_it;
+
+	// variables
 	bool exit_scene;
 
 	// functions

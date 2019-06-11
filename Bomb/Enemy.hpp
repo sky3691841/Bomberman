@@ -5,6 +5,7 @@
 #include "Animation.hpp"
 #include "Tilemap.hpp"
 
+#define ENEMY_NUM 3
 #define ENEMY_SPEED 1
 
 class Enemy {

@@ -1,9 +1,8 @@
-#ifndef MAINMENU_H_INCLUDED
-#define MAINMENU_H_INCLUDED
+#ifndef MAINMENU_HPP_INCLUDED
+#define MAINMENU_HPP_INCLUDED
 
 #include "init.hpp"
-#include "animation.hpp"
 
 void mainmenu();
 
-#endif // MAINMENU_H_INCLUDED
+#endif // MAINMENU_HPP_INCLUDED

@@ -10,9 +10,6 @@
 ///BITMAPS================================================
 extern ALLEGRO_BITMAP* main_bg;
 extern ALLEGRO_BITMAP* main_title;
-extern ALLEGRO_BITMAP* main_balao;
-extern ALLEGRO_BITMAP* main_dirigivel1;
-extern ALLEGRO_BITMAP* main_dirigivel2;
 
 extern ALLEGRO_BITMAP* game_tile[5];
 extern ALLEGRO_BITMAP* game_brick_explosion;
@@ -75,11 +72,12 @@ void LoadDefaultContent();
 void UnloadDefaultContent();
 void LoadMainmenuContent();
 void UnloadMainmenuContent();
-void LoadGamescreenContent();
+
+/*void LoadGamescreenContent();
 void UnloadGamescreenContent();
 void LoadGameoverContent();
 void UnloadGameoverContent();
 void LoadVictoryContent();
-void UnloadVictoryContent();
+void UnloadVictoryContent();*/
 
 #endif

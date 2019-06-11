@@ -11,7 +11,7 @@
 extern ALLEGRO_BITMAP* main_bg;
 extern ALLEGRO_BITMAP* main_title;
 
-extern ALLEGRO_BITMAP* game_tile[5];
+/*extern ALLEGRO_BITMAP* game_tile[5];
 extern ALLEGRO_BITMAP* game_brick_explosion;
 extern ALLEGRO_BITMAP* game_portal;
 extern ALLEGRO_BITMAP* game_barra_superior;
@@ -43,7 +43,7 @@ extern ALLEGRO_BITMAP* victory_bomberman;
 
 extern ALLEGRO_BITMAP* gameover_bg;
 extern ALLEGRO_BITMAP* gameover_animation;
-extern ALLEGRO_BITMAP* gameover_title;
+extern ALLEGRO_BITMAP* gameover_title;*/
 ///=======================================================
 
 ///FONTES=================================================

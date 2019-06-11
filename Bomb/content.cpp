@@ -4,7 +4,7 @@
 ALLEGRO_BITMAP* main_bg;
 ALLEGRO_BITMAP* main_title;
 
-ALLEGRO_BITMAP* game_tile[5];
+/*ALLEGRO_BITMAP* game_tile[5];
 ALLEGRO_BITMAP* game_brick_explosion;
 ALLEGRO_BITMAP* game_portal;
 ALLEGRO_BITMAP* game_barra_superior;
@@ -36,7 +36,7 @@ ALLEGRO_BITMAP* victory_bomberman;
 
 ALLEGRO_BITMAP* gameover_bg;
 ALLEGRO_BITMAP* gameover_animation;
-ALLEGRO_BITMAP* gameover_title;
+ALLEGRO_BITMAP* gameover_title;*/
 ///==========================
 
 ///Fonts====================
@@ -68,7 +68,6 @@ ALLEGRO_SAMPLE* BGM_gameover;
 void LoadDefaultContent()
 {
 	// BITMAPS
-	game_bomb = al_load_bitmap("Sprites/GAMESCREEN/bomb.png");
 
 	// Fonts
 	font_debug = al_load_ttf_font("Fonts/debug.ttf", 10, ALLEGRO_TTF_MONOCHROME);
@@ -84,7 +83,6 @@ void LoadDefaultContent()
 void UnloadDefaultContent()
 {
 	// BITMAPS
-	al_destroy_bitmap(game_bomb);
 
 	// Fonts
 	al_destroy_font(font_debug);
@@ -115,7 +113,7 @@ void UnloadMainmenuContent()
 	al_destroy_bitmap(main_bg);
 	al_destroy_bitmap(main_title);
 
-	//SONS
+	// Sounds
 	al_destroy_sample(BGM_mainmenu);
 }
 
@@ -152,7 +150,7 @@ void LoadGamescreenContent()
 	game_upgrade_bomba_espinho = al_load_bitmap("Sprites/GAMESCREEN/upgrades/bomba espinho.png");
 	game_bomba_espinho = al_load_bitmap("Sprites/GAMESCREEN/bomba espinho.png");
 
-	//SONS
+	//Sounds
 	BGM_gamescreen = al_load_sample("Sons/BGM/gamescreen.ogg");
 	SFX_put_bomb = al_load_sample("Sons/SFX/put bomb.wav");
 	SFX_explosion = al_load_sample("Sons/SFX/explosion.wav");
@@ -187,7 +185,7 @@ void UnloadGamescreenContent()
 	al_destroy_bitmap(game_upgrade_bomba_espinho);
 	al_destroy_bitmap(game_bomba_espinho);
 
-	//SONS
+	//Sounds
 	al_destroy_sample(BGM_gamescreen);
 	al_destroy_sample(SFX_put_bomb);
 	al_destroy_sample(SFX_explosion);
@@ -204,7 +202,7 @@ void LoadGameoverContent()
 	gameover_title = al_load_bitmap("Sprites/GAMEOVER/title.png");
 	gameover_animation = al_load_bitmap("Sprites/GAMEOVER/animation.png");
 
-	//SONS
+	//Sounds
 	BGM_gameover = al_load_sample("Sons/BGM/gameover.ogg");
 }
 
@@ -215,7 +213,7 @@ void UnloadGameoverContent()
 	al_destroy_bitmap(gameover_animation);
 	al_destroy_bitmap(gameover_title);
 
-	//SONS
+	//Sounds
 	al_destroy_sample(BGM_gameover);
 }
 
@@ -232,7 +230,7 @@ void LoadVictoryContent()
 	victory_floor = al_load_bitmap("Sprites/VICTORY/floor.png");
 	victory_bomberman = al_load_bitmap("Sprites/VICTORY/bomberman.png");
 
-	//SONS
+	//Sounds
 	BGM_victory = al_load_sample("Sons/BGM/victory.ogg");
 }
 
@@ -246,7 +244,7 @@ void UnloadVictoryContent()
 	al_destroy_bitmap(victory_floor);
 	al_destroy_bitmap(victory_bomberman);
 
-	//SONS
+	//Sounds
 	al_destroy_sample(BGM_victory);
 }
 */

@@ -1,4 +1,4 @@
-#include "mainmenu.hpp"
+#include "MenuScene.hpp"
 
 // try to write by class
 
@@ -12,6 +12,8 @@ MenuScene::MenuScene() {
 }
 
 MenuScene::~MenuScene() {
+	al_stop_timer(timer_FPS);
+	UnloadMainmenuContent();
 }
 
 void MenuScene::start() {

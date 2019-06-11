@@ -1,5 +1,5 @@
 #include "init.hpp"
-#include "mainmenu.hpp"
+#include "MenuScene.hpp"
 
 int main()
 {

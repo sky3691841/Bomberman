@@ -20,7 +20,6 @@ public:
 	~Tilemap();
 	void init();
 	void draw();
-
 };
 
 #endif // TILEMAP_HPP

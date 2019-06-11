@@ -11,3 +11,4 @@ packages/
 *.opendb
 *.sln
 *.cbp
+*.config

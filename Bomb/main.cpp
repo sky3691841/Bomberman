@@ -17,7 +17,7 @@ int main()
         victory();*/
     }
 
-    deinit();
+    destroy();
 
 	return 0;
 }

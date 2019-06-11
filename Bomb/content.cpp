@@ -66,10 +66,8 @@ ALLEGRO_SAMPLE* BGM_gameover;
 //=================================
 void LoadDefaultContent()
 {
-	//BITMAPS
+	// BITMAPS
 	game_bomb = al_load_bitmap("Sprites/GAMESCREEN/bomb.png");
-
-	//al_convert_mask_to_alpha(sprite, al_map_rgb(255, 0, 255));
 
 	// Fonts
 	font_debug = al_load_ttf_font("Fonts/debug.ttf", 10, ALLEGRO_TTF_MONOCHROME);
@@ -77,29 +75,29 @@ void LoadDefaultContent()
 	font_menu = al_load_ttf_font("Fonts/menu.ttf", 30, ALLEGRO_TTF_MONOCHROME);
 
 
-	///SONS
+	// Sounds
 	SFX_menusound1 = al_load_sample("Sounds/SFX/menusound1.wav");
 	SFX_menusound2 = al_load_sample("Sounds/SFX/menusound2.wav");
 }
 
 void UnloadDefaultContent()
 {
-	//BITMAPS
+	// BITMAPS
 	al_destroy_bitmap(game_bomb);
 
-	//FONTES
+	// Fonts
 	al_destroy_font(font_debug);
 	al_destroy_font(font_bomberman);
 	al_destroy_font(font_menu);
 
-	//SONS
+	// Sounds
 	al_destroy_sample(SFX_menusound1);
 	al_destroy_sample(SFX_menusound2);
 }
 
-///=================================
-///MAINMENU
-///=================================
+//=================================
+//MAINMENU
+//=================================
 void LoadMainmenuContent()
 {
 	//BITMAPS

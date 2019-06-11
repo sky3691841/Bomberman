@@ -62,7 +62,7 @@ void init()
 	debug_mode = false;
 }
 
-void deinit()
+void destroy()
 {
     UnloadDefaultContent();
     al_destroy_timer(timer_FPS);

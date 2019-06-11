@@ -45,7 +45,7 @@ extern ALLEGRO_KEYBOARD_STATE keystate;
 
 // Functions
 void init();
-void deinit();
+void destroy();
 int width(ALLEGRO_BITMAP* img);
 int height(ALLEGRO_BITMAP* img);
 // void fade(int r, int g, int b, float speed);

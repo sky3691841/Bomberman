@@ -1,4 +1,5 @@
 #include "content.hpp"
+#include <iostream>
 
 ///BITMAPS===================
 ALLEGRO_BITMAP* main_bg;
@@ -106,6 +107,7 @@ void UnloadDefaultContent()
 void LoadMainmenuContent()
 {
 	//BITMAPS
+
 	main_bg = al_load_bitmap("Sprites/MAINMENU/bg.png");
 	main_title = al_load_bitmap("Sprites/MAINMENU/title.png");
 	main_balao = al_load_bitmap("Sprites/MAINMENU/balao.png");

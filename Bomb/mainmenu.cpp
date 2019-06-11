@@ -1,13 +1,13 @@
 #include "mainmenu.hpp"
-
+#include <iostream>
 void mainmenu()
 {
-    ///INICIALIZAÇÃO=========
+    ///INICIALIZATION=========
     LoadMainmenuContent();
     desenhar = true;
     ///======================
 
-	///VARIÁVEIS=============
+	///VARIABLES=============
 	bool exit_screen = false;
 	bool option = 0;
 	Animation anim_bomba;
@@ -132,7 +132,7 @@ void mainmenu()
         }
 	}
 
-	///FINALIZAÇÃO
+	///FINALIZATION
 	al_stop_timer(timer_FPS);
 	UnloadMainmenuContent();
 }

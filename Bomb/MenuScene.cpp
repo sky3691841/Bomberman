@@ -3,6 +3,8 @@
 // try to write by class
 
 MenuScene::MenuScene() {
+	LoadMainmenuContent();
+	al_play_sample(BGM_mainmenu, volBGM / 3, 0, 1, ALLEGRO_PLAYMODE_LOOP, NULL);
 	exit_scene = false;
 	play = true;
 	color_black = al_map_rgb(0, 0, 0);
@@ -17,9 +19,7 @@ MenuScene::~MenuScene() {
 }
 
 void MenuScene::start() {
-	LoadMainmenuContent();
 	redraws = 0;
-	al_play_sample(BGM_mainmenu, volBGM / 3, 0, 1, ALLEGRO_PLAYMODE_LOOP, NULL);
 	al_start_timer(timer_FPS);
 
 	//=============================

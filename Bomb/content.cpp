@@ -7,8 +7,8 @@ using namespace std;
 ALLEGRO_BITMAP* main_bg;
 ALLEGRO_BITMAP* main_title;
 
-/*ALLEGRO_BITMAP* game_tile[5];
-ALLEGRO_BITMAP* game_brick_explosion;
+ALLEGRO_BITMAP* game_tile[4];
+/*ALLEGRO_BITMAP* game_brick_explosion;
 ALLEGRO_BITMAP* game_portal;
 ALLEGRO_BITMAP* game_barra_superior;
 ALLEGRO_BITMAP* game_player_up;
@@ -123,19 +123,19 @@ void UnloadMainmenuContent()
 	cout << "main menu content destroyed" << endl;
 }
 
-/*
+
 ///=================================
 ///GAMESCREEN
 ///=================================
-void LoadGamescreenContent()
+void LoadGameSceneContent()
 {
 	//BITMAPS
 	game_tile[0] = al_load_bitmap("Sprites/GAMESCREEN/tiles/grass.png");
 	game_tile[1] = al_load_bitmap("Sprites/GAMESCREEN/tiles/brick.png");
 	game_tile[2] = al_load_bitmap("Sprites/GAMESCREEN/tiles/block.png");
-	game_tile[3] = al_load_bitmap("Sprites/GAMESCREEN/tiles/wall.png");
-	game_tile[4] = game_tile[0];
-	game_brick_explosion = al_load_bitmap("Sprites/GAMESCREEN/tiles/brick explosion.png");
+	game_tile[3] = game_tile[0];
+
+	/*game_brick_explosion = al_load_bitmap("Sprites/GAMESCREEN/tiles/brick explosion.png");
 	game_portal = al_load_bitmap("Sprites/GAMESCREEN/portal.png");
 	game_barra_superior = al_load_bitmap("Sprites/GAMESCREEN/barra superior.png");
 	game_player_up = al_load_bitmap("Sprites/GAMESCREEN/player up.png");
@@ -160,7 +160,7 @@ void LoadGamescreenContent()
 	BGM_gamescreen = al_load_sample("Sons/BGM/gamescreen.ogg");
 	SFX_put_bomb = al_load_sample("Sons/SFX/put bomb.wav");
 	SFX_explosion = al_load_sample("Sons/SFX/explosion.wav");
-	SFX_pick_upgrade = al_load_sample("Sons/SFX/pick upgrade.wav");
+	SFX_pick_upgrade = al_load_sample("Sons/SFX/pick upgrade.wav");*/
 }
 
 void UnloadGamescreenContent()
@@ -170,7 +170,7 @@ void UnloadGamescreenContent()
 	al_destroy_bitmap(game_tile[1]);
 	al_destroy_bitmap(game_tile[2]);
 	al_destroy_bitmap(game_tile[3]);
-	al_destroy_bitmap(game_brick_explosion);
+	/*al_destroy_bitmap(game_brick_explosion);
 	al_destroy_bitmap(game_portal);
 	al_destroy_bitmap(game_barra_superior);
 	al_destroy_bitmap(game_player_up);
@@ -195,9 +195,10 @@ void UnloadGamescreenContent()
 	al_destroy_sample(BGM_gamescreen);
 	al_destroy_sample(SFX_put_bomb);
 	al_destroy_sample(SFX_explosion);
-	al_destroy_sample(SFX_pick_upgrade);
+	al_destroy_sample(SFX_pick_upgrade);*/
 }
 
+/*
 ///=================================
 ///GAMEOVER
 ///=================================

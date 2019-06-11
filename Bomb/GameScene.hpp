@@ -2,10 +2,12 @@
 #define GAMESCENE_HPP
 
 #include "init.hpp"
+#include "Tilemap.hpp"
 
 class GameScene {
 private:
 	// variables
+	Tilemap map;
 	bool exit_scene;
 
 	// functions

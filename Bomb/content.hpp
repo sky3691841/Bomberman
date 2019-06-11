@@ -11,7 +11,8 @@
 extern ALLEGRO_BITMAP* main_bg;
 extern ALLEGRO_BITMAP* main_title;
 
-/*extern ALLEGRO_BITMAP* game_tile[5];
+extern ALLEGRO_BITMAP* game_tile[4];
+/*
 extern ALLEGRO_BITMAP* game_brick_explosion;
 extern ALLEGRO_BITMAP* game_portal;
 extern ALLEGRO_BITMAP* game_barra_superior;
@@ -74,8 +75,9 @@ void UnloadDefaultContent();
 void LoadMainmenuContent();
 void UnloadMainmenuContent();
 
-/*void LoadGamescreenContent();
+void LoadGameSceneContent();
 void UnloadGamescreenContent();
+/*
 void LoadGameoverContent();
 void UnloadGameoverContent();
 void LoadVictoryContent();

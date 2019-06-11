@@ -1,8 +1,11 @@
 #include "GameScene.hpp"
 
 GameScene::GameScene() {
-	// LoadGameSceneContent();
+	LoadGameSceneContent();
 	exit_scene = false;
+	
+	map.init();
+	
 	// play sample
 
 }
@@ -63,5 +66,6 @@ void GameScene::update() {
 
 void GameScene::draw() {
 	al_clear_to_color(al_map_rgb(0, 0, 0));
+	map.draw();
 	al_flip_display();
 }

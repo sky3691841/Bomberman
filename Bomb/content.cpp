@@ -1,16 +1,18 @@
 #include "content.hpp"
 #include <iostream>
-//<<<<<<< HEAD
-//=======
 
 using namespace std;
-//>>>>>>> b9248a469353020b2e917b2652eff477e18ad878
 
 ///BITMAPS===================
 ALLEGRO_BITMAP* main_bg;
 ALLEGRO_BITMAP* main_title;
 
 ALLEGRO_BITMAP* game_tile[4];
+ALLEGRO_BITMAP* game_enemy_up;
+ALLEGRO_BITMAP* game_enemy_down;
+ALLEGRO_BITMAP* game_enemy_left;
+ALLEGRO_BITMAP* game_enemy_right;
+
 /*ALLEGRO_BITMAP* game_brick_explosion;
 ALLEGRO_BITMAP* game_portal;
 ALLEGRO_BITMAP* game_barra_superior;
@@ -18,10 +20,6 @@ ALLEGRO_BITMAP* game_player_up;
 ALLEGRO_BITMAP* game_player_down;
 ALLEGRO_BITMAP* game_player_left;
 ALLEGRO_BITMAP* game_player_right;
-ALLEGRO_BITMAP* game_enemy_up;
-ALLEGRO_BITMAP* game_enemy_down;
-ALLEGRO_BITMAP* game_enemy_left;
-ALLEGRO_BITMAP* game_enemy_right;
 ALLEGRO_BITMAP* game_bomb;
 ALLEGRO_BITMAP* game_upgrade_bomba_extra;
 ALLEGRO_BITMAP* game_upgrade_fogo;
@@ -134,10 +132,17 @@ void UnloadMainmenuContent()
 void LoadGameSceneContent()
 {
 	//BITMAPS
+	/// Tilemaps
 	game_tile[0] = al_load_bitmap("Sprites/GAMESCREEN/tiles/grass.png");
 	game_tile[1] = al_load_bitmap("Sprites/GAMESCREEN/tiles/brick.png");
 	game_tile[2] = al_load_bitmap("Sprites/GAMESCREEN/tiles/block.png");
 	game_tile[3] = game_tile[0];
+
+	/// Enemy
+	game_enemy_up = al_load_bitmap("Sprites/GAMESCREEN/enemy_up.png");
+	game_enemy_down = al_load_bitmap("Sprites/GAMESCREEN/enemy_down.png");
+	game_enemy_left = al_load_bitmap("Sprites/GAMESCREEN/enemy_left.png");
+	game_enemy_right = al_load_bitmap("Sprites/GAMESCREEN/enemy_right.png");
 
 	/*game_brick_explosion = al_load_bitmap("Sprites/GAMESCREEN/tiles/brick explosion.png");
 	game_portal = al_load_bitmap("Sprites/GAMESCREEN/portal.png");
@@ -146,10 +151,6 @@ void LoadGameSceneContent()
 	game_player_down = al_load_bitmap("Sprites/GAMESCREEN/player down.png");
 	game_player_left = al_load_bitmap("Sprites/GAMESCREEN/player left.png");
 	game_player_right = al_load_bitmap("Sprites/GAMESCREEN/player right.png");
-	game_enemy_up = al_load_bitmap("Sprites/GAMESCREEN/enemy up.png");
-	game_enemy_down = al_load_bitmap("Sprites/GAMESCREEN/enemy down.png");
-	game_enemy_left = al_load_bitmap("Sprites/GAMESCREEN/enemy left.png");
-	game_enemy_right = al_load_bitmap("Sprites/GAMESCREEN/enemy right.png");
 	game_upgrade_bomba_extra = al_load_bitmap("Sprites/GAMESCREEN/upgrades/bomba extra.png");
 	game_upgrade_fogo = al_load_bitmap("Sprites/GAMESCREEN/upgrades/fogo.png");
 	game_upgrade_patins = al_load_bitmap("Sprites/GAMESCREEN/upgrades/patins.png");
@@ -167,13 +168,21 @@ void LoadGameSceneContent()
 	SFX_pick_upgrade = al_load_sample("Sons/SFX/pick upgrade.wav");*/
 }
 
-void UnloadGamescreenContent()
+void UnloadGameSceneContent()
 {
-	//BITMAPS
+	// BITMAPS
+	/// Tilemaps
 	al_destroy_bitmap(game_tile[0]);
 	al_destroy_bitmap(game_tile[1]);
 	al_destroy_bitmap(game_tile[2]);
 	al_destroy_bitmap(game_tile[3]);
+
+	///Enemy
+	al_destroy_bitmap(game_enemy_up);
+	al_destroy_bitmap(game_enemy_down);
+	al_destroy_bitmap(game_enemy_left);
+	al_destroy_bitmap(game_enemy_right);
+
 	/*al_destroy_bitmap(game_brick_explosion);
 	al_destroy_bitmap(game_portal);
 	al_destroy_bitmap(game_barra_superior);
@@ -181,10 +190,6 @@ void UnloadGamescreenContent()
 	al_destroy_bitmap(game_player_down);
 	al_destroy_bitmap(game_player_left);
 	al_destroy_bitmap(game_player_right);
-	al_destroy_bitmap(game_enemy_up);
-	al_destroy_bitmap(game_enemy_down);
-	al_destroy_bitmap(game_enemy_left);
-	al_destroy_bitmap(game_enemy_right);
 	al_destroy_bitmap(game_upgrade_bomba_extra);
 	al_destroy_bitmap(game_upgrade_fogo);
 	al_destroy_bitmap(game_upgrade_patins);
@@ -258,7 +263,5 @@ void UnloadVictoryContent()
 	//Sounds
 	al_destroy_sample(BGM_victory);
 }
-<<<<<<< HEAD
-=======
 */
-//>>>>>>> b9248a469353020b2e917b2652eff477e18ad878
+

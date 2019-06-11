@@ -5,6 +5,7 @@ GameScene::GameScene() {
 	exit_scene = false;
 	
 	map.init();
+	enemy.init(9, 5);
 	
 	// play sample
 
@@ -54,6 +55,7 @@ void GameScene::start() {
 	al_stop_timer(timer_FPS);
 }
 
+// this is for single key press, movement should be handled in update
 void GameScene::on_key_down(int keycode) {
 	if (keycode == ALLEGRO_KEY_ESCAPE) {
 		exit_scene = true;
@@ -67,5 +69,6 @@ void GameScene::update() {
 void GameScene::draw() {
 	al_clear_to_color(al_map_rgb(0, 0, 0));
 	map.draw();
+	enemy.draw();
 	al_flip_display();
 }

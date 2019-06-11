@@ -27,7 +27,7 @@ void Tilemap::init() {
 void Tilemap::draw() {
 	for (int i = 0; i < TILES_H; i++) {
 		for (int j = 0;j < TILES_W; j++) {
-			al_draw_bitmap(game_tile[map[i][j]], 0 + j * TILESIZE, 100 + i * TILESIZE, 0);
+			al_draw_bitmap(game_tile[map[i][j]], MAP_X0 + j * TILESIZE, MAP_Y0 + i * TILESIZE, 0);
 		}
 	}
 }

@@ -3,11 +3,13 @@
 
 #include "init.hpp"
 #include "Tilemap.hpp"
+#include "Enemy.hpp"
 
 class GameScene {
 private:
 	// variables
 	Tilemap map;
+	Enemy enemy;
 	bool exit_scene;
 
 	// functions

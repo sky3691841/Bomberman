@@ -7,6 +7,9 @@
 #define TILES_W 19
 #define TILESIZE 50
 
+#define MAP_X0 0
+#define MAP_Y0 100
+
 enum TILE_ID {GRASS = 0, BRICK = 1, BLOCK = 2};
 
 class Tilemap {

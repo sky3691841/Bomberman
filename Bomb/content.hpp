@@ -10,11 +10,9 @@
 ///BITMAPS================================================
 extern ALLEGRO_BITMAP* main_bg;
 extern ALLEGRO_BITMAP* main_title;
-extern ALLEGRO_BITMAP* main_balao;
-extern ALLEGRO_BITMAP* main_dirigivel1;
-extern ALLEGRO_BITMAP* main_dirigivel2;
 
-extern ALLEGRO_BITMAP* game_tile[5];
+extern ALLEGRO_BITMAP* game_tile[4];
+/*
 extern ALLEGRO_BITMAP* game_brick_explosion;
 extern ALLEGRO_BITMAP* game_portal;
 extern ALLEGRO_BITMAP* game_barra_superior;
@@ -46,7 +44,7 @@ extern ALLEGRO_BITMAP* victory_bomberman;
 
 extern ALLEGRO_BITMAP* gameover_bg;
 extern ALLEGRO_BITMAP* gameover_animation;
-extern ALLEGRO_BITMAP* gameover_title;
+extern ALLEGRO_BITMAP* gameover_title;*/
 ///=======================================================
 
 ///FONTES=================================================
@@ -57,6 +55,7 @@ extern ALLEGRO_FONT* font_menu;
 
 ///SONS=====================================================
 extern ALLEGRO_SAMPLE* BGM_mainmenu;
+extern ALLEGRO_SAMPLE_ID BGM_mainmenu_id;
 extern ALLEGRO_SAMPLE* SFX_menusound1;
 extern ALLEGRO_SAMPLE* SFX_menusound2;
 
@@ -75,11 +74,13 @@ void LoadDefaultContent();
 void UnloadDefaultContent();
 void LoadMainmenuContent();
 void UnloadMainmenuContent();
-void LoadGamescreenContent();
+
+void LoadGameSceneContent();
 void UnloadGamescreenContent();
+/*
 void LoadGameoverContent();
 void UnloadGameoverContent();
 void LoadVictoryContent();
-void UnloadVictoryContent();
+void UnloadVictoryContent();*/
 
 #endif

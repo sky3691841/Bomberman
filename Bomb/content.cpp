@@ -1,15 +1,17 @@
 #include "content.hpp"
 #include <iostream>
+<<<<<<< HEAD
+=======
+
+using namespace std;
+>>>>>>> b9248a469353020b2e917b2652eff477e18ad878
 
 ///BITMAPS===================
 ALLEGRO_BITMAP* main_bg;
 ALLEGRO_BITMAP* main_title;
-ALLEGRO_BITMAP* main_balao;
-ALLEGRO_BITMAP* main_dirigivel1;
-ALLEGRO_BITMAP* main_dirigivel2;
 
-ALLEGRO_BITMAP* game_tile[5];
-ALLEGRO_BITMAP* game_brick_explosion;
+ALLEGRO_BITMAP* game_tile[4];
+/*ALLEGRO_BITMAP* game_brick_explosion;
 ALLEGRO_BITMAP* game_portal;
 ALLEGRO_BITMAP* game_barra_superior;
 ALLEGRO_BITMAP* game_player_up;
@@ -40,17 +42,18 @@ ALLEGRO_BITMAP* victory_bomberman;
 
 ALLEGRO_BITMAP* gameover_bg;
 ALLEGRO_BITMAP* gameover_animation;
-ALLEGRO_BITMAP* gameover_title;
+ALLEGRO_BITMAP* gameover_title;*/
 ///==========================
 
-///FONTES====================
+///Fonts====================
 ALLEGRO_FONT* font_debug;
 ALLEGRO_FONT* font_bomberman;
 ALLEGRO_FONT* font_menu;
 ///==========================
 
-///SONS======================
+///Sounds======================
 ALLEGRO_SAMPLE* BGM_mainmenu;
+ALLEGRO_SAMPLE_ID BGM_mainmenu_id;
 ALLEGRO_SAMPLE* SFX_menusound1;
 ALLEGRO_SAMPLE* SFX_menusound2;
 
@@ -65,57 +68,52 @@ ALLEGRO_SAMPLE* BGM_gameover;
 ///==========================
 
 
-///=================================
-///DEFAULT
-///=================================
+//=================================
+//DEFAULT
+//=================================
 void LoadDefaultContent()
 {
-	///BITMAPS
-	game_bomb = al_load_bitmap("Sprites/GAMESCREEN/bomba.png");
+	// BITMAPS
 
-	//al_convert_mask_to_alpha(sprite, al_map_rgb(255, 0, 255));
-
-	///FONTES
-	font_debug = al_load_ttf_font("Fontes/debug.ttf", 10, ALLEGRO_TTF_MONOCHROME);
-	font_bomberman = al_load_ttf_font("Fontes/bomberman.ttf", 45, ALLEGRO_TTF_MONOCHROME);
-	font_menu = al_load_ttf_font("Fontes/menu.ttf", 30, ALLEGRO_TTF_MONOCHROME);
+	// Fonts
+	font_debug = al_load_ttf_font("Fonts/debug.ttf", 10, ALLEGRO_TTF_MONOCHROME);
+	font_bomberman = al_load_ttf_font("Fonts/bomberman.ttf", 45, ALLEGRO_TTF_MONOCHROME);
+	font_menu = al_load_ttf_font("Fonts/menu.ttf", 30, ALLEGRO_TTF_MONOCHROME);
 
 
-	///SONS
-	SFX_menusound1 = al_load_sample("Sons/SFX/menusound1.wav");
-	SFX_menusound2 = al_load_sample("Sons/SFX/menusound2.wav");
+	// Sounds
+	SFX_menusound1 = al_load_sample("Sounds/SFX/menusound1.wav");
+	SFX_menusound2 = al_load_sample("Sounds/SFX/menusound2.wav");
 }
 
 void UnloadDefaultContent()
 {
-	//BITMAPS
-	al_destroy_bitmap(game_bomb);
+	// BITMAPS
 
-	//FONTES
+	// Fonts
 	al_destroy_font(font_debug);
 	al_destroy_font(font_bomberman);
 	al_destroy_font(font_menu);
 
-	//SONS
+	// Sounds
 	al_destroy_sample(SFX_menusound1);
 	al_destroy_sample(SFX_menusound2);
 }
 
-///=================================
-///MAINMENU
-///=================================
+//=================================
+//MAINMENU
+//=================================
 void LoadMainmenuContent()
 {
 	//BITMAPS
 
 	main_bg = al_load_bitmap("Sprites/MAINMENU/bg.png");
 	main_title = al_load_bitmap("Sprites/MAINMENU/title.png");
-	main_balao = al_load_bitmap("Sprites/MAINMENU/balao.png");
-	main_dirigivel1 = al_load_bitmap("Sprites/MAINMENU/dirigivel1.png");
-	main_dirigivel2 = al_load_bitmap("Sprites/MAINMENU/dirigivel2.png");
 
-	//SONS
-	BGM_mainmenu = al_load_sample("Sons/BGM/mainmenu.ogg");
+	//SOUNDS
+	BGM_mainmenu = al_load_sample("Sounds/BGM/mainmenu.ogg");
+
+	cout << "main menu content loaded" << endl;
 }
 
 void UnloadMainmenuContent()
@@ -123,26 +121,25 @@ void UnloadMainmenuContent()
 	//BITMAPS
 	al_destroy_bitmap(main_bg);
 	al_destroy_bitmap(main_title);
-	al_destroy_bitmap(main_balao);
-	al_destroy_bitmap(main_dirigivel1);
-	al_destroy_bitmap(main_dirigivel2);
 
-	//SONS
+	// Sounds
 	al_destroy_sample(BGM_mainmenu);
+	cout << "main menu content destroyed" << endl;
 }
+
 
 ///=================================
 ///GAMESCREEN
 ///=================================
-void LoadGamescreenContent()
+void LoadGameSceneContent()
 {
 	//BITMAPS
 	game_tile[0] = al_load_bitmap("Sprites/GAMESCREEN/tiles/grass.png");
 	game_tile[1] = al_load_bitmap("Sprites/GAMESCREEN/tiles/brick.png");
 	game_tile[2] = al_load_bitmap("Sprites/GAMESCREEN/tiles/block.png");
-	game_tile[3] = al_load_bitmap("Sprites/GAMESCREEN/tiles/wall.png");
-	game_tile[4] = game_tile[0];
-	game_brick_explosion = al_load_bitmap("Sprites/GAMESCREEN/tiles/brick explosion.png");
+	game_tile[3] = game_tile[0];
+
+	/*game_brick_explosion = al_load_bitmap("Sprites/GAMESCREEN/tiles/brick explosion.png");
 	game_portal = al_load_bitmap("Sprites/GAMESCREEN/portal.png");
 	game_barra_superior = al_load_bitmap("Sprites/GAMESCREEN/barra superior.png");
 	game_player_up = al_load_bitmap("Sprites/GAMESCREEN/player up.png");
@@ -163,11 +160,11 @@ void LoadGamescreenContent()
 	game_upgrade_bomba_espinho = al_load_bitmap("Sprites/GAMESCREEN/upgrades/bomba espinho.png");
 	game_bomba_espinho = al_load_bitmap("Sprites/GAMESCREEN/bomba espinho.png");
 
-	//SONS
+	//Sounds
 	BGM_gamescreen = al_load_sample("Sons/BGM/gamescreen.ogg");
 	SFX_put_bomb = al_load_sample("Sons/SFX/put bomb.wav");
 	SFX_explosion = al_load_sample("Sons/SFX/explosion.wav");
-	SFX_pick_upgrade = al_load_sample("Sons/SFX/pick upgrade.wav");
+	SFX_pick_upgrade = al_load_sample("Sons/SFX/pick upgrade.wav");*/
 }
 
 void UnloadGamescreenContent()
@@ -177,7 +174,7 @@ void UnloadGamescreenContent()
 	al_destroy_bitmap(game_tile[1]);
 	al_destroy_bitmap(game_tile[2]);
 	al_destroy_bitmap(game_tile[3]);
-	al_destroy_bitmap(game_brick_explosion);
+	/*al_destroy_bitmap(game_brick_explosion);
 	al_destroy_bitmap(game_portal);
 	al_destroy_bitmap(game_barra_superior);
 	al_destroy_bitmap(game_player_up);
@@ -198,13 +195,14 @@ void UnloadGamescreenContent()
 	al_destroy_bitmap(game_upgrade_bomba_espinho);
 	al_destroy_bitmap(game_bomba_espinho);
 
-	//SONS
+	//Sounds
 	al_destroy_sample(BGM_gamescreen);
 	al_destroy_sample(SFX_put_bomb);
 	al_destroy_sample(SFX_explosion);
-	al_destroy_sample(SFX_pick_upgrade);
+	al_destroy_sample(SFX_pick_upgrade);*/
 }
 
+/*
 ///=================================
 ///GAMEOVER
 ///=================================
@@ -215,7 +213,7 @@ void LoadGameoverContent()
 	gameover_title = al_load_bitmap("Sprites/GAMEOVER/title.png");
 	gameover_animation = al_load_bitmap("Sprites/GAMEOVER/animation.png");
 
-	//SONS
+	//Sounds
 	BGM_gameover = al_load_sample("Sons/BGM/gameover.ogg");
 }
 
@@ -226,7 +224,7 @@ void UnloadGameoverContent()
 	al_destroy_bitmap(gameover_animation);
 	al_destroy_bitmap(gameover_title);
 
-	//SONS
+	//Sounds
 	al_destroy_sample(BGM_gameover);
 }
 
@@ -243,7 +241,7 @@ void LoadVictoryContent()
 	victory_floor = al_load_bitmap("Sprites/VICTORY/floor.png");
 	victory_bomberman = al_load_bitmap("Sprites/VICTORY/bomberman.png");
 
-	//SONS
+	//Sounds
 	BGM_victory = al_load_sample("Sons/BGM/victory.ogg");
 }
 
@@ -257,6 +255,10 @@ void UnloadVictoryContent()
 	al_destroy_bitmap(victory_floor);
 	al_destroy_bitmap(victory_bomberman);
 
-	//SONS
+	//Sounds
 	al_destroy_sample(BGM_victory);
 }
+<<<<<<< HEAD
+=======
+*/
+>>>>>>> b9248a469353020b2e917b2652eff477e18ad878

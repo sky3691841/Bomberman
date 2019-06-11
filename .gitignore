@@ -10,3 +10,5 @@ Debug/
 packages/
 *.opendb
 *.sln
+*.cbp
+*.config

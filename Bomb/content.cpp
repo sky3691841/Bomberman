@@ -1,4 +1,7 @@
 #include "content.hpp"
+#include <iostream>
+
+using namespace std;
 
 ///BITMAPS===================
 ALLEGRO_BITMAP* main_bg;
@@ -105,6 +108,8 @@ void LoadMainmenuContent()
 
 	//SOUNDS
 	BGM_mainmenu = al_load_sample("Sounds/BGM/mainmenu.ogg");
+
+	cout << "main menu content loaded" << endl;
 }
 
 void UnloadMainmenuContent()
@@ -115,6 +120,7 @@ void UnloadMainmenuContent()
 
 	// Sounds
 	al_destroy_sample(BGM_mainmenu);
+	cout << "main menu content destroyed" << endl;
 }
 
 /*

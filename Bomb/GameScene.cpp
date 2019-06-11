@@ -9,7 +9,6 @@ GameScene::GameScene() {
 
 GameScene::~GameScene() {
 	al_stop_timer(timer_FPS);
-	UnloadMainmenuContent();
 }
 
 void GameScene::start() {
@@ -48,9 +47,15 @@ void GameScene::start() {
 			redraws = 0;
 		}
 	}
+
+	al_stop_timer(timer_FPS);
 }
 
 void GameScene::on_key_down(int keycode) {
+	if (keycode == ALLEGRO_KEY_ESCAPE) {
+		exit_scene = true;
+		scenestate = MAINMENU;
+	}
 }
 
 void GameScene::update() {

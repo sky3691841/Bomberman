@@ -11,13 +11,13 @@ int main()
 
     while(!exit_program)
     {
-		if (screenstate == MAINMENU) {
+		if (scenestate == MAINMENU) {
 			cout << "menu" << endl;
 			MenuScene menu;
 			menu.start();
 		}
 			
-		else if (screenstate == GAMESCENE) {
+		else if (scenestate == GAMESCENE) {
 			cout << "game" << endl;
 			GameScene game;
 			game.start();

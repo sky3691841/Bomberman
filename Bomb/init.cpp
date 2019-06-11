@@ -1,7 +1,7 @@
 #include "init.hpp"
 
 // Globals =======================
-int screenstate;
+int scenestate;
 bool key_state[ALLEGRO_KEY_MAX];
 bool exit_program;
 int redraws;
@@ -51,7 +51,7 @@ void init()
 	al_set_display_icon(display, icon);
 
 	exit_program = false;
-	screenstate = MAINMENU;
+	scenestate = MAINMENU;
 	volSFX = 1.0;
 	volBGM = 0.8;
 

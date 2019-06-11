@@ -14,10 +14,6 @@ MenuScene::MenuScene() {
 }
 
 MenuScene::~MenuScene() {
-	al_stop_sample(&BGM_mainmenu_id);
-	al_stop_timer(timer_FPS);
-
-	UnloadMainmenuContent();
 }
 
 void MenuScene::start() {
@@ -56,6 +52,11 @@ void MenuScene::start() {
 			redraws = 0;
 		}
 	}
+
+	al_stop_sample(&BGM_mainmenu_id);
+	al_stop_timer(timer_FPS);
+
+	UnloadMainmenuContent();
 }
 
 void MenuScene::update() {
@@ -76,7 +77,7 @@ void MenuScene::on_key_down(int keycode) {
 			exit_program = true;
 		else {
 			exit_scene = true;
-			screenstate = GAMESCENE;
+			scenestate = GAMESCENE;
 		}
 	}
 }

@@ -27,7 +27,7 @@ private:
 public:
 	GameScene();
 	~GameScene();
-	void start();
+	void start(); // the game loop, no need to modify
 
 };
 

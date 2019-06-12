@@ -19,13 +19,12 @@ GameScene::GameScene() {
 		enemy.init(enemy_y, enemy_x);
 		enemy_list.push_back(enemy);
 	}
-	
-	// play sample
 }
 
 GameScene::~GameScene() {
 }
 
+// this is the gameloop, no need to modify
 void GameScene::start() {
 	redraws = 0;
 	al_start_timer(timer_FPS);
@@ -92,6 +91,7 @@ void GameScene::update() {
 }
 
 void GameScene::draw() {
+	// draw UI bar
 	al_draw_bitmap(UI_bar, 0, 0, 0);
 	// draw tilemap
 	map.draw();

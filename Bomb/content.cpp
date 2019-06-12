@@ -6,6 +6,9 @@ using namespace std;
 ///BITMAPS===================
 ALLEGRO_BITMAP* main_bg;
 ALLEGRO_BITMAP* main_title;
+ALLEGRO_BITMAP* main_balloon;
+ALLEGRO_BITMAP* main_airship1;
+ALLEGRO_BITMAP* main_airship2;
 
 ALLEGRO_BITMAP* UI_bar;
 ALLEGRO_BITMAP* game_tile[4];
@@ -19,9 +22,9 @@ ALLEGRO_BITMAP* game_portal;
 ALLEGRO_BITMAP* game_player_up;
 ALLEGRO_BITMAP* game_player_down;
 ALLEGRO_BITMAP* game_player_left;
-ALLEGRO_BITMAP* game_player_right;
-ALLEGRO_BITMAP* game_bomb;
-ALLEGRO_BITMAP* game_upgrade_bomba_extra;
+ALLEGRO_BITMAP* game_player_right;*/
+ALLEGRO_BITMAP* game_bomb; // already loaded in default
+/*ALLEGRO_BITMAP* game_upgrade_bomba_extra;
 ALLEGRO_BITMAP* game_upgrade_fogo;
 ALLEGRO_BITMAP* game_upgrade_patins;
 ALLEGRO_BITMAP* game_upgrade_chuta_bomba;
@@ -73,6 +76,7 @@ ALLEGRO_SAMPLE* BGM_gameover;
 void LoadDefaultContent()
 {
 	// BITMAPS
+	game_bomb = al_load_bitmap("Sprites/GAMESCREEN/bomb.png");
 
 	// Fonts
 	font_debug = al_load_ttf_font("Fonts/debug.ttf", 10, ALLEGRO_TTF_MONOCHROME);
@@ -88,6 +92,7 @@ void LoadDefaultContent()
 void UnloadDefaultContent()
 {
 	// BITMAPS
+	al_destroy_bitmap(game_bomb);
 
 	// Fonts
 	al_destroy_font(font_debug);
@@ -105,9 +110,11 @@ void UnloadDefaultContent()
 void LoadMainmenuContent()
 {
 	//BITMAPS
-
 	main_bg = al_load_bitmap("Sprites/MAINMENU/bg.png");
 	main_title = al_load_bitmap("Sprites/MAINMENU/title.png");
+	main_balloon = al_load_bitmap("Sprites/MAINMENU/balloon.png");
+	main_airship1 = al_load_bitmap("Sprites/MAINMENU/airship1.png");
+	main_airship2 = al_load_bitmap("Sprites/MAINMENU/airship2.png");
 
 	//SOUNDS
 	BGM_mainmenu = al_load_sample("Sounds/BGM/mainmenu.ogg");
@@ -120,6 +127,9 @@ void UnloadMainmenuContent()
 	//BITMAPS
 	al_destroy_bitmap(main_bg);
 	al_destroy_bitmap(main_title);
+	al_destroy_bitmap(main_balloon);
+	al_destroy_bitmap(main_airship1);
+	al_destroy_bitmap(main_airship2);
 
 	// Sounds
 	al_destroy_sample(BGM_mainmenu);

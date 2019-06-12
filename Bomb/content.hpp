@@ -10,6 +10,9 @@
 ///BITMAPS================================================
 extern ALLEGRO_BITMAP* main_bg;
 extern ALLEGRO_BITMAP* main_title;
+extern ALLEGRO_BITMAP* main_balloon;
+extern ALLEGRO_BITMAP* main_airship1;
+extern ALLEGRO_BITMAP* main_airship2;
 
 extern ALLEGRO_BITMAP* UI_bar;
 extern ALLEGRO_BITMAP* game_tile[4];
@@ -23,9 +26,9 @@ extern ALLEGRO_BITMAP* game_portal;
 extern ALLEGRO_BITMAP* game_player_up;
 extern ALLEGRO_BITMAP* game_player_down;
 extern ALLEGRO_BITMAP* game_player_left;
-extern ALLEGRO_BITMAP* game_player_right;
-extern ALLEGRO_BITMAP* game_bomb;
-extern ALLEGRO_BITMAP* game_upgrade_bomba_extra;
+extern ALLEGRO_BITMAP* game_player_right;*/
+extern ALLEGRO_BITMAP* game_bomb; // also used for menu scene
+/*extern ALLEGRO_BITMAP* game_upgrade_bomba_extra;
 extern ALLEGRO_BITMAP* game_upgrade_fogo;
 extern ALLEGRO_BITMAP* game_upgrade_patins;
 extern ALLEGRO_BITMAP* game_upgrade_chuta_bomba;

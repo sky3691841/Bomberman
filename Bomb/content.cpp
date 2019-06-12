@@ -56,6 +56,7 @@ ALLEGRO_SAMPLE* SFX_menusound1;
 ALLEGRO_SAMPLE* SFX_menusound2;
 
 ALLEGRO_SAMPLE* BGM_gamescreen;
+ALLEGRO_SAMPLE_ID BGM_gamescreen_id;
 ALLEGRO_SAMPLE* SFX_put_bomb;
 ALLEGRO_SAMPLE* SFX_explosion;
 ALLEGRO_SAMPLE* SFX_pick_upgrade;
@@ -160,11 +161,11 @@ void LoadGameSceneContent()
 	game_upgrade_bomba_relogio = al_load_bitmap("Sprites/GAMESCREEN/upgrades/bomba relogio.png");
 	game_bomba_relogio = al_load_bitmap("Sprites/GAMESCREEN/bomba relogio.png");
 	game_upgrade_bomba_espinho = al_load_bitmap("Sprites/GAMESCREEN/upgrades/bomba espinho.png");
-	game_bomba_espinho = al_load_bitmap("Sprites/GAMESCREEN/bomba espinho.png");
+	game_bomba_espinho = al_load_bitmap("Sprites/GAMESCREEN/bomba espinho.png");*/
 
 	//Sounds
-	BGM_gamescreen = al_load_sample("Sons/BGM/gamescreen.ogg");
-	SFX_put_bomb = al_load_sample("Sons/SFX/put bomb.wav");
+	BGM_gamescreen = al_load_sample("Sounds/BGM/gamescreen.ogg");
+	/*SFX_put_bomb = al_load_sample("Sons/SFX/put bomb.wav");
 	SFX_explosion = al_load_sample("Sons/SFX/explosion.wav");
 	SFX_pick_upgrade = al_load_sample("Sons/SFX/pick upgrade.wav");*/
 }

@@ -60,6 +60,7 @@ extern ALLEGRO_SAMPLE* SFX_menusound1;
 extern ALLEGRO_SAMPLE* SFX_menusound2;
 
 extern ALLEGRO_SAMPLE* BGM_gamescreen;
+extern ALLEGRO_SAMPLE_ID BGM_gamescreen_id;
 extern ALLEGRO_SAMPLE* SFX_put_bomb;
 extern ALLEGRO_SAMPLE* SFX_explosion;
 extern ALLEGRO_SAMPLE* SFX_pick_upgrade;

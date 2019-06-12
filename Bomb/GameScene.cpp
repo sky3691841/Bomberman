@@ -9,16 +9,21 @@ GameScene::GameScene() {
 	map.init();
 
 	// init enemy group (read from txt)
-	enemy1_txt = fopen("Txt_files/enemy1.txt", "r");
-	fscanf(enemy1_txt, "%d", &enemy_num);
+	stage1_txt = fopen("Txt_files/stage1.txt", "r");
+	fscanf(stage1_txt, "%d", &enemy_num);
 
 	for (int i = 0; i < enemy_num; i++) {
 		int enemy_y, enemy_x;
-		fscanf(enemy1_txt, "%d %d", &enemy_y, &enemy_x);
+		fscanf(stage1_txt, "%d %d", &enemy_y, &enemy_x);
 		Enemy enemy;
 		enemy.init(enemy_y, enemy_x);
 		enemy_list.push_back(enemy);
 	}
+
+	// init game time
+	fscanf(stage1_txt, "%d %d", &minutes, &seconds);
+	time_left = minutes * 60 + seconds;
+	get_game_timer = al_get_time();
 }
 
 GameScene::~GameScene() {
@@ -88,11 +93,28 @@ void GameScene::update() {
 	for (enemy_it = enemy_list.begin(); enemy_it != enemy_list.end(); enemy_it++) {
 		(*enemy_it).update(map);
 	}
+
+	// update game time
+	if (al_get_time() - get_game_timer >= 1.0) {
+		time_left--;
+
+		if (time_left <= 0) {
+			exit_scene = true;
+			scenestate = GAMEOVER;
+		}
+
+		get_game_timer = al_get_time();
+	}
 }
 
 void GameScene::draw() {
 	// draw UI bar
 	al_draw_bitmap(UI_bar, 0, 0, 0);
+
+	// draw game time
+	al_draw_textf(font_bomberman, al_map_rgb(200, 200, 200), SCREEN_W / 2, 30, ALLEGRO_ALIGN_CENTER, "%02d:%02d", time_left / 60, time_left % 60);
+	al_draw_textf(font_bomberman, al_map_rgb(255, 255, 255), SCREEN_W / 2 + 2, 32, ALLEGRO_ALIGN_CENTER, "%02d:%02d", time_left / 60, time_left % 60);
+
 	// draw tilemap
 	map.draw();
 

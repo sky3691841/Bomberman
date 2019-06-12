@@ -8,7 +8,7 @@
 class GameScene {
 private:
 	// objects
-	FILE* enemy1_txt;
+	FILE* stage1_txt; // # of enemies, game time
 	Tilemap map;
 
 	// groups
@@ -18,6 +18,11 @@ private:
 	// variables
 	bool exit_scene;
 	int enemy_num;
+	/// used for timer =============
+	int minutes, seconds;
+	int time_left;
+	float get_game_timer;
+	/// ============================
 
 	// functions
 	void update();

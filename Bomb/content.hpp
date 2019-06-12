@@ -43,11 +43,11 @@ extern ALLEGRO_BITMAP* victory_green;
 extern ALLEGRO_BITMAP* victory_blue;
 extern ALLEGRO_BITMAP* victory_orange;
 extern ALLEGRO_BITMAP* victory_floor;
-extern ALLEGRO_BITMAP* victory_bomberman;
+extern ALLEGRO_BITMAP* victory_bomberman;*/
 
 extern ALLEGRO_BITMAP* gameover_bg;
 extern ALLEGRO_BITMAP* gameover_animation;
-extern ALLEGRO_BITMAP* gameover_title;*/
+extern ALLEGRO_BITMAP* gameover_title;
 ///=======================================================
 
 ///FONTES=================================================
@@ -71,6 +71,7 @@ extern ALLEGRO_SAMPLE* SFX_pick_upgrade;
 extern ALLEGRO_SAMPLE* BGM_victory;
 
 extern ALLEGRO_SAMPLE* BGM_gameover;
+extern ALLEGRO_SAMPLE_ID BGM_gameover_id;
 ///=========================================================
 
 
@@ -81,10 +82,10 @@ void UnloadMainmenuContent();
 
 void LoadGameSceneContent();
 void UnloadGameSceneContent();
-/*
+
 void LoadGameoverContent();
 void UnloadGameoverContent();
-void LoadVictoryContent();
+/*void LoadVictoryContent();
 void UnloadVictoryContent();*/
 
 #endif

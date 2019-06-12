@@ -39,11 +39,11 @@ ALLEGRO_BITMAP* victory_green;
 ALLEGRO_BITMAP* victory_blue;
 ALLEGRO_BITMAP* victory_orange;
 ALLEGRO_BITMAP* victory_floor;
-ALLEGRO_BITMAP* victory_bomberman;
+ALLEGRO_BITMAP* victory_bomberman;*/
 
 ALLEGRO_BITMAP* gameover_bg;
 ALLEGRO_BITMAP* gameover_animation;
-ALLEGRO_BITMAP* gameover_title;*/
+ALLEGRO_BITMAP* gameover_title;
 ///==========================
 
 ///Fonts====================
@@ -67,6 +67,7 @@ ALLEGRO_SAMPLE* SFX_pick_upgrade;
 ALLEGRO_SAMPLE* BGM_victory;
 
 ALLEGRO_SAMPLE* BGM_gameover;
+ALLEGRO_SAMPLE_ID BGM_gameover_id;
 ///==========================
 
 
@@ -137,9 +138,9 @@ void UnloadMainmenuContent()
 }
 
 
-///=================================
-///GAMESCREEN
-///=================================
+//=================================
+//GAMESCREEN
+//=================================
 void LoadGameSceneContent()
 {
 	//BITMAPS
@@ -219,10 +220,10 @@ void UnloadGameSceneContent()
 	al_destroy_sample(SFX_pick_upgrade);*/
 }
 
-/*
-///=================================
-///GAMEOVER
-///=================================
+
+//=================================
+//GAMEOVER
+//=================================
 void LoadGameoverContent()
 {
 	//BITMAPS
@@ -231,7 +232,7 @@ void LoadGameoverContent()
 	gameover_animation = al_load_bitmap("Sprites/GAMEOVER/animation.png");
 
 	//Sounds
-	BGM_gameover = al_load_sample("Sons/BGM/gameover.ogg");
+	BGM_gameover = al_load_sample("Sounds/BGM/gameover.ogg");
 }
 
 void UnloadGameoverContent()
@@ -244,7 +245,7 @@ void UnloadGameoverContent()
 	//Sounds
 	al_destroy_sample(BGM_gameover);
 }
-
+/*
 ///=================================
 ///VICTORY
 ///=================================

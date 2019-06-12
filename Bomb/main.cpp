@@ -1,6 +1,7 @@
 #include "init.hpp"
 #include "MenuScene.hpp"
 #include "GameScene.hpp"
+#include "LoseScene.hpp"
 #include <iostream>
 
 using namespace std;
@@ -22,10 +23,11 @@ int main()
 			GameScene game;
 			game.start();
 		}
-        //gamescreen();
-       /*else if(screenstate == GAMEOVER)
-        gameover();
-       else if(screenstate == VICTORY)
+		else if (scenestate == GAMEOVER) {
+			LoseScene gameover;
+			gameover.start();
+		}
+       /*else if(scenestate == VICTORY)
         victory();*/
     }
 

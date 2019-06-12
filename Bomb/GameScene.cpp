@@ -77,6 +77,11 @@ void GameScene::on_key_down(int keycode) {
 	else if (keycode == ALLEGRO_KEY_TAB) {
 		debug_mode = !debug_mode;
 	}
+	// for debug purpose, delete later
+	else if (keycode == ALLEGRO_KEY_LCTRL) {
+		exit_scene = true;
+		scenestate = GAMEOVER;
+	}
 }
 
 void GameScene::update() {

@@ -44,6 +44,7 @@ void Tilemap::SetEnemyPos(int i, int j, bool value) {
 	enemy_map[i][j] = value;
 }
 
+// should also handle player postion / bomb position in the future
 bool Tilemap::IsPathBlocked(int i, int j) {
 	return (GetTileID(i, j) != GRASS || GetEnemyPos(i, j) == 1);
 }

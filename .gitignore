@@ -12,3 +12,5 @@ packages/
 *.sln
 *.cbp
 *.config
+*.depend
+*.log

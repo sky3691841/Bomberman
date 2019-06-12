@@ -18,11 +18,21 @@ private:
 	FILE* map_txt;
 	int map[TILES_H][TILES_W];
 
+	bool enemy_map[TILES_H][TILES_W];
+	
 public:
+	// basic functions
 	Tilemap();
 	~Tilemap();
 	void init();
 	void draw();
+
+	// other functions
+	int GetTileID(int i, int j); // get status of tile
+	int GetEnemyPos(int i, int j);
+	void SetEnemyPos(int i, int j, bool value);
+
+	bool IsPathBlocked(int i, int j);
 };
 
 #endif // TILEMAP_HPP

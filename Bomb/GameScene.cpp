@@ -80,6 +80,10 @@ void GameScene::on_key_down(int keycode) {
 }
 
 void GameScene::update() {
+	// update ememy group
+	for (enemy_it = enemy_list.begin(); enemy_it != enemy_list.end(); enemy_it++) {
+		(*enemy_it).update(map);
+	}
 }
 
 void GameScene::draw() {

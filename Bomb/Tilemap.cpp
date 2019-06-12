@@ -31,3 +31,19 @@ void Tilemap::draw() {
 		}
 	}
 }
+
+int Tilemap::GetTileID(int i, int j) {
+	return map[i][j];
+}
+
+int Tilemap::GetEnemyPos(int i, int j) {
+	return enemy_map[i][j];
+}
+
+void Tilemap::SetEnemyPos(int i, int j, bool value) {
+	enemy_map[i][j] = value;
+}
+
+bool Tilemap::IsPathBlocked(int i, int j) {
+	return (GetTileID(i, j) != GRASS || GetEnemyPos(i, j) == 1);
+}

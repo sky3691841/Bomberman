@@ -77,6 +77,9 @@ void GameScene::on_key_down(int keycode) {
 		exit_scene = true;
 		scenestate = MAINMENU;
 	}
+	else if (keycode == ALLEGRO_KEY_TAB) {
+		debug_mode = !debug_mode;
+	}
 }
 
 void GameScene::update() {

@@ -30,7 +30,7 @@ public:
 	Enemy();
 	~Enemy();
 	void init(int i, int j);
-	void update(Tilemap &map);
+	void update(Tilemap &map); // only movement for now, should handle explosion in the future
 	void draw();
 
 	// other functions

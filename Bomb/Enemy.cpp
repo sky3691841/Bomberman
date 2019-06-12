@@ -32,6 +32,13 @@ void Enemy::update(Tilemap &map) {
 
 void Enemy::draw() {
 	anim[dir].Draw(x, y - 15, 0.8, 0.8, 0.0, al_map_rgb(255, 255, 255));
+
+	// Debug mode
+	if (debug_mode) {
+		al_draw_filled_circle(x, y, 3, al_map_rgb(0, 255, 0));
+		al_draw_textf(font_debug, al_map_rgba(255, 255, 255, 255), x + 10, y + 10, ALLEGRO_ALIGN_RIGHT, "State %d", state);
+		al_draw_textf(font_debug, al_map_rgba(255, 255, 255, 255), x + 10, y + 20, ALLEGRO_ALIGN_RIGHT, "Paths %d", paths_available);
+	}
 }
 
 void Enemy::WalkCurrentDir() {
@@ -111,9 +118,9 @@ void Enemy::Move(Tilemap &map) {
 					dir = i;
 					break;
 				}
-
-				state = STATE_WALKING;
 			}
+
+			state = STATE_WALKING;
 		}
 		// two paths or above available
 		else {

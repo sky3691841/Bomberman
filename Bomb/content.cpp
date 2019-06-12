@@ -7,6 +7,7 @@ using namespace std;
 ALLEGRO_BITMAP* main_bg;
 ALLEGRO_BITMAP* main_title;
 
+ALLEGRO_BITMAP* UI_bar;
 ALLEGRO_BITMAP* game_tile[4];
 ALLEGRO_BITMAP* game_enemy_up;
 ALLEGRO_BITMAP* game_enemy_down;
@@ -15,7 +16,6 @@ ALLEGRO_BITMAP* game_enemy_right;
 
 /*ALLEGRO_BITMAP* game_brick_explosion;
 ALLEGRO_BITMAP* game_portal;
-ALLEGRO_BITMAP* game_barra_superior;
 ALLEGRO_BITMAP* game_player_up;
 ALLEGRO_BITMAP* game_player_down;
 ALLEGRO_BITMAP* game_player_left;
@@ -132,6 +132,8 @@ void UnloadMainmenuContent()
 void LoadGameSceneContent()
 {
 	//BITMAPS
+	/// UI bar
+	UI_bar = al_load_bitmap("Sprites/GAMESCREEN/UI_bar.png");
 	/// Tilemaps
 	game_tile[0] = al_load_bitmap("Sprites/GAMESCREEN/tiles/grass.png");
 	game_tile[1] = al_load_bitmap("Sprites/GAMESCREEN/tiles/brick.png");
@@ -146,7 +148,6 @@ void LoadGameSceneContent()
 
 	/*game_brick_explosion = al_load_bitmap("Sprites/GAMESCREEN/tiles/brick explosion.png");
 	game_portal = al_load_bitmap("Sprites/GAMESCREEN/portal.png");
-	game_barra_superior = al_load_bitmap("Sprites/GAMESCREEN/barra superior.png");
 	game_player_up = al_load_bitmap("Sprites/GAMESCREEN/player up.png");
 	game_player_down = al_load_bitmap("Sprites/GAMESCREEN/player down.png");
 	game_player_left = al_load_bitmap("Sprites/GAMESCREEN/player left.png");
@@ -171,11 +172,12 @@ void LoadGameSceneContent()
 void UnloadGameSceneContent()
 {
 	// BITMAPS
+	/// UI bar
+	al_destroy_bitmap(UI_bar);
 	/// Tilemaps
 	al_destroy_bitmap(game_tile[0]);
 	al_destroy_bitmap(game_tile[1]);
 	al_destroy_bitmap(game_tile[2]);
-	al_destroy_bitmap(game_tile[3]);
 
 	///Enemy
 	al_destroy_bitmap(game_enemy_up);
@@ -185,7 +187,6 @@ void UnloadGameSceneContent()
 
 	/*al_destroy_bitmap(game_brick_explosion);
 	al_destroy_bitmap(game_portal);
-	al_destroy_bitmap(game_barra_superior);
 	al_destroy_bitmap(game_player_up);
 	al_destroy_bitmap(game_player_down);
 	al_destroy_bitmap(game_player_left);

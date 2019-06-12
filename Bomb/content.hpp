@@ -11,6 +11,7 @@
 extern ALLEGRO_BITMAP* main_bg;
 extern ALLEGRO_BITMAP* main_title;
 
+extern ALLEGRO_BITMAP* UI_bar;
 extern ALLEGRO_BITMAP* game_tile[4];
 extern ALLEGRO_BITMAP* game_enemy_up;
 extern ALLEGRO_BITMAP* game_enemy_down;
@@ -19,7 +20,6 @@ extern ALLEGRO_BITMAP* game_enemy_right;
 /*
 extern ALLEGRO_BITMAP* game_brick_explosion;
 extern ALLEGRO_BITMAP* game_portal;
-extern ALLEGRO_BITMAP* game_barra_superior;
 extern ALLEGRO_BITMAP* game_player_up;
 extern ALLEGRO_BITMAP* game_player_down;
 extern ALLEGRO_BITMAP* game_player_left;

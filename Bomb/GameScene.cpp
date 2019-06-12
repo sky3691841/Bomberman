@@ -85,7 +85,7 @@ void GameScene::update() {
 }
 
 void GameScene::draw() {
-	al_clear_to_color(al_map_rgb(0, 0, 0));
+	al_draw_bitmap(UI_bar, 0, 0, 0);
 	// draw tilemap
 	map.draw();
 

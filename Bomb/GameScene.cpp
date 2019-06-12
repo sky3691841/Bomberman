@@ -23,7 +23,6 @@ GameScene::GameScene() {
 }
 
 GameScene::~GameScene() {
-	al_stop_timer(timer_FPS);
 }
 
 void GameScene::start() {
@@ -64,6 +63,7 @@ void GameScene::start() {
 	}
 
 	al_stop_timer(timer_FPS);
+	UnloadGameSceneContent();
 }
 
 // this is for single key press, movement should be handled in update

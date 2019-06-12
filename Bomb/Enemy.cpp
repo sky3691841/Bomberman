@@ -92,6 +92,7 @@ void Enemy::Move(Tilemap &map) {
 	// count # of available paths
 	CountPaths(map);
 
+	// walking
 	if (state == STATE_WALKING) {
 		WalkCurrentDir();
 

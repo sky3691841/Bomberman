@@ -16,8 +16,7 @@ int main()
 			cout << "menu" << endl;
 			MenuScene menu;
 			menu.start();
-		}
-			
+		}		
 		else if (scenestate == GAMESCENE) {
 			cout << "game" << endl;
 			GameScene game;

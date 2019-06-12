@@ -10,6 +10,7 @@
 #define MAP_X0 0
 #define MAP_Y0 100
 
+// Grass is to walk on, Brick can be destroyed by bomb, Block can't be destroyed
 enum TILE_ID {GRASS = 0, BRICK = 1, BLOCK = 2};
 
 class Tilemap {

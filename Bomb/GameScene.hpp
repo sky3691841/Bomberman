@@ -8,6 +8,7 @@
 class GameScene {
 private:
 	// objects
+	FILE* enemy1_txt;
 	Tilemap map;
 
 	// groups
@@ -16,6 +17,7 @@ private:
 
 	// variables
 	bool exit_scene;
+	int enemy_num;
 
 	// functions
 	void update();

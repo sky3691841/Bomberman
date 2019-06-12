@@ -7,20 +7,15 @@ GameScene::GameScene() {
 	// init tile map
 	map.init();
 
-	// init enemy group
-	for (int i = 0; i < ENEMY_NUM; i++) {
+	// init enemy group (read from txt)
+	enemy1_txt = fopen("Txt_files/enemy1.txt", "r");
+	fscanf(enemy1_txt, "%d", &enemy_num);
+
+	for (int i = 0; i < enemy_num; i++) {
+		int enemy_y, enemy_x;
+		fscanf(enemy1_txt, "%d %d", &enemy_y, &enemy_x);
 		Enemy enemy;
-		switch (i) {
-		case(0):
-			enemy.init(9, 5);
-			break;
-		case(1):
-			enemy.init(1, 7);
-			break;
-		case(2):
-			enemy.init(8, 11);
-			break;
-		}
+		enemy.init(enemy_y, enemy_x);
 		enemy_list.push_back(enemy);
 	}
 	

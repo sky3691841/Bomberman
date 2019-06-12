@@ -5,7 +5,6 @@
 #include "Animation.hpp"
 #include "Tilemap.hpp"
 
-#define ENEMY_NUM 3
 #define ENEMY_SPEED 1
 
 // enemy walking and choosing new direction
@@ -26,18 +25,18 @@ private:
 	int paths_available;
 	bool available_dir[4];
 public:
-	// basic functions
 	Enemy();
 	~Enemy();
 	void init(int i, int j);
 	void update(Tilemap &map); // only movement for now, should handle explosion in the future
 	void draw();
 
-	// other functions
+	/// functions for enemy movement ==============
 	void WalkCurrentDir(); // handle basic walking
 	bool OnTileCenter(); // check if enemy is on the center of tile map
 	void CountPaths(Tilemap &map); // count paths availabe
 	void Move(Tilemap &map); // handle enemy movement
+	/// ===========================================
 };
 
 

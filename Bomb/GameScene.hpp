@@ -3,10 +3,12 @@
 
 #include "init.hpp"
 #include "Tilemap.hpp"
-
+#include "player.hpp"
+class player;
 class GameScene {
 private:
 	// variables
+	player *player1;
 	Tilemap map;
 	bool exit_scene;
 

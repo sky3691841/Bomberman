@@ -12,6 +12,7 @@ extern ALLEGRO_BITMAP* main_bg;
 extern ALLEGRO_BITMAP* main_title;
 
 extern ALLEGRO_BITMAP* game_tile[4];
+extern ALLEGRO_BITMAP* player_static;
 /*
 extern ALLEGRO_BITMAP* game_brick_explosion;
 extern ALLEGRO_BITMAP* game_portal;

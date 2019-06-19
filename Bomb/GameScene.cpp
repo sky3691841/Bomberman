@@ -1,11 +1,11 @@
 #include "GameScene.hpp"
-
+#include <iostream>
 GameScene::GameScene() {
 	LoadGameSceneContent();
 	exit_scene = false;
-	
+
 	map.init();
-	
+	player1->initial(100,100);
 	// play sample
 
 }
@@ -67,5 +67,7 @@ void GameScene::update() {
 void GameScene::draw() {
 	al_clear_to_color(al_map_rgb(0, 0, 0));
 	map.draw();
+	//player.draw may be change to animation
+	player1->draw();
 	al_flip_display();
 }

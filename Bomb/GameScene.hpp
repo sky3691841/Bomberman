@@ -3,14 +3,31 @@
 
 #include "init.hpp"
 #include "Tilemap.hpp"
+
 #include "player.hpp"
 class player;
+
+#include "Enemy.hpp"
+
 class GameScene {
 private:
-	// variables
-	player *player1;
+	// objects
+	FILE* stage1_txt; // # of enemies, game time
+    player *player1;
 	Tilemap map;
+
+	// groups
+	std::list<Enemy> enemy_list;
+	std::list<Enemy>::iterator enemy_it;
+
+	// variables
 	bool exit_scene;
+	int enemy_num;
+	/// used for timer =============
+	int minutes, seconds;
+	int time_left;
+	float get_game_timer;
+	/// ============================
 
 	// functions
 	void update();
@@ -20,7 +37,7 @@ private:
 public:
 	GameScene();
 	~GameScene();
-	void start();
+	void start(); // the game loop, no need to modify
 
 };
 

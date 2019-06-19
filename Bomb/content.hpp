@@ -10,23 +10,29 @@
 ///BITMAPS================================================
 extern ALLEGRO_BITMAP* main_bg;
 extern ALLEGRO_BITMAP* main_title;
+extern ALLEGRO_BITMAP* main_balloon;
+extern ALLEGRO_BITMAP* main_airship1;
+extern ALLEGRO_BITMAP* main_airship2;
 
+extern ALLEGRO_BITMAP* UI_bar;
 extern ALLEGRO_BITMAP* game_tile[4];
+
 extern ALLEGRO_BITMAP* player_static;
-/*
-extern ALLEGRO_BITMAP* game_brick_explosion;
-extern ALLEGRO_BITMAP* game_portal;
-extern ALLEGRO_BITMAP* game_barra_superior;
-extern ALLEGRO_BITMAP* game_player_up;
-extern ALLEGRO_BITMAP* game_player_down;
-extern ALLEGRO_BITMAP* game_player_left;
-extern ALLEGRO_BITMAP* game_player_right;
+
 extern ALLEGRO_BITMAP* game_enemy_up;
 extern ALLEGRO_BITMAP* game_enemy_down;
 extern ALLEGRO_BITMAP* game_enemy_left;
 extern ALLEGRO_BITMAP* game_enemy_right;
-extern ALLEGRO_BITMAP* game_bomb;
-extern ALLEGRO_BITMAP* game_upgrade_bomba_extra;
+
+/*
+extern ALLEGRO_BITMAP* game_brick_explosion;
+extern ALLEGRO_BITMAP* game_portal;
+extern ALLEGRO_BITMAP* game_player_up;
+extern ALLEGRO_BITMAP* game_player_down;
+extern ALLEGRO_BITMAP* game_player_left;
+extern ALLEGRO_BITMAP* game_player_right;*/
+extern ALLEGRO_BITMAP* game_bomb; // also used for menu scene
+/*extern ALLEGRO_BITMAP* game_upgrade_bomba_extra;
 extern ALLEGRO_BITMAP* game_upgrade_fogo;
 extern ALLEGRO_BITMAP* game_upgrade_patins;
 extern ALLEGRO_BITMAP* game_upgrade_chuta_bomba;
@@ -41,11 +47,11 @@ extern ALLEGRO_BITMAP* victory_green;
 extern ALLEGRO_BITMAP* victory_blue;
 extern ALLEGRO_BITMAP* victory_orange;
 extern ALLEGRO_BITMAP* victory_floor;
-extern ALLEGRO_BITMAP* victory_bomberman;
+extern ALLEGRO_BITMAP* victory_bomberman;*/
 
 extern ALLEGRO_BITMAP* gameover_bg;
 extern ALLEGRO_BITMAP* gameover_animation;
-extern ALLEGRO_BITMAP* gameover_title;*/
+extern ALLEGRO_BITMAP* gameover_title;
 ///=======================================================
 
 ///FONTES=================================================
@@ -61,6 +67,7 @@ extern ALLEGRO_SAMPLE* SFX_menusound1;
 extern ALLEGRO_SAMPLE* SFX_menusound2;
 
 extern ALLEGRO_SAMPLE* BGM_gamescreen;
+extern ALLEGRO_SAMPLE_ID BGM_gamescreen_id;
 extern ALLEGRO_SAMPLE* SFX_put_bomb;
 extern ALLEGRO_SAMPLE* SFX_explosion;
 extern ALLEGRO_SAMPLE* SFX_pick_upgrade;
@@ -68,6 +75,7 @@ extern ALLEGRO_SAMPLE* SFX_pick_upgrade;
 extern ALLEGRO_SAMPLE* BGM_victory;
 
 extern ALLEGRO_SAMPLE* BGM_gameover;
+extern ALLEGRO_SAMPLE_ID BGM_gameover_id;
 ///=========================================================
 
 
@@ -77,11 +85,11 @@ void LoadMainmenuContent();
 void UnloadMainmenuContent();
 
 void LoadGameSceneContent();
-void UnloadGamescreenContent();
-/*
+void UnloadGameSceneContent();
+
 void LoadGameoverContent();
 void UnloadGameoverContent();
-void LoadVictoryContent();
+/*void LoadVictoryContent();
 void UnloadVictoryContent();*/
 
 #endif

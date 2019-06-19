@@ -1,9 +1,12 @@
 # depslib dependency file v1.0
-1560254144 source:c:\users\iivy303\desktop\final_2semes\bomb\main.cpp
+1560974273 source:c:\users\iivy303\desktop\final_2semes\bomb\main.cpp
 	"init.hpp"
-	"mainmenu.hpp"
+	"MenuScene.hpp"
+	"GameScene.hpp"
+	"LoseScene.hpp"
+	<iostream>
 
-1560172634 c:\users\iivy303\desktop\final_2semes\bomb\init.hpp
+1560264113 c:\users\iivy303\desktop\final_2semes\bomb\init.hpp
 	<allegro5/allegro.h>
 	<allegro5/allegro_native_dialog.h>
 	<allegro5/allegro_primitives.h>
@@ -324,7 +327,7 @@
 1544638345 c:\allegro-mingw-gcc6.2.0-x86-static-5.2.2\allegro\include\\allegro5\allegro_physfs.h
 	"allegro5/allegro.h"
 
-1560172634 c:\users\iivy303\desktop\final_2semes\bomb\content.hpp
+1560978447 c:\users\iivy303\desktop\final_2semes\bomb\content.hpp
 	<allegro5/allegro.h>
 	<allegro5/allegro_image.h>
 	<allegro5/allegro_ttf.h>
@@ -335,17 +338,16 @@
 	"init.hpp"
 	"animation.hpp"
 
-1560172634 c:\users\iivy303\desktop\final_2semes\bomb\animation.hpp
+1560266704 c:\users\iivy303\desktop\final_2semes\bomb\animation.hpp
 	"init.hpp"
 
-1560172634 source:c:\users\iivy303\desktop\final_2semes\bomb\animation.cpp
-	"animation.hpp"
+1560266704 source:c:\users\iivy303\desktop\final_2semes\bomb\animation.cpp
 
-1560255878 source:c:\users\iivy303\desktop\final_2semes\bomb\content.cpp
+1560978432 source:c:\users\iivy303\desktop\final_2semes\bomb\content.cpp
 	"content.hpp"
 	<iostream>
 
-1560256881 source:c:\users\iivy303\desktop\final_2semes\bomb\init.cpp
+1560266704 source:c:\users\iivy303\desktop\final_2semes\bomb\init.cpp
 	"init.hpp"
 	<allegro5/allegro.h>
 	<allegro5/allegro_image.h>
@@ -356,4 +358,48 @@
 1560262821 source:c:\users\iivy303\desktop\final_2semes\bomb\mainmenu.cpp
 	"mainmenu.hpp"
 	<iostream>
+
+1560974273 c:\users\iivy303\desktop\final_2semes\bomb\menuscene.hpp
+	"init.hpp"
+	"Animation.hpp"
+
+1560978515 c:\users\iivy303\desktop\final_2semes\bomb\gamescene.hpp
+	"init.hpp"
+	"Tilemap.hpp"
+	"player.hpp"
+	"Enemy.hpp"
+
+1560974273 c:\users\iivy303\desktop\final_2semes\bomb\tilemap.hpp
+	"init.hpp"
+
+1560968321 source:c:\users\iivy303\desktop\final_2semes\bomb\gamescene.cpp
+	"GameScene.hpp"
+	<iostream>
+
+1560974273 source:c:\users\iivy303\desktop\final_2semes\bomb\menuscene.cpp
+	"MenuScene.hpp"
+
+1560974273 source:c:\users\iivy303\desktop\final_2semes\bomb\tilemap.cpp
+	"Tilemap.hpp"
+	<iostream>
+
+1560974074 c:\users\iivy303\desktop\final_2semes\bomb\player.hpp
+	"Tilemap.hpp"
+	"GameScene.hpp"
+	"init.hpp"
+	"content.hpp"
+
+1560974074 source:c:\users\iivy303\desktop\final_2semes\bomb\player.cpp
+	"player.hpp"
+	<math.h>
+	<iostream>
+
+1560974273 c:\users\iivy303\desktop\final_2semes\bomb\enemy.hpp
+	"init.hpp"
+	"Animation.hpp"
+	"Tilemap.hpp"
+
+1560974273 c:\users\iivy303\desktop\final_2semes\bomb\losescene.hpp
+	"init.hpp"
+	"Animation.hpp"
 

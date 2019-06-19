@@ -13,8 +13,8 @@ void Enemy::init(int i, int j) {
 	anim[RIGHT].Initialize(game_enemy_right, 4, 0.1, true);
 
 	// track tile count
-	pos_y = i;
-	pos_x = j;
+	pos_i = i;
+	pos_j = j;
 
 	// real position
 	x = MAP_X0 + j * TILESIZE + TILESIZE / 2;
@@ -64,19 +64,19 @@ void Enemy::CountPaths(Tilemap &map) {
 	}
 
 	// check paths
-	if (!map.IsPathBlocked(pos_y - 1, pos_x)) {
+	if (!map.IsPathBlocked(pos_i - 1, pos_j)) {
 		paths_available++;
 		available_dir[UP] = true;
 	}
-	if (!map.IsPathBlocked(pos_y + 1, pos_x)) {
+	if (!map.IsPathBlocked(pos_i + 1, pos_j)) {
 		paths_available++;
 		available_dir[DOWN] = true;
 	}
-	if (!map.IsPathBlocked(pos_y, pos_x - 1)) {
+	if (!map.IsPathBlocked(pos_i, pos_j - 1)) {
 		paths_available++;
 		available_dir[LEFT] = true;
 	}
-	if (!map.IsPathBlocked(pos_y, pos_x + 1)) {
+	if (!map.IsPathBlocked(pos_i, pos_j + 1)) {
 		paths_available++;
 		available_dir[RIGHT] = true;
 	}
@@ -84,10 +84,10 @@ void Enemy::CountPaths(Tilemap &map) {
 
 void Enemy::Move(Tilemap &map) {
 	// update enemy map
-	map.SetEnemyPos(pos_y, pos_x, false);
-	pos_y = (y - MAP_Y0) / TILESIZE;
-	pos_x = (x - MAP_X0) / TILESIZE;
-	map.SetEnemyPos(pos_y, pos_x, true);
+	map.SetEnemyPos(pos_i, pos_j, false);
+	pos_i = (y - MAP_Y0) / TILESIZE;
+	pos_j = (x - MAP_X0) / TILESIZE;
+	map.SetEnemyPos(pos_i, pos_j, true);
 
 	// count # of available paths
 	CountPaths(map);
@@ -98,10 +98,10 @@ void Enemy::Move(Tilemap &map) {
 
 		if (OnTileCenter()) {
 			// if path is blocked or reach crossroad
-			if ((dir == UP && map.IsPathBlocked(pos_y - 1, pos_x))
-				|| (dir == DOWN && map.IsPathBlocked(pos_y + 1, pos_x))
-				|| (dir == LEFT && map.IsPathBlocked(pos_y, pos_x - 1))
-				|| (dir == RIGHT && map.IsPathBlocked(pos_y, pos_x + 1))
+			if ((dir == UP && map.IsPathBlocked(pos_i - 1, pos_j))
+				|| (dir == DOWN && map.IsPathBlocked(pos_i + 1, pos_j))
+				|| (dir == LEFT && map.IsPathBlocked(pos_i, pos_j - 1))
+				|| (dir == RIGHT && map.IsPathBlocked(pos_i, pos_j + 1))
 				|| (paths_available > 2 && rand() % 100 <= 30)) {
 				state = STATE_CHOOSING;
 			}

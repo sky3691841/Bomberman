@@ -14,8 +14,8 @@ class Enemy {
 private:
 	Animation anim[4];
 
-	int pos_y;
-	int pos_x;
+	int pos_i;
+	int pos_j;
 	int x;
 	int y;
 	int dir;

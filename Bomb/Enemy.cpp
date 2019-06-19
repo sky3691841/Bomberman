@@ -127,7 +127,7 @@ void Enemy::Move(Tilemap &map) {
 		else {
 			// choose random direction instead of original path
 			for (int i = rand() % 4; ; i = rand() % 4) {
-				if (available_dir[i] == true && i != oposite_direction(dir)) {
+				if (available_dir[i] == true && i != opposite_direction(dir)) {
 					dir = i;
 					break;
 				}

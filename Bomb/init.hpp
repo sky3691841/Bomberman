@@ -52,6 +52,6 @@ int height(ALLEGRO_BITMAP* img);
 // void fade(int r, int g, int b, float speed);
 int max(int a, int b);
 int min(int a, int b);
-int oposite_direction(int dir);
+int opposite_direction(int dir);
 
 #endif

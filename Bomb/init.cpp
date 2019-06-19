@@ -112,7 +112,7 @@ int min(int a, int b)
      return b;
 }
 
-int oposite_direction(int dir)
+int opposite_direction(int dir)
 {
     if(dir == UP)
      return DOWN;

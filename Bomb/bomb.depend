@@ -372,7 +372,7 @@
 1560974273 c:\users\iivy303\desktop\final_2semes\bomb\tilemap.hpp
 	"init.hpp"
 
-1561149996 source:c:\users\iivy303\desktop\final_2semes\bomb\gamescene.cpp
+1561153103 source:c:\users\iivy303\desktop\final_2semes\bomb\gamescene.cpp
 	"GameScene.hpp"
 	<iostream>
 
@@ -383,12 +383,12 @@
 	"Tilemap.hpp"
 	<iostream>
 
-1561152367 c:\users\iivy303\desktop\final_2semes\bomb\player.hpp
+1561153673 c:\users\iivy303\desktop\final_2semes\bomb\player.hpp
 	"Tilemap.hpp"
 	"init.hpp"
 	"Animation.hpp"
 
-1560974074 source:c:\users\iivy303\desktop\final_2semes\bomb\player.cpp
+1561152529 source:c:\users\iivy303\desktop\final_2semes\bomb\player.cpp
 	"player.hpp"
 	<math.h>
 	<iostream>

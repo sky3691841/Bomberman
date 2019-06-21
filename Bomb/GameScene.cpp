@@ -90,6 +90,9 @@ void GameScene::on_key_down(int keycode) {
 		exit_scene = true;
 		scenestate = GAMEOVER;
 	}
+	else if (keycode == ALLEGRO_KEY_SPACE) {
+        //put a bomb on the ground
+	}
 }
 
 void GameScene::update() {
@@ -97,6 +100,8 @@ void GameScene::update() {
 	for (enemy_it = enemy_list.begin(); enemy_it != enemy_list.end(); enemy_it++) {
 		(*enemy_it).update(map);
 	}
+    //update player motion
+    player1.update(map);
 
 	// update game time
 	if (al_get_time() - get_game_timer >= 1.0) {

@@ -22,11 +22,11 @@ ALLEGRO_BITMAP* game_enemy_right;
 
 
 /*ALLEGRO_BITMAP* game_brick_explosion;
-ALLEGRO_BITMAP* game_portal;
+ALLEGRO_BITMAP* game_portal;*/
 ALLEGRO_BITMAP* game_player_up;
 ALLEGRO_BITMAP* game_player_down;
 ALLEGRO_BITMAP* game_player_left;
-ALLEGRO_BITMAP* game_player_right;*/
+ALLEGRO_BITMAP* game_player_right;
 ALLEGRO_BITMAP* game_bomb; // already loaded in default
 /*ALLEGRO_BITMAP* game_upgrade_bomba_extra;
 ALLEGRO_BITMAP* game_upgrade_fogo;
@@ -167,12 +167,12 @@ void LoadGameSceneContent()
 
 
 	/*game_brick_explosion = al_load_bitmap("Sprites/GAMESCREEN/tiles/brick explosion.png");
-	game_portal = al_load_bitmap("Sprites/GAMESCREEN/portal.png");
+	game_portal = al_load_bitmap("Sprites/GAMESCREEN/portal.png");*/
 	game_player_up = al_load_bitmap("Sprites/GAMESCREEN/player up.png");
 	game_player_down = al_load_bitmap("Sprites/GAMESCREEN/player down.png");
 	game_player_left = al_load_bitmap("Sprites/GAMESCREEN/player left.png");
 	game_player_right = al_load_bitmap("Sprites/GAMESCREEN/player right.png");
-	game_upgrade_bomba_extra = al_load_bitmap("Sprites/GAMESCREEN/upgrades/bomba extra.png");
+	/*game_upgrade_bomba_extra = al_load_bitmap("Sprites/GAMESCREEN/upgrades/bomba extra.png");
 	game_upgrade_fogo = al_load_bitmap("Sprites/GAMESCREEN/upgrades/fogo.png");
 	game_upgrade_patins = al_load_bitmap("Sprites/GAMESCREEN/upgrades/patins.png");
 	game_upgrade_chuta_bomba = al_load_bitmap("Sprites/GAMESCREEN/upgrades/chuta bomba.png");
@@ -207,17 +207,16 @@ void UnloadGameSceneContent()
 
 	/*al_destroy_bitmap(game_brick_explosion);
 	al_destroy_bitmap(game_portal);
-<<<<<<< HEAD
+
 	al_destroy_bitmap(game_barra_superior);*/
 	al_destroy_bitmap(player_static);
-	/*al_destroy_bitmap(game_player_up);
-=======
+	/*al_destroy_bitmap(game_player_up);*/
+
 	al_destroy_bitmap(game_player_up);
->>>>>>> b0dd61d992aa228eb8281fc5d74b4648ff2875bb
 	al_destroy_bitmap(game_player_down);
 	al_destroy_bitmap(game_player_left);
 	al_destroy_bitmap(game_player_right);
-	al_destroy_bitmap(game_upgrade_bomba_extra);
+	/*al_destroy_bitmap(game_upgrade_bomba_extra);
 	al_destroy_bitmap(game_upgrade_fogo);
 	al_destroy_bitmap(game_upgrade_patins);
 	al_destroy_bitmap(game_upgrade_chuta_bomba);

@@ -3,7 +3,7 @@
 
 #include "Tilemap.hpp"
 #include "init.hpp"
-
+#include "Animation.hpp"
 //to be revised
 #define start_pos_x 75
 #define start_pos_y 150
@@ -11,7 +11,10 @@
 class player{
 protected:
     int pos_x, pos_y;
+    int cur_tile_i, cur_tile_j;
     int speed;
+    int dir;
+    Animation anim[4];
 
 public:
 
@@ -20,7 +23,8 @@ public:
     void initial(int ,int);
     void walk(Tilemap &map);
     void draw();
-    bool haveobstacles(Tilemap map, int x, int y);
+    void update(Tilemap &map);
+    //bool haveobstacles(Tilemap map, int x, int y);
 
 };
 

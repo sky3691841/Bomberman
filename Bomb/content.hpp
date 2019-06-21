@@ -26,11 +26,11 @@ extern ALLEGRO_BITMAP* game_enemy_right;
 
 /*
 extern ALLEGRO_BITMAP* game_brick_explosion;
-extern ALLEGRO_BITMAP* game_portal;
+extern ALLEGRO_BITMAP* game_portal;*/
 extern ALLEGRO_BITMAP* game_player_up;
 extern ALLEGRO_BITMAP* game_player_down;
 extern ALLEGRO_BITMAP* game_player_left;
-extern ALLEGRO_BITMAP* game_player_right;*/
+extern ALLEGRO_BITMAP* game_player_right;
 extern ALLEGRO_BITMAP* game_bomb; // also used for menu scene
 /*extern ALLEGRO_BITMAP* game_upgrade_bomba_extra;
 extern ALLEGRO_BITMAP* game_upgrade_fogo;

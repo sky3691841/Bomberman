@@ -7,7 +7,7 @@ GameScene::GameScene() {
 	exit_scene = false;
 
 	// init player
-	player1.initial(100,100);
+	player1.initial(75,150);
 
 	// init tile map
 	map.init();

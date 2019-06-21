@@ -3,17 +3,14 @@
 
 #include "init.hpp"
 #include "Tilemap.hpp"
-
 #include "player.hpp"
-class player;
-
 #include "Enemy.hpp"
 
 class GameScene {
 private:
 	// objects
 	FILE* stage1_txt; // # of enemies, game time
-    player *player1;
+    player player1;
 	Tilemap map;
 
 	// groups

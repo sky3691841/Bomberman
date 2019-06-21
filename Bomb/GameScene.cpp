@@ -1,19 +1,16 @@
 #include "GameScene.hpp"
 #include <iostream>
+
 GameScene::GameScene() {
 	LoadGameSceneContent();
 	al_play_sample(BGM_gamescreen, volBGM / 3, 0, 1, ALLEGRO_PLAYMODE_LOOP, &BGM_gamescreen_id);
 	exit_scene = false;
 
-
-	map.init();
-	player1->initial(100,100);
-	// play sample
-
+	// init player
+	player1.initial(100,100);
 
 	// init tile map
 	map.init();
-
 
 	// init enemy group (read from txt)
 	stage1_txt = fopen("Txt_files/stage1.txt", "r");
@@ -126,7 +123,7 @@ void GameScene::draw() {
 	map.draw();
 
 	//player.draw may be change to animation
-	player1->draw();
+	player1.draw();
 
 
 	// draw enemy group

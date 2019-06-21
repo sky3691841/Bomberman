@@ -2,9 +2,7 @@
 #define PLAYER_HPP
 
 #include "Tilemap.hpp"
-#include "GameScene.hpp"
 #include "init.hpp"
-#include "content.hpp"
 
 //to be revised
 #define start_pos_x 75

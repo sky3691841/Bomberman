@@ -4,12 +4,14 @@
 #include "init.hpp"
 #include "Animation.hpp"
 #include "Tilemap.hpp"
+#include "Collision.hpp"
 
 #define start_countdown 2.5
 
 class Bomb{
 protected:
     Animation anim;
+    BoundingBox box;
     int pos_x, pos_y;
     int tile_i, tile_j;
 

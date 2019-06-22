@@ -34,5 +34,5 @@ void Bomb::draw(){
 }
 void Bomb::exploded(Tilemap &map){
     appear = false;
-    map.SetBombPos(pos_x,pos_y,0);
+    map.SetBombPos(tile_i,tile_j,0);
 }

@@ -1,5 +1,5 @@
 #include "GameScene.hpp"
-#include <iostream>
+#include <stdio.h>
 
 GameScene::GameScene() {
 	LoadGameSceneContent();
@@ -7,7 +7,7 @@ GameScene::GameScene() {
 	exit_scene = false;
 
 	// init player
-	player1.initial(75,150);
+	player1.initial(MAP_X0 + TILESIZE + TILESIZE/2, MAP_Y0 + TILESIZE + TILESIZE/2);
 
 	// init tile map
 	map.init();
@@ -90,9 +90,9 @@ void GameScene::on_key_down(int keycode) {
 		exit_scene = true;
 		scenestate = GAMEOVER;
 	}
-	else if (keycode == ALLEGRO_KEY_SPACE) {
+	else if (keycode == ALLEGRO_KEY_SPACE ) {
         //put a bomb on the ground
-        std::cout<<"put bomb\n";
+        printf("put bomb\n");
         player1.put_bomb(map);
 	}
 }

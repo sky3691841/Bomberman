@@ -26,6 +26,7 @@ public:
     void walk(Tilemap &map);
     void draw();
     void update(Tilemap &map);
+    void put_bomb(Tilemap &map);
     //bool haveobstacles(Tilemap map, int x, int y);
 
 };

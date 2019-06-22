@@ -92,6 +92,7 @@ void GameScene::on_key_down(int keycode) {
 	}
 	else if (keycode == ALLEGRO_KEY_SPACE) {
         //put a bomb on the ground
+        player1.put_bomb(map);
 	}
 }
 

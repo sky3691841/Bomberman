@@ -66,7 +66,16 @@ void player::update(Tilemap &map){
 
     //explode effect
 }
+
+void player::put_bomb(Tilemap &map){
+
+}
+
 void player::draw(){
-    //pos_x = start_pos_x;
+    //bomb
+
+    //explode
+
+    //player
     anim[dir].Draw(pos_x, pos_y-15, 0.9, 0.9, 0, al_map_rgba(255, 255, 255, 255));
 }

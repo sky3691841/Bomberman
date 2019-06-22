@@ -184,9 +184,9 @@ void LoadGameSceneContent()
 
 	//Sounds
 	BGM_gamescreen = al_load_sample("Sounds/BGM/gamescreen.ogg");
-	/*SFX_put_bomb = al_load_sample("Sons/SFX/put bomb.wav");
-	SFX_explosion = al_load_sample("Sons/SFX/explosion.wav");
-	SFX_pick_upgrade = al_load_sample("Sons/SFX/pick upgrade.wav");*/
+	SFX_put_bomb = al_load_sample("Sounds/SFX/put bomb.wav");
+	SFX_explosion = al_load_sample("Sounds/SFX/explosion.wav");
+	/*SFX_pick_upgrade = al_load_sample("Sons/SFX/pick upgrade.wav");*/
 }
 
 void UnloadGameSceneContent()
@@ -224,13 +224,13 @@ void UnloadGameSceneContent()
 	al_destroy_bitmap(game_upgrade_bomba_relogio);
 	al_destroy_bitmap(game_bomba_relogio);
 	al_destroy_bitmap(game_upgrade_bomba_espinho);
-	al_destroy_bitmap(game_bomba_espinho);
+	al_destroy_bitmap(game_bomba_espinho);*/
 
 	//Sounds
 	al_destroy_sample(BGM_gamescreen);
 	al_destroy_sample(SFX_put_bomb);
 	al_destroy_sample(SFX_explosion);
-	al_destroy_sample(SFX_pick_upgrade);*/
+	//al_destroy_sample(SFX_pick_upgrade);*/
 }
 
 

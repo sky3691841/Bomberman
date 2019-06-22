@@ -20,7 +20,8 @@ private:
 	int map[TILES_H][TILES_W];
 
 	bool enemy_map[TILES_H][TILES_W];
-	
+	bool bomb_map[TILES_H][TILES_W];
+
 public:
 	// basic functions
 	Tilemap();
@@ -32,7 +33,8 @@ public:
 	int GetTileID(int i, int j); // get status of tile
 	int GetEnemyPos(int i, int j);
 	void SetEnemyPos(int i, int j, bool value);
-
+	int GetBombPos(int i, int j);
+	void SetBombPos(int i, int j, bool value);
 	bool IsPathBlocked(int i, int j);
 };
 

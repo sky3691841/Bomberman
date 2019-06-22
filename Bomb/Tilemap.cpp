@@ -43,6 +43,13 @@ int Tilemap::GetEnemyPos(int i, int j) {
 void Tilemap::SetEnemyPos(int i, int j, bool value) {
 	enemy_map[i][j] = value;
 }
+int Tilemap::GetBombPos(int i, int j){
+    return bomb_map[i][j];
+}
+
+void Tilemap::SetBombPos(int i, int j, bool value){
+    bomb_map[i][j] = value;
+}
 
 // should also handle player postion / bomb position in the future
 bool Tilemap::IsPathBlocked(int i, int j) {

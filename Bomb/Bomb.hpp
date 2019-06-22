@@ -29,6 +29,7 @@ public:
     int gety(){return pos_y;}
     int get_tile_i(){return tile_i;}
     int get_tile_j(){return tile_j;}
+    bool get_appear(){return appear;}
 };
 
 #endif

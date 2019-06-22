@@ -92,6 +92,7 @@ void GameScene::on_key_down(int keycode) {
 	}
 	else if (keycode == ALLEGRO_KEY_SPACE) {
         //put a bomb on the ground
+        std::cout<<"put bomb\n";
         player1.put_bomb(map);
 	}
 }
@@ -103,7 +104,6 @@ void GameScene::update() {
 	}
     //update player motion
     player1.update(map);
-
 	// update game time
 	if (al_get_time() - get_game_timer >= 1.0) {
 		time_left--;
@@ -115,6 +115,7 @@ void GameScene::update() {
 
 		get_game_timer = al_get_time();
 	}
+
 }
 
 void GameScene::draw() {

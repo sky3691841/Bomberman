@@ -7,7 +7,7 @@ void Bomb::initial(int x, int y, float countdown, Tilemap &map){
     this->anim.Initialize(game_bomb, 4, ALLEGRO_MSECS_TO_SECS(150), true);
 
     this->appear = true;
-    this-> time_until_exploded = countdown;
+    this->time_until_exploded = countdown;
     this->timer = al_get_time();
 
     map.SetBombPos(x,y,1);

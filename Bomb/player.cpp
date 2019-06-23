@@ -151,6 +151,17 @@ void player::update(Tilemap &map){
     }
 
     //explode effect
+    ex_it = explosion_list.begin();
+    while(ex_it != explosion_list.end()){
+        ex_it->Update(map);
+        if(ex_it->get_appear()==false){
+            ex_it = explosion_list.erase(ex_it);
+        }
+        else{
+            ex_it++;
+        }
+
+    }
 }
 
 void player::draw(){

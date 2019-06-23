@@ -42,7 +42,7 @@ public:
     void FindBounds(Tilemap &map);
     void Update(Tilemap &map);
     void Draw();
-    bool GetActive() { return appear; }
+    bool get_appear() { return appear; }
     int GetX() { return x; }
     int GetY() { return y; }
 

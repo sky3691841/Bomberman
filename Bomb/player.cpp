@@ -25,6 +25,7 @@ void player::initial(int x,int y){
 
     this->speed = start_speed;
     this->bomb_num = max_bomb_num;
+    this->walkout = false;
 }
 
 void player::put_bomb(Tilemap &map){
@@ -34,7 +35,11 @@ void player::put_bomb(Tilemap &map){
         add.initial(((x-MAP_X0)/TILESIZE)*TILESIZE + MAP_X0 + TILESIZE/2, ((y-MAP_Y0)/TILESIZE)*TILESIZE + TILESIZE/2 + MAP_Y0, 2.5, map);
         bomb_list.push_back(add);
     }
+    bomb_timer = al_get_time();
+    walkout = false;
 }
+
+//PATH BLOCKED SERIES
 bool player::PathBlocked(Tilemap &map,int i, int j) {
 	if(map.GetTileID(i, j) != GRASS || map.GetBombPos(i, j) == 1){
         return box[dir].CollisionWithTiles( j*TILESIZE + MAP_X0, i*TILESIZE + MAP_Y0, TILESIZE, TILESIZE);
@@ -43,6 +48,14 @@ bool player::PathBlocked(Tilemap &map,int i, int j) {
 }
 bool player::Blocked(Tilemap &map,int i, int j){
     if(map.GetTileID(i, j) != GRASS) return true;
+    return false;
+}
+bool player::Bomb_Block(Tilemap &map, int i,int j){
+    if(al_get_time() - bomb_timer >= leave_timer){
+        if(map.GetBombPos(i, j) == 1)
+            return true;
+        else return false;
+    }
     return false;
 }
 
@@ -62,7 +75,9 @@ void player::walk(Tilemap &map){
         //tmp_j2 = (x + 0.1*w - MAP_X0) / TILESIZE;//right
         posI = (y - MAP_Y0) / TILESIZE;
         posJ = (x - MAP_X0) / TILESIZE;
-        if(Blocked(map, posI, posJ)//||Blocked(map, posI-1, tmp_j1)
+        if(Blocked(map, posI, posJ)
+           ||Bomb_Block(map, posI, posJ)
+           //||Blocked(map, posI-1, tmp_j1)
             //||Blocked(map, posI-1, tmp_j2)
        //|| PathBlocked(map, posI-1, posJ-1)
 
@@ -79,7 +94,9 @@ void player::walk(Tilemap &map){
         //tmp_j2 = (x + 0.1*w - MAP_X0) / TILESIZE;
         posI = (y - MAP_Y0 +15) / TILESIZE;
         posJ = (x - MAP_X0) / TILESIZE;
-        if(Blocked(map, posI, posJ)//||Blocked(map, posI+1, tmp_j1)
+        if(Blocked(map, posI, posJ)
+           ||Bomb_Block(map, posI, posJ)
+           //||Blocked(map, posI+1, tmp_j1)
             //||Blocked(map, posI+1, tmp_j2)
        //|| PathBlocked(map, posI+1, posJ-1)
 
@@ -95,10 +112,10 @@ void player::walk(Tilemap &map){
         tmp_j1 = (x - 0.118*w - MAP_X0) / TILESIZE;
         posI = (y - MAP_Y0) / TILESIZE;
         posJ = (x - MAP_X0) / TILESIZE;
-        if(Blocked(map, posI, posJ)||Blocked(map, posI, tmp_j1)
-
+        if(Blocked(map, posI, posJ)
+           ||Bomb_Block(map, posI, posJ)
+           ||Blocked(map, posI, tmp_j1)
        //|| PathBlocked(map, posI-1, posJ-1)
-
       /* || PathBlocked(map, posI+1, posJ-1) */ ){
             y = pre_y;
             x = pre_x;
@@ -111,8 +128,9 @@ void player::walk(Tilemap &map){
         tmp_j2 = (x + 0.12*w - MAP_X0) / TILESIZE;
         posI = (y - MAP_Y0) / TILESIZE;
         posJ = (x - MAP_X0) / TILESIZE;
-        if(Blocked(map, posI, posJ)||Blocked(map, posI, tmp_j2)
-
+        if(Blocked(map, posI, posJ)
+           ||Bomb_Block(map, posI, posJ)
+           ||Blocked(map, posI, tmp_j2)
        //|| PathBlocked(map, posI-1, posJ+1)
 
        /*|| PathBlocked(map, posI+1, posJ+1) */ ){
@@ -133,6 +151,10 @@ void player::update(Tilemap &map){
     anim[dir].Update();
 
     //bomb
+    /*if(!walkout && (map.GetBombPos(posI, posJ) == 0)){
+        walkout = true;
+    }*/
+
     it = bomb_list.begin();
     while(it != bomb_list.end()){
         (*it).update(map);

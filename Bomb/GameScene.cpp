@@ -92,7 +92,6 @@ void GameScene::on_key_down(int keycode) {
 	}
 	else if (keycode == ALLEGRO_KEY_SPACE ) {
         //put a bomb on the ground
-        printf("put bomb\n");
         player1.put_bomb(map);
 	}
 }
@@ -102,13 +101,13 @@ void GameScene::update() {
 	enemy_it = enemy_list.begin();
 	while (enemy_it != enemy_list.end()) {
 		(*enemy_it).update(map, player1.GetExplosionList());
-		
+
 		if ((*enemy_it).getActive() == false) {
 			enemy_it = enemy_list.erase(enemy_it);
-		}	
+		}
 		else {
 			enemy_it++;
-		}	
+		}
 	}
 
 	if (enemy_list.empty()) {

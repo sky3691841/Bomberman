@@ -100,7 +100,7 @@ void GameScene::on_key_down(int keycode) {
 void GameScene::update() {
 	// update ememy group
 	for (enemy_it = enemy_list.begin(); enemy_it != enemy_list.end(); enemy_it++) {
-		(*enemy_it).update(map);
+		(*enemy_it).update(map, player1.GetExplosionList());
 	}
     //update player motion
     player1.update(map);
@@ -135,7 +135,8 @@ void GameScene::draw() {
 
 	// draw enemy group
 	for (enemy_it = enemy_list.begin(); enemy_it != enemy_list.end(); enemy_it++) {
-		(*enemy_it).draw();
+		if ((*enemy_it).getActive())
+			(*enemy_it).draw();
 	}
 
 

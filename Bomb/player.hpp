@@ -42,6 +42,7 @@ public:
     void put_bomb(Tilemap &map);
     bool PathBlocked(Tilemap &map,int i, int j) ;
     bool Blocked(Tilemap &map,int i, int j);
+	std::list<Explosion> GetExplosionList() { return explosion_list; }
     //bool haveobstacles(Tilemap map, int x, int y);
 
 };

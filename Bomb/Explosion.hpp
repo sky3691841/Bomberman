@@ -45,7 +45,8 @@ public:
     bool get_appear() { return appear; }
     int GetX() { return x; }
     int GetY() { return y; }
-
+	BoundingBox GetBoxY() { return box[0]; }
+	BoundingBox GetBoxX() { return box[1]; }
 
 };
 

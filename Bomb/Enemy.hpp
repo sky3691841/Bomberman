@@ -4,6 +4,8 @@
 #include "init.hpp"
 #include "Animation.hpp"
 #include "Tilemap.hpp"
+#include "Collision.hpp"
+#include "Explosion.hpp"
 
 #define ENEMY_SPEED 1
 
@@ -13,6 +15,7 @@ enum ENEMY_STATES {STATE_WALKING, STATE_CHOOSING};
 class Enemy {
 private:
 	Animation anim[4];
+	BoundingBox box[4];
 
 	int pos_i;
 	int pos_j;
@@ -24,11 +27,13 @@ private:
 	int state;
 	int paths_available;
 	bool available_dir[4];
+
+	bool active;
 public:
 	Enemy();
 	~Enemy();
 	void init(int i, int j);
-	void update(Tilemap &map); // only movement for now, should handle explosion in the future
+	void update(Tilemap &map, std::list<Explosion> explosion_list); 
 	void draw();
 
 	/// functions for enemy movement ==============
@@ -37,6 +42,10 @@ public:
 	void CountPaths(Tilemap &map); // count paths availabe
 	void Move(Tilemap &map); // handle enemy movement
 	/// ===========================================
+
+	bool CollisionWith(Tilemap &map, int i, int j);
+	bool getActive() { return active; }
+	BoundingBox GetBox() { return box[dir]; }
 };
 
 

@@ -12,6 +12,11 @@ void Enemy::init(int i, int j) {
 	anim[LEFT].Initialize(game_enemy_left, 4, 0.1, true);
 	anim[RIGHT].Initialize(game_enemy_right, 4, 0.1, true);
 
+	box[UP].Initialize(-16, -22, 32, 32);
+	box[DOWN].Initialize(-16, -22, 32, 32);
+	box[LEFT].Initialize(-16, -20, 34, 25);
+	box[RIGHT].Initialize(-18, -20, 34, 25);
+
 	// track tile count
 	pos_i = i;
 	pos_j = j;
@@ -22,12 +27,22 @@ void Enemy::init(int i, int j) {
 
 	speed = ENEMY_SPEED;
 	dir = rand() % 4;
+	active = true;
 	state = STATE_CHOOSING;
 }
 
-void Enemy::update(Tilemap &map) {
+void Enemy::update(Tilemap &map, std::list<Explosion> explosion_list) {
 	anim[dir].Update();
 	Move(map);
+	box[dir].UpdatePosition(x, y);
+
+	// explosion
+	std::list<Explosion>::iterator ex_it;
+	for (ex_it = explosion_list.begin(); ex_it != explosion_list.end(); ex_it++) {
+		if ((box[dir].CheckCollision((*ex_it).GetBoxY()) || box[dir].CheckCollision((*ex_it).GetBoxX()))) {
+			active = false;
+		}
+	}
 }
 
 void Enemy::draw() {
@@ -137,3 +152,14 @@ void Enemy::Move(Tilemap &map) {
 		}
 	}
 }
+
+bool Enemy::CollisionWith(Tilemap & map, int i, int j) {
+	if (map.GetTileID(i, j) != GRASS)
+	{
+		return box[dir].CollisionWithTiles((j)*TILESIZE + MAP_X0, (i)*TILESIZE + MAP_Y0, TILESIZE, TILESIZE);
+	}
+
+	return false;
+}
+
+

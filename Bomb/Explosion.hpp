@@ -43,6 +43,7 @@ public:
     void Update(Tilemap &map);
     void Draw();
     bool get_appear() { return appear; }
+    bool inexplosion(int playerI, int playerJ);
     int GetX() { return x; }
     int GetY() { return y; }
 	BoundingBox GetBoxY() { return box[0]; }

@@ -28,15 +28,6 @@ ALLEGRO_BITMAP* game_player_down;
 ALLEGRO_BITMAP* game_player_left;
 ALLEGRO_BITMAP* game_player_right;
 ALLEGRO_BITMAP* game_bomb; // already loaded in default
-/*ALLEGRO_BITMAP* game_upgrade_bomba_extra;
-ALLEGRO_BITMAP* game_upgrade_fogo;
-ALLEGRO_BITMAP* game_upgrade_patins;
-ALLEGRO_BITMAP* game_upgrade_chuta_bomba;
-ALLEGRO_BITMAP* game_upgrade_vida;
-ALLEGRO_BITMAP* game_upgrade_bomba_relogio;
-ALLEGRO_BITMAP* game_bomba_relogio;
-ALLEGRO_BITMAP* game_upgrade_bomba_espinho;
-ALLEGRO_BITMAP* game_bomba_espinho;*/
 
 ALLEGRO_BITMAP* victory_yellow;
 ALLEGRO_BITMAP* victory_green;
@@ -172,21 +163,11 @@ void LoadGameSceneContent()
 	game_player_down = al_load_bitmap("Sprites/GAMESCREEN/player down.png");
 	game_player_left = al_load_bitmap("Sprites/GAMESCREEN/player left.png");
 	game_player_right = al_load_bitmap("Sprites/GAMESCREEN/player right.png");
-	/*game_upgrade_bomba_extra = al_load_bitmap("Sprites/GAMESCREEN/upgrades/bomba extra.png");
-	game_upgrade_fogo = al_load_bitmap("Sprites/GAMESCREEN/upgrades/fogo.png");
-	game_upgrade_patins = al_load_bitmap("Sprites/GAMESCREEN/upgrades/patins.png");
-	game_upgrade_chuta_bomba = al_load_bitmap("Sprites/GAMESCREEN/upgrades/chuta bomba.png");
-	game_upgrade_vida = al_load_bitmap("Sprites/GAMESCREEN/upgrades/vida.png");
-	game_upgrade_bomba_relogio = al_load_bitmap("Sprites/GAMESCREEN/upgrades/bomba relogio.png");
-	game_bomba_relogio = al_load_bitmap("Sprites/GAMESCREEN/bomba relogio.png");
-	game_upgrade_bomba_espinho = al_load_bitmap("Sprites/GAMESCREEN/upgrades/bomba espinho.png");
-	game_bomba_espinho = al_load_bitmap("Sprites/GAMESCREEN/bomba espinho.png");*/
 
 	//Sounds
 	BGM_gamescreen = al_load_sample("Sounds/BGM/gamescreen.ogg");
 	SFX_put_bomb = al_load_sample("Sounds/SFX/put bomb.wav");
 	SFX_explosion = al_load_sample("Sounds/SFX/explosion.wav");
-	/*SFX_pick_upgrade = al_load_sample("Sons/SFX/pick upgrade.wav");*/
 }
 
 void UnloadGameSceneContent()
@@ -210,27 +191,17 @@ void UnloadGameSceneContent()
 
 	al_destroy_bitmap(game_barra_superior);*/
 	al_destroy_bitmap(player_static);
-	/*al_destroy_bitmap(game_player_up);*/
 
 	al_destroy_bitmap(game_player_up);
 	al_destroy_bitmap(game_player_down);
 	al_destroy_bitmap(game_player_left);
 	al_destroy_bitmap(game_player_right);
-	/*al_destroy_bitmap(game_upgrade_bomba_extra);
-	al_destroy_bitmap(game_upgrade_fogo);
-	al_destroy_bitmap(game_upgrade_patins);
-	al_destroy_bitmap(game_upgrade_chuta_bomba);
-	al_destroy_bitmap(game_upgrade_vida);
-	al_destroy_bitmap(game_upgrade_bomba_relogio);
-	al_destroy_bitmap(game_bomba_relogio);
-	al_destroy_bitmap(game_upgrade_bomba_espinho);
-	al_destroy_bitmap(game_bomba_espinho);*/
 
 	//Sounds
 	al_destroy_sample(BGM_gamescreen);
 	al_destroy_sample(SFX_put_bomb);
 	al_destroy_sample(SFX_explosion);
-	//al_destroy_sample(SFX_pick_upgrade);*/
+
 }
 
 

@@ -100,6 +100,12 @@ void Explosion::FindBounds(Tilemap &map){
     }
     boundright = maxbound*unit;
 }
+bool Explosion::inexplosion(int playerI, int playerJ){
+    if((playerI >= posI-1 && playerI <= posI+1 && playerJ == posJ)
+        ||(playerJ >= posJ-1 && playerJ <= posJ+1 && playerI == posI))
+            return true;
+    return false;
+}
 void Explosion::Update(Tilemap &map){
     if(al_get_time() - timer >= time_until_end) {
         appear = false;
@@ -116,13 +122,36 @@ void Explosion::Update(Tilemap &map){
 }
 
 void Explosion::Draw(){
+    //yellow
     al_draw_filled_rounded_rectangle(x - boundleft - THICKNESS/2, y - THICKNESS/2, x + boundright + THICKNESS/2, y + THICKNESS/2, 15, 15, al_map_rgb(255, 127, 39));
     al_draw_filled_rounded_rectangle(x - THICKNESS/2, y - boundup - THICKNESS/2, x + THICKNESS/2, y + bounddown + THICKNESS/2, 10, 10, al_map_rgb(255, 127, 39));
+    //red
     al_draw_filled_rounded_rectangle(x - boundleft - THICKNESS/2 +8, y - THICKNESS/2 +8, x + boundright + THICKNESS/2 -8, y + THICKNESS/2 -8, 15, 15, al_map_rgb(238, 228, 176));
     al_draw_filled_rounded_rectangle(x - THICKNESS/2 +8, y - boundup - THICKNESS/2 +8, x + THICKNESS/2 -8, y + bounddown + THICKNESS/2 -8, 10, 10, al_map_rgb(238, 228, 176));
 
     for(it = brick_list.begin(); it != brick_list.end(); it++){
         brick_anim.Draw((*it).j * TILESIZE + TILESIZE/2 + MAP_X0, (*it).i * TILESIZE + TILESIZE/2 + MAP_Y0, 1.0, 1.0, 0.0, al_map_rgb(255,255,255));
     }
+
+
+    if(debug_mode){
+
+       al_draw_textf(font_debug, al_map_rgba(255, 255, 255, 255), SCREEN_W - 150, 20, ALLEGRO_ALIGN_RIGHT, "BOUNDUP: %d", boundup);
+
+       al_draw_textf(font_debug, al_map_rgba(255, 255, 255, 255), SCREEN_W - 150, 30, ALLEGRO_ALIGN_RIGHT, "BOUNDDOWN: %d", bounddown);
+
+       al_draw_textf(font_debug, al_map_rgba(255, 255, 255, 255), SCREEN_W - 150, 40, ALLEGRO_ALIGN_RIGHT, "BOUNDLEFT: %d", boundleft);
+
+       al_draw_textf(font_debug, al_map_rgba(255, 255, 255, 255), SCREEN_W - 150, 50, ALLEGRO_ALIGN_RIGHT, "BOUNDRIGHT: %d", boundright);
+
+       al_draw_textf(font_debug, al_map_rgba(255, 255, 255, 255), SCREEN_W - 150, 60, ALLEGRO_ALIGN_RIGHT, "SIZE: %d", size);
+
+       al_draw_filled_circle(x, y, 2, al_map_rgb(255, 0, 0));
+
+       box[0].Draw();
+
+       box[1].Draw();
+
+       }
 
 }

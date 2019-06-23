@@ -32,15 +32,6 @@ extern ALLEGRO_BITMAP* game_player_down;
 extern ALLEGRO_BITMAP* game_player_left;
 extern ALLEGRO_BITMAP* game_player_right;
 extern ALLEGRO_BITMAP* game_bomb; // also used for menu scene
-/*extern ALLEGRO_BITMAP* game_upgrade_bomba_extra;
-extern ALLEGRO_BITMAP* game_upgrade_fogo;
-extern ALLEGRO_BITMAP* game_upgrade_patins;
-extern ALLEGRO_BITMAP* game_upgrade_chuta_bomba;
-extern ALLEGRO_BITMAP* game_upgrade_vida;
-extern ALLEGRO_BITMAP* game_upgrade_bomba_relogio;
-extern ALLEGRO_BITMAP* game_bomba_relogio;
-extern ALLEGRO_BITMAP* game_upgrade_bomba_espinho;
-extern ALLEGRO_BITMAP* game_bomba_espinho;*/
 
 extern ALLEGRO_BITMAP* victory_yellow;
 extern ALLEGRO_BITMAP* victory_green;

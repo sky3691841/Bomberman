@@ -181,6 +181,9 @@ void player::update(Tilemap &map){
     ex_it = explosion_list.begin();
     while(ex_it != explosion_list.end()){
         ex_it->Update(map);
+        if(ex_it->inexplosion(posI, posJ))
+            die();
+
         if(ex_it->get_appear()==false){
             ex_it = explosion_list.erase(ex_it);
         }
@@ -208,41 +211,26 @@ void player::draw(){
     if(debug_mode){
 
 		box[dir].Draw();
-
 		al_draw_filled_circle(x, y, 3, al_map_rgba(255,0,0,255));
 
         //posJ = cur_tile_j;
         //posI = cur_tile_i;
 
         al_draw_rectangle((posJ-1)*TILESIZE + MAP_X0, (posI-1)*TILESIZE + MAP_Y0, (posJ-1)*TILESIZE + MAP_X0 + TILESIZE, (posI-1)*TILESIZE + MAP_Y0 + TILESIZE, al_map_rgba(0,0,255,255), 1);
-
         al_draw_rectangle((posJ+1)*TILESIZE + MAP_X0, (posI-1)*TILESIZE + MAP_Y0, (posJ+1)*TILESIZE + MAP_X0 + TILESIZE, (posI-1)*TILESIZE + MAP_Y0 + TILESIZE, al_map_rgba(0,0,255,255), 1);
-
         al_draw_rectangle((posJ)*TILESIZE + MAP_X0, (posI-1)*TILESIZE + MAP_Y0, (posJ)*TILESIZE + MAP_X0 + TILESIZE, (posI-1)*TILESIZE + MAP_Y0 + TILESIZE, al_map_rgba(0,0,255,255), 1);
-
         al_draw_rectangle((posJ-1)*TILESIZE + MAP_X0, (posI+1)*TILESIZE + MAP_Y0, (posJ-1)*TILESIZE + MAP_X0 + TILESIZE, (posI+1)*TILESIZE + MAP_Y0 + TILESIZE, al_map_rgba(0,0,255,255), 1);
-
         al_draw_rectangle((posJ+1)*TILESIZE + MAP_X0, (posI+1)*TILESIZE + MAP_Y0, (posJ+1)*TILESIZE + MAP_X0 + TILESIZE, (posI+1)*TILESIZE + MAP_Y0 + TILESIZE, al_map_rgba(0,0,255,255), 1);
-
         al_draw_rectangle((posJ)*TILESIZE + MAP_X0, (posI+1)*TILESIZE + MAP_Y0, (posJ)*TILESIZE + MAP_X0 + TILESIZE, (posI+1)*TILESIZE + MAP_Y0 + TILESIZE, al_map_rgba(0,0,255,255), 1);
-
         al_draw_rectangle((posJ-1)*TILESIZE + MAP_X0, (posI-1)*TILESIZE + MAP_Y0, (posJ-1)*TILESIZE + MAP_X0 + TILESIZE, (posI-1)*TILESIZE + MAP_Y0 + TILESIZE, al_map_rgba(0,0,255,255), 1);
-
         al_draw_rectangle((posJ-1)*TILESIZE + MAP_X0, (posI)*TILESIZE + MAP_Y0, (posJ-1)*TILESIZE + MAP_X0 + TILESIZE, (posI)*TILESIZE + MAP_Y0 + TILESIZE, al_map_rgba(0,0,255,255), 1);
-
         al_draw_rectangle((posJ-1)*TILESIZE + MAP_X0, (posI+1)*TILESIZE + MAP_Y0, (posJ-1)*TILESIZE + MAP_X0 + TILESIZE, (posI+1)*TILESIZE + MAP_Y0 + TILESIZE, al_map_rgba(0,0,255,255), 1);
-
         al_draw_rectangle((posJ+1)*TILESIZE + MAP_X0, (posI-1)*TILESIZE + MAP_Y0, (posJ+1)*TILESIZE + MAP_X0 + TILESIZE, (posI-1)*TILESIZE + MAP_Y0 + TILESIZE, al_map_rgba(0,0,255,255), 1);
-
         al_draw_rectangle((posJ+1)*TILESIZE + MAP_X0, (posI)*TILESIZE + MAP_Y0, (posJ+1)*TILESIZE + MAP_X0 + TILESIZE, (posI)*TILESIZE + MAP_Y0 + TILESIZE, al_map_rgba(0,0,255,255), 1);
-
         al_draw_rectangle((posJ+1)*TILESIZE + MAP_X0, (posI+1)*TILESIZE + MAP_Y0, (posJ+1)*TILESIZE + MAP_X0 + TILESIZE, (posI+1)*TILESIZE + MAP_Y0 + TILESIZE, al_map_rgba(0,0,255,255), 1);
-
-
 
         al_draw_textf(font_debug, al_map_rgb(0, 0, 0), x, y+15, ALLEGRO_ALIGN_CENTER, "Pos I: %d, Pos J: %d", posI, posJ);
-
         al_draw_textf(font_debug, al_map_rgb(0, 0, 0), x, y+25, ALLEGRO_ALIGN_CENTER, "x: %d, y: %d", x, y);
 
-        }
+    }
 }

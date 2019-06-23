@@ -23,12 +23,12 @@ void Animation::Reset()
 
 void Animation::Update()
 {
-	//Hora de trocar de frame
+	//time to switch
 	if ((al_get_time() - curtime) >= switchtime)
 	{
 		curframe++;
 
-		//Passou Último frame
+		//last one is done
 		if (curframe == qtdframes)
 		{
 			curframe = 0;

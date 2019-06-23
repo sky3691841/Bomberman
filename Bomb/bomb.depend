@@ -328,7 +328,7 @@
 1544638345 c:\allegro-mingw-gcc6.2.0-x86-static-5.2.2\allegro\include\\allegro5\allegro_physfs.h
 	"allegro5/allegro.h"
 
-1561278239 c:\users\iivy303\desktop\final_2semes\bomb\content.hpp
+1561294485 c:\users\iivy303\desktop\final_2semes\bomb\content.hpp
 	<allegro5/allegro.h>
 	<allegro5/allegro_image.h>
 	<allegro5/allegro_ttf.h>
@@ -342,9 +342,9 @@
 1560266704 c:\users\iivy303\desktop\final_2semes\bomb\animation.hpp
 	"init.hpp"
 
-1560266704 source:c:\users\iivy303\desktop\final_2semes\bomb\animation.cpp
+1561294485 source:c:\users\iivy303\desktop\final_2semes\bomb\animation.cpp
 
-1561278239 source:c:\users\iivy303\desktop\final_2semes\bomb\content.cpp
+1561294560 source:c:\users\iivy303\desktop\final_2semes\bomb\content.cpp
 	"content.hpp"
 	<iostream>
 
@@ -373,7 +373,7 @@
 1561249566 c:\users\iivy303\desktop\final_2semes\bomb\tilemap.hpp
 	"init.hpp"
 
-1561278551 source:c:\users\iivy303\desktop\final_2semes\bomb\gamescene.cpp
+1561293712 source:c:\users\iivy303\desktop\final_2semes\bomb\gamescene.cpp
 	"GameScene.hpp"
 	<stdio.h>
 
@@ -384,7 +384,7 @@
 	"Tilemap.hpp"
 	<iostream>
 
-1561293719 c:\users\iivy303\desktop\final_2semes\bomb\player.hpp
+1561298436 c:\users\iivy303\desktop\final_2semes\bomb\player.hpp
 	"Tilemap.hpp"
 	"init.hpp"
 	"Animation.hpp"
@@ -393,7 +393,7 @@
 	"content.hpp"
 	"Explosion.hpp"
 
-1561284592 source:c:\users\iivy303\desktop\final_2semes\bomb\player.cpp
+1561298436 source:c:\users\iivy303\desktop\final_2semes\bomb\player.cpp
 	"player.hpp"
 	<math.h>
 	<iostream>
@@ -433,7 +433,7 @@
 1561249553 source:c:\users\iivy303\desktop\final_2semes\bomb\explosion.cpp
 	"Explosion.hpp"
 
-1561278239 c:\users\iivy303\desktop\final_2semes\bomb\explosion.hpp
+1561298695 c:\users\iivy303\desktop\final_2semes\bomb\explosion.hpp
 	"init.hpp"
 	"Tilemap.hpp"
 	"Collision.hpp"

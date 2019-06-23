@@ -99,11 +99,26 @@ void GameScene::on_key_down(int keycode) {
 
 void GameScene::update() {
 	// update ememy group
-	for (enemy_it = enemy_list.begin(); enemy_it != enemy_list.end(); enemy_it++) {
+	enemy_it = enemy_list.begin();
+	while (enemy_it != enemy_list.end()) {
 		(*enemy_it).update(map, player1.GetExplosionList());
+		
+		if ((*enemy_it).getActive() == false) {
+			enemy_it = enemy_list.erase(enemy_it);
+		}	
+		else {
+			enemy_it++;
+		}	
 	}
+
+	if (enemy_list.empty()) {
+		exit_scene = true;
+		scenestate = GAMEOVER;
+	}
+
     //update player motion
     player1.update(map);
+
 	// update game time
 	if (al_get_time() - get_game_timer >= 1.0) {
 		time_left--;
@@ -135,8 +150,7 @@ void GameScene::draw() {
 
 	// draw enemy group
 	for (enemy_it = enemy_list.begin(); enemy_it != enemy_list.end(); enemy_it++) {
-		if ((*enemy_it).getActive())
-			(*enemy_it).draw();
+		(*enemy_it).draw();
 	}
 
 

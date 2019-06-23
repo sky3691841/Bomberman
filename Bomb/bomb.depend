@@ -327,7 +327,7 @@
 1544638345 c:\allegro-mingw-gcc6.2.0-x86-static-5.2.2\allegro\include\\allegro5\allegro_physfs.h
 	"allegro5/allegro.h"
 
-1561149996 c:\users\iivy303\desktop\final_2semes\bomb\content.hpp
+1561249553 c:\users\iivy303\desktop\final_2semes\bomb\content.hpp
 	<allegro5/allegro.h>
 	<allegro5/allegro_image.h>
 	<allegro5/allegro_ttf.h>
@@ -343,7 +343,7 @@
 
 1560266704 source:c:\users\iivy303\desktop\final_2semes\bomb\animation.cpp
 
-1561202273 source:c:\users\iivy303\desktop\final_2semes\bomb\content.cpp
+1561249553 source:c:\users\iivy303\desktop\final_2semes\bomb\content.cpp
 	"content.hpp"
 	<iostream>
 
@@ -369,7 +369,7 @@
 	"player.hpp"
 	"Enemy.hpp"
 
-1561202273 c:\users\iivy303\desktop\final_2semes\bomb\tilemap.hpp
+1561249566 c:\users\iivy303\desktop\final_2semes\bomb\tilemap.hpp
 	"init.hpp"
 
 1561240418 source:c:\users\iivy303\desktop\final_2semes\bomb\gamescene.cpp
@@ -379,19 +379,20 @@
 1560974273 source:c:\users\iivy303\desktop\final_2semes\bomb\menuscene.cpp
 	"MenuScene.hpp"
 
-1561202273 source:c:\users\iivy303\desktop\final_2semes\bomb\tilemap.cpp
+1561243608 source:c:\users\iivy303\desktop\final_2semes\bomb\tilemap.cpp
 	"Tilemap.hpp"
 	<iostream>
 
-1561241494 c:\users\iivy303\desktop\final_2semes\bomb\player.hpp
+1561247589 c:\users\iivy303\desktop\final_2semes\bomb\player.hpp
 	"Tilemap.hpp"
 	"init.hpp"
 	"Animation.hpp"
 	"Bomb.hpp"
 	"Collision.hpp"
 	"content.hpp"
+	"Explosion.hpp"
 
-1561239139 source:c:\users\iivy303\desktop\final_2semes\bomb\player.cpp
+1561247753 source:c:\users\iivy303\desktop\final_2semes\bomb\player.cpp
 	"player.hpp"
 	<math.h>
 	<iostream>
@@ -417,12 +418,22 @@
 1560974273 source:c:\users\iivy303\desktop\final_2semes\bomb\losescene.cpp
 	"LoseScene.hpp"
 
-1561241185 source:c:\users\iivy303\desktop\final_2semes\bomb\bomb.cpp
+1561243038 source:c:\users\iivy303\desktop\final_2semes\bomb\bomb.cpp
 	"Bomb.hpp"
 
-1561241185 c:\users\iivy303\desktop\final_2semes\bomb\bomb.hpp
+1561247523 c:\users\iivy303\desktop\final_2semes\bomb\bomb.hpp
 	"init.hpp"
 	"Animation.hpp"
 	"Tilemap.hpp"
 	"Collision.hpp"
+
+1561249553 source:c:\users\iivy303\desktop\final_2semes\bomb\explosion.cpp
+	"Explosion.hpp"
+
+1561249553 c:\users\iivy303\desktop\final_2semes\bomb\explosion.hpp
+	"init.hpp"
+	"Tilemap.hpp"
+	"Collision.hpp"
+	"Animation.hpp"
+	"Bomb.hpp"
 

@@ -3,845 +3,870 @@ system   D            wsystem.c:771  _al_win_safe_load_library        [   0.0000
 system   D            wsystem.c:682  load_library_at_path             [   0.00000] Calling LoadLibrary C:\WINDOWS\system32\shcore.dll
 system   I            wsystem.c:685  load_library_at_path             [   0.00000] Loaded C:\WINDOWS\system32\shcore.dll
 system   I             system.c:257  al_install_system                [   0.00000] Allegro version: 5.2.2
-system   D            wsystem.c:392  win_get_joystick_driver          [   0.00029] Selected combined XInput/DirectInput joystick driver.
-system   D            wsystem.c:771  _al_win_safe_load_library        [   0.00074] PathFindOnPath found: C:\WINDOWS\system32\xinput1_4.dll
-system   D            wsystem.c:682  load_library_at_path             [   0.00077] Calling LoadLibrary C:\WINDOWS\system32\xinput1_4.dll
-system   I            wsystem.c:685  load_library_at_path             [   0.00243] Loaded C:\WINDOWS\system32\xinput1_4.dll
-xinput   I             wjoyxi.c:214  _imp_load_xinput_module_version  [   0.00247] Module "xinput1_4.dll" loaded.
-system   D            wsystem.c:771  _al_win_safe_load_library        [   0.00356] PathFindOnPath found: C:\WINDOWS\system32\dinput8.dll
-system   D            wsystem.c:682  load_library_at_path             [   0.00359] Calling LoadLibrary C:\WINDOWS\system32\dinput8.dll
-system   I            wsystem.c:685  load_library_at_path             [   0.00434] Loaded C:\WINDOWS\system32\dinput8.dll
-dinput   I         wjoydxnu.cpp:1107 joydx_merge                      [   0.04250] Merged, num joysticks=0
-audio-dsound I           dsound.cpp:249  _dsound_open                     [   0.04265] Starting DirectSound...
-audio-dsound D           dsound.cpp:258  _dsound_open                     [   0.07851] DirectSoundCreate8 succeeded
-audio    I              audio.c:347  do_install_audio                 [   0.08583] Using DirectSound driver
-system   D            wsystem.c:771  _al_win_safe_load_library        [   0.08657] PathFindOnPath found: C:\WINDOWS\system32\d3d9.dll
-system   D            wsystem.c:682  load_library_at_path             [   0.08659] Calling LoadLibrary C:\WINDOWS\system32\d3d9.dll
-system   I            wsystem.c:685  load_library_at_path             [   0.08960] Loaded C:\WINDOWS\system32\d3d9.dll
-d3d      I         d3d_disp.cpp:674  d3d_init_display                 [   0.11086] Render-to-texture: 1
-d3d      I         d3d_disp.cpp:1769 d3d_create_display_locked        [   0.11219] faux_fullscreen=0
-d3d      D         d3d_disp.cpp:1770 d3d_create_display_locked        [   0.11222] al_display=02762380
-d3d      D         d3d_disp.cpp:1771 d3d_create_display_locked        [   0.11224] al_display->vt=02761AD8
-d3d      I d3d_display_formats.cpp:144  _al_d3d_generate_display_format_list [   0.11639] found 64 format combinations
-display  D   display_settings.c:212  debug_display_settings           [   0.11643] color: 32 (rgba 8880), depth: 0, stencil: 0, acc: 0000, samples: 0/0
-display  D   display_settings.c:527  _al_score_display_settings       [   0.11646] Score is : 897
-display  D   display_settings.c:212  debug_display_settings           [   0.11648] color: 32 (rgba 8880), depth: 0, stencil: 0, acc: 0000, samples: 0/0
-display  D   display_settings.c:527  _al_score_display_settings       [   0.11650] Score is : 897
-display  D   display_settings.c:212  debug_display_settings           [   0.11652] color: 32 (rgba 8880), depth: 24, stencil: 8, acc: 0000, samples: 0/0
-display  D   display_settings.c:527  _al_score_display_settings       [   0.11655] Score is : 897
-display  D   display_settings.c:212  debug_display_settings           [   0.11657] color: 32 (rgba 8880), depth: 24, stencil: 8, acc: 0000, samples: 0/0
-display  D   display_settings.c:527  _al_score_display_settings       [   0.11659] Score is : 897
-display  D   display_settings.c:212  debug_display_settings           [   0.11667] color: 32 (rgba 8880), depth: 24, stencil: 0, acc: 0000, samples: 0/0
-display  D   display_settings.c:527  _al_score_display_settings       [   0.11670] Score is : 897
-display  D   display_settings.c:212  debug_display_settings           [   0.11671] color: 32 (rgba 8880), depth: 24, stencil: 0, acc: 0000, samples: 0/0
-display  D   display_settings.c:527  _al_score_display_settings       [   0.11673] Score is : 897
-display  D   display_settings.c:212  debug_display_settings           [   0.11675] color: 32 (rgba 8880), depth: 16, stencil: 0, acc: 0000, samples: 0/0
-display  D   display_settings.c:527  _al_score_display_settings       [   0.11677] Score is : 897
-display  D   display_settings.c:212  debug_display_settings           [   0.11678] color: 32 (rgba 8880), depth: 16, stencil: 0, acc: 0000, samples: 0/0
-display  D   display_settings.c:527  _al_score_display_settings       [   0.11680] Score is : 897
-display  D   display_settings.c:212  debug_display_settings           [   0.11682] color: 16 (rgba 5650), depth: 0, stencil: 0, acc: 0000, samples: 0/0
-display  D   display_settings.c:527  _al_score_display_settings       [   0.11684] Score is : 897
-display  D   display_settings.c:212  debug_display_settings           [   0.11685] color: 16 (rgba 5650), depth: 0, stencil: 0, acc: 0000, samples: 0/0
-display  D   display_settings.c:527  _al_score_display_settings       [   0.11687] Score is : 897
-display  D   display_settings.c:212  debug_display_settings           [   0.11689] color: 16 (rgba 5650), depth: 24, stencil: 8, acc: 0000, samples: 0/0
-display  D   display_settings.c:527  _al_score_display_settings       [   0.11691] Score is : 897
-display  D   display_settings.c:212  debug_display_settings           [   0.11693] color: 16 (rgba 5650), depth: 24, stencil: 8, acc: 0000, samples: 0/0
-display  D   display_settings.c:527  _al_score_display_settings       [   0.11695] Score is : 897
-display  D   display_settings.c:212  debug_display_settings           [   0.11696] color: 16 (rgba 5650), depth: 24, stencil: 0, acc: 0000, samples: 0/0
-display  D   display_settings.c:527  _al_score_display_settings       [   0.11698] Score is : 897
-display  D   display_settings.c:212  debug_display_settings           [   0.11700] color: 16 (rgba 5650), depth: 24, stencil: 0, acc: 0000, samples: 0/0
-display  D   display_settings.c:527  _al_score_display_settings       [   0.11702] Score is : 897
-display  D   display_settings.c:212  debug_display_settings           [   0.11703] color: 16 (rgba 5650), depth: 16, stencil: 0, acc: 0000, samples: 0/0
-display  D   display_settings.c:527  _al_score_display_settings       [   0.11705] Score is : 897
-display  D   display_settings.c:212  debug_display_settings           [   0.11707] color: 16 (rgba 5650), depth: 16, stencil: 0, acc: 0000, samples: 0/0
-display  D   display_settings.c:527  _al_score_display_settings       [   0.11709] Score is : 897
-display  D   display_settings.c:212  debug_display_settings           [   0.11710] color: 32 (rgba 8880), depth: 0, stencil: 0, acc: 0000, samples: 0/0
-display  D   display_settings.c:398  _al_score_display_settings       [   0.11712] Single Buffer requirement not met.
-display  D   display_settings.c:212  debug_display_settings           [   0.11714] color: 32 (rgba 8880), depth: 0, stencil: 0, acc: 0000, samples: 0/0
-display  D   display_settings.c:398  _al_score_display_settings       [   0.11716] Single Buffer requirement not met.
-display  D   display_settings.c:212  debug_display_settings           [   0.11718] color: 32 (rgba 8880), depth: 24, stencil: 8, acc: 0000, samples: 0/0
-display  D   display_settings.c:398  _al_score_display_settings       [   0.11720] Single Buffer requirement not met.
-display  D   display_settings.c:212  debug_display_settings           [   0.12053] color: 32 (rgba 8880), depth: 24, stencil: 8, acc: 0000, samples: 0/0
-display  D   display_settings.c:398  _al_score_display_settings       [   0.12056] Single Buffer requirement not met.
-display  D   display_settings.c:212  debug_display_settings           [   0.12058] color: 32 (rgba 8880), depth: 24, stencil: 0, acc: 0000, samples: 0/0
-display  D   display_settings.c:398  _al_score_display_settings       [   0.12061] Single Buffer requirement not met.
-display  D   display_settings.c:212  debug_display_settings           [   0.12062] color: 32 (rgba 8880), depth: 24, stencil: 0, acc: 0000, samples: 0/0
-display  D   display_settings.c:398  _al_score_display_settings       [   0.12064] Single Buffer requirement not met.
-display  D   display_settings.c:212  debug_display_settings           [   0.12065] color: 32 (rgba 8880), depth: 16, stencil: 0, acc: 0000, samples: 0/0
-display  D   display_settings.c:398  _al_score_display_settings       [   0.12067] Single Buffer requirement not met.
-display  D   display_settings.c:212  debug_display_settings           [   0.12068] color: 32 (rgba 8880), depth: 16, stencil: 0, acc: 0000, samples: 0/0
-display  D   display_settings.c:398  _al_score_display_settings       [   0.12070] Single Buffer requirement not met.
-display  D   display_settings.c:212  debug_display_settings           [   0.12071] color: 16 (rgba 5650), depth: 0, stencil: 0, acc: 0000, samples: 0/0
-display  D   display_settings.c:398  _al_score_display_settings       [   0.12073] Single Buffer requirement not met.
-display  D   display_settings.c:212  debug_display_settings           [   0.12074] color: 16 (rgba 5650), depth: 0, stencil: 0, acc: 0000, samples: 0/0
-display  D   display_settings.c:398  _al_score_display_settings       [   0.12076] Single Buffer requirement not met.
-display  D   display_settings.c:212  debug_display_settings           [   0.12077] color: 16 (rgba 5650), depth: 24, stencil: 8, acc: 0000, samples: 0/0
-display  D   display_settings.c:398  _al_score_display_settings       [   0.12079] Single Buffer requirement not met.
-display  D   display_settings.c:212  debug_display_settings           [   0.12080] color: 16 (rgba 5650), depth: 24, stencil: 8, acc: 0000, samples: 0/0
-display  D   display_settings.c:398  _al_score_display_settings       [   0.12082] Single Buffer requirement not met.
-display  D   display_settings.c:212  debug_display_settings           [   0.12083] color: 16 (rgba 5650), depth: 24, stencil: 0, acc: 0000, samples: 0/0
-display  D   display_settings.c:398  _al_score_display_settings       [   0.12085] Single Buffer requirement not met.
-display  D   display_settings.c:212  debug_display_settings           [   0.12086] color: 16 (rgba 5650), depth: 24, stencil: 0, acc: 0000, samples: 0/0
-display  D   display_settings.c:398  _al_score_display_settings       [   0.12088] Single Buffer requirement not met.
-display  D   display_settings.c:212  debug_display_settings           [   0.12089] color: 16 (rgba 5650), depth: 16, stencil: 0, acc: 0000, samples: 0/0
-display  D   display_settings.c:398  _al_score_display_settings       [   0.12091] Single Buffer requirement not met.
-display  D   display_settings.c:212  debug_display_settings           [   0.12095] color: 16 (rgba 5650), depth: 16, stencil: 0, acc: 0000, samples: 0/0
-display  D   display_settings.c:398  _al_score_display_settings       [   0.12097] Single Buffer requirement not met.
-display  D   display_settings.c:212  debug_display_settings           [   0.12098] color: 32 (rgba 8880), depth: 0, stencil: 0, acc: 0000, samples: 0/0
-display  D   display_settings.c:527  _al_score_display_settings       [   0.12100] Score is : 769
-display  D   display_settings.c:212  debug_display_settings           [   0.12101] color: 32 (rgba 8880), depth: 0, stencil: 0, acc: 0000, samples: 0/0
-display  D   display_settings.c:527  _al_score_display_settings       [   0.12103] Score is : 769
-display  D   display_settings.c:212  debug_display_settings           [   0.12104] color: 32 (rgba 8880), depth: 24, stencil: 8, acc: 0000, samples: 0/0
-display  D   display_settings.c:527  _al_score_display_settings       [   0.12106] Score is : 769
-display  D   display_settings.c:212  debug_display_settings           [   0.12108] color: 32 (rgba 8880), depth: 24, stencil: 8, acc: 0000, samples: 0/0
-display  D   display_settings.c:527  _al_score_display_settings       [   0.12110] Score is : 769
-display  D   display_settings.c:212  debug_display_settings           [   0.12111] color: 32 (rgba 8880), depth: 24, stencil: 0, acc: 0000, samples: 0/0
-display  D   display_settings.c:527  _al_score_display_settings       [   0.12113] Score is : 769
-display  D   display_settings.c:212  debug_display_settings           [   0.12115] color: 32 (rgba 8880), depth: 24, stencil: 0, acc: 0000, samples: 0/0
-display  D   display_settings.c:527  _al_score_display_settings       [   0.12116] Score is : 769
-display  D   display_settings.c:212  debug_display_settings           [   0.12118] color: 32 (rgba 8880), depth: 16, stencil: 0, acc: 0000, samples: 0/0
-display  D   display_settings.c:527  _al_score_display_settings       [   0.12119] Score is : 769
-display  D   display_settings.c:212  debug_display_settings           [   0.12121] color: 32 (rgba 8880), depth: 16, stencil: 0, acc: 0000, samples: 0/0
-display  D   display_settings.c:527  _al_score_display_settings       [   0.12122] Score is : 769
-display  D   display_settings.c:212  debug_display_settings           [   0.12124] color: 16 (rgba 5650), depth: 0, stencil: 0, acc: 0000, samples: 0/0
-display  D   display_settings.c:527  _al_score_display_settings       [   0.12126] Score is : 769
-display  D   display_settings.c:212  debug_display_settings           [   0.12127] color: 16 (rgba 5650), depth: 0, stencil: 0, acc: 0000, samples: 0/0
-display  D   display_settings.c:527  _al_score_display_settings       [   0.12129] Score is : 769
-display  D   display_settings.c:212  debug_display_settings           [   0.12130] color: 16 (rgba 5650), depth: 24, stencil: 8, acc: 0000, samples: 0/0
-display  D   display_settings.c:527  _al_score_display_settings       [   0.12132] Score is : 769
-display  D   display_settings.c:212  debug_display_settings           [   0.12133] color: 16 (rgba 5650), depth: 24, stencil: 8, acc: 0000, samples: 0/0
-display  D   display_settings.c:527  _al_score_display_settings       [   0.12137] Score is : 769
-display  D   display_settings.c:212  debug_display_settings           [   0.12139] color: 16 (rgba 5650), depth: 24, stencil: 0, acc: 0000, samples: 0/0
-display  D   display_settings.c:527  _al_score_display_settings       [   0.12141] Score is : 769
-display  D   display_settings.c:212  debug_display_settings           [   0.12142] color: 16 (rgba 5650), depth: 24, stencil: 0, acc: 0000, samples: 0/0
-display  D   display_settings.c:527  _al_score_display_settings       [   0.12144] Score is : 769
-display  D   display_settings.c:212  debug_display_settings           [   0.12145] color: 16 (rgba 5650), depth: 16, stencil: 0, acc: 0000, samples: 0/0
-display  D   display_settings.c:527  _al_score_display_settings       [   0.12147] Score is : 769
-display  D   display_settings.c:212  debug_display_settings           [   0.12148] color: 16 (rgba 5650), depth: 16, stencil: 0, acc: 0000, samples: 0/0
-display  D   display_settings.c:527  _al_score_display_settings       [   0.12150] Score is : 769
-display  D   display_settings.c:212  debug_display_settings           [   0.12151] color: 32 (rgba 8880), depth: 0, stencil: 0, acc: 0000, samples: 0/0
-display  D   display_settings.c:398  _al_score_display_settings       [   0.12153] Single Buffer requirement not met.
-display  D   display_settings.c:212  debug_display_settings           [   0.12154] color: 32 (rgba 8880), depth: 0, stencil: 0, acc: 0000, samples: 0/0
-display  D   display_settings.c:398  _al_score_display_settings       [   0.12156] Single Buffer requirement not met.
-display  D   display_settings.c:212  debug_display_settings           [   0.12157] color: 32 (rgba 8880), depth: 24, stencil: 8, acc: 0000, samples: 0/0
-display  D   display_settings.c:398  _al_score_display_settings       [   0.12159] Single Buffer requirement not met.
-display  D   display_settings.c:212  debug_display_settings           [   0.12160] color: 32 (rgba 8880), depth: 24, stencil: 8, acc: 0000, samples: 0/0
-display  D   display_settings.c:398  _al_score_display_settings       [   0.12168] Single Buffer requirement not met.
-display  D   display_settings.c:212  debug_display_settings           [   0.12169] color: 32 (rgba 8880), depth: 24, stencil: 0, acc: 0000, samples: 0/0
-display  D   display_settings.c:398  _al_score_display_settings       [   0.12171] Single Buffer requirement not met.
-display  D   display_settings.c:212  debug_display_settings           [   0.12173] color: 32 (rgba 8880), depth: 24, stencil: 0, acc: 0000, samples: 0/0
-display  D   display_settings.c:398  _al_score_display_settings       [   0.12174] Single Buffer requirement not met.
-display  D   display_settings.c:212  debug_display_settings           [   0.12176] color: 32 (rgba 8880), depth: 16, stencil: 0, acc: 0000, samples: 0/0
-display  D   display_settings.c:398  _al_score_display_settings       [   0.12177] Single Buffer requirement not met.
-display  D   display_settings.c:212  debug_display_settings           [   0.12179] color: 32 (rgba 8880), depth: 16, stencil: 0, acc: 0000, samples: 0/0
-display  D   display_settings.c:398  _al_score_display_settings       [   0.12180] Single Buffer requirement not met.
-display  D   display_settings.c:212  debug_display_settings           [   0.12182] color: 16 (rgba 5650), depth: 0, stencil: 0, acc: 0000, samples: 0/0
-display  D   display_settings.c:398  _al_score_display_settings       [   0.12183] Single Buffer requirement not met.
-display  D   display_settings.c:212  debug_display_settings           [   0.12185] color: 16 (rgba 5650), depth: 0, stencil: 0, acc: 0000, samples: 0/0
-display  D   display_settings.c:398  _al_score_display_settings       [   0.12186] Single Buffer requirement not met.
-display  D   display_settings.c:212  debug_display_settings           [   0.12188] color: 16 (rgba 5650), depth: 24, stencil: 8, acc: 0000, samples: 0/0
-display  D   display_settings.c:398  _al_score_display_settings       [   0.12189] Single Buffer requirement not met.
-display  D   display_settings.c:212  debug_display_settings           [   0.12191] color: 16 (rgba 5650), depth: 24, stencil: 8, acc: 0000, samples: 0/0
-display  D   display_settings.c:398  _al_score_display_settings       [   0.12193] Single Buffer requirement not met.
-display  D   display_settings.c:212  debug_display_settings           [   0.12194] color: 16 (rgba 5650), depth: 24, stencil: 0, acc: 0000, samples: 0/0
-display  D   display_settings.c:398  _al_score_display_settings       [   0.12196] Single Buffer requirement not met.
-display  D   display_settings.c:212  debug_display_settings           [   0.12197] color: 16 (rgba 5650), depth: 24, stencil: 0, acc: 0000, samples: 0/0
-display  D   display_settings.c:398  _al_score_display_settings       [   0.12198] Single Buffer requirement not met.
-display  D   display_settings.c:212  debug_display_settings           [   0.12200] color: 16 (rgba 5650), depth: 16, stencil: 0, acc: 0000, samples: 0/0
-display  D   display_settings.c:398  _al_score_display_settings       [   0.12201] Single Buffer requirement not met.
-display  D   display_settings.c:212  debug_display_settings           [   0.12203] color: 16 (rgba 5650), depth: 16, stencil: 0, acc: 0000, samples: 0/0
-display  D   display_settings.c:398  _al_score_display_settings       [   0.12204] Single Buffer requirement not met.
-d3d      D         d3d_disp.cpp:1669 d3d_create_display_internals     [   0.12207] Trying format 0.
-d3d      I         d3d_disp.cpp:1344 d3d_display_thread_proc          [   0.14076] Chose a display format: 23
-d3d      I         d3d_disp.cpp:1413 d3d_display_thread_proc          [   0.14081] Normal window.
-d3d      I         d3d_disp.cpp:781  d3d_create_device                [   0.19661] Using no depth stencil buffer
-d3d      D         d3d_disp.cpp:839  d3d_create_device                [   0.22293] BeginScene succeeded in create_device
-d3d      D         d3d_disp.cpp:847  d3d_create_device                [   0.22296] Success
-d3d      D         d3d_disp.cpp:1692 d3d_create_display_internals     [   0.22308] Resumed after wait.
-d3d      I         d3d_disp.cpp:1725 d3d_create_display_internals     [   0.22312] Format 0 succeeded.
-d3d      D         d3d_disp.cpp:1756 d3d_create_display_internals     [   0.22317] Returning d3d_display: 02762380
-d3d      D         d3d_disp.cpp:1781 d3d_create_display_locked        [   0.22319] al_display=02762380
-d3d      D         d3d_disp.cpp:1782 d3d_create_display_locked        [   0.22321] al_display->vt=02761AD8
-system   W            wsystem.c:775  _al_win_safe_load_library        [   0.22622] PathFindOnPath failed to find d3dx9_43.dll
-system   W            wsystem.c:775  _al_win_safe_load_library        [   0.22869] PathFindOnPath failed to find d3dx9_42.dll
-system   W            wsystem.c:775  _al_win_safe_load_library        [   0.23225] PathFindOnPath failed to find d3dx9_41.dll
-system   W            wsystem.c:775  _al_win_safe_load_library        [   0.23510] PathFindOnPath failed to find d3dx9_40.dll
-system   W            wsystem.c:775  _al_win_safe_load_library        [   0.23758] PathFindOnPath failed to find d3dx9_39.dll
-system   W            wsystem.c:775  _al_win_safe_load_library        [   0.24007] PathFindOnPath failed to find d3dx9_38.dll
-system   W            wsystem.c:775  _al_win_safe_load_library        [   0.24248] PathFindOnPath failed to find d3dx9_37.dll
-system   W            wsystem.c:775  _al_win_safe_load_library        [   0.24481] PathFindOnPath failed to find d3dx9_36.dll
-system   W            wsystem.c:775  _al_win_safe_load_library        [   0.24711] PathFindOnPath failed to find d3dx9_35.dll
-system   W            wsystem.c:775  _al_win_safe_load_library        [   0.25131] PathFindOnPath failed to find d3dx9_34.dll
-system   W            wsystem.c:775  _al_win_safe_load_library        [   0.25363] PathFindOnPath failed to find d3dx9_33.dll
-system   W            wsystem.c:775  _al_win_safe_load_library        [   0.25599] PathFindOnPath failed to find d3dx9_32.dll
-system   W            wsystem.c:775  _al_win_safe_load_library        [   0.25843] PathFindOnPath failed to find d3dx9_31.dll
-system   W            wsystem.c:775  _al_win_safe_load_library        [   0.26077] PathFindOnPath failed to find d3dx9_30.dll
-system   W            wsystem.c:775  _al_win_safe_load_library        [   0.26315] PathFindOnPath failed to find d3dx9_29.dll
-system   W            wsystem.c:775  _al_win_safe_load_library        [   0.26689] PathFindOnPath failed to find d3dx9_28.dll
-system   W            wsystem.c:775  _al_win_safe_load_library        [   0.26926] PathFindOnPath failed to find d3dx9_27.dll
-system   W            wsystem.c:775  _al_win_safe_load_library        [   0.27171] PathFindOnPath failed to find d3dx9_26.dll
-system   W            wsystem.c:775  _al_win_safe_load_library        [   0.27407] PathFindOnPath failed to find d3dx9_25.dll
-system   W            wsystem.c:775  _al_win_safe_load_library        [   0.27644] PathFindOnPath failed to find d3dx9_24.dll
-d3dx9    E        d3d_d3dx9.cpp:121  _al_load_d3dx9_module            [   0.27647] Failed to load D3DX9 library. Library is not installed.dtor     D               dtor.c:196  _al_register_destructor          [   0.27658] added dtor for queue 0276CA40, func 61CE5C4F
-dtor     D               dtor.c:196  _al_register_destructor          [   0.27660] added dtor for timer 027643C0, func 61CF628F
-stdio    D         file_stdio.c:109  file_stdio_fopen                 [   0.27867] opening Sprites/icon.png rb
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   0.27909] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   0.27911] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   0.27913] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   0.27914] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   0.27915] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   0.27927] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   0.27929] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   0.27931] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   0.27932] Fake format
-d3d      D         d3d_disp.cpp:1196 real_choose_bitmap_format        [   0.27934] Alpha doesn't match
-d3d      D         d3d_disp.cpp:1203 real_choose_bitmap_format        [   0.27935] Adapter format is 23
-d3d      D         d3d_disp.cpp:1206 real_choose_bitmap_format        [   0.27937] Found a format
-d3d      I         d3d_disp.cpp:2378 d3d_create_bitmap                [   0.27939] Chose bitmap format 9
-dtor     D               dtor.c:196  _al_register_destructor          [   0.27968] added dtor for bitmap 0276FF70, func 61CC1C7B
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   0.28171] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   0.28174] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   0.28176] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   0.28177] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   0.28178] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   0.28179] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   0.28181] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   0.28182] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   0.28183] Fake format
-d3d      D         d3d_disp.cpp:1196 real_choose_bitmap_format        [   0.28184] Alpha doesn't match
-d3d      D         d3d_disp.cpp:1203 real_choose_bitmap_format        [   0.28186] Adapter format is 23
-d3d      D         d3d_disp.cpp:1206 real_choose_bitmap_format        [   0.28188] Found a format
-d3d      I         d3d_disp.cpp:2378 d3d_create_bitmap                [   0.28189] Chose bitmap format 9
-dtor     D               dtor.c:196  _al_register_destructor          [   0.28213] added dtor for bitmap 0276CB20, func 61CC1C7B
-d3d      D          d3d_bmp.cpp:539  _al_d3d_sync_bitmap              [   0.29449] _al_d3d_sync_bitmap (system) ref count == 1
-d3d      D          d3d_bmp.cpp:545  _al_d3d_sync_bitmap              [   0.29452] _al_d3d_sync_bitmap (video) ref count == 1
-dtor     D               dtor.c:227  _al_unregister_destructor        [   0.29902] removed dtor for bitmap 0276CB20
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   0.30103] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   0.30108] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   0.30110] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   0.30111] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   0.30113] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   0.30114] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   0.30115] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   0.30117] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   0.30119] Fake format
-d3d      D         d3d_disp.cpp:1196 real_choose_bitmap_format        [   0.30120] Alpha doesn't match
-d3d      D         d3d_disp.cpp:1203 real_choose_bitmap_format        [   0.30122] Adapter format is 23
-d3d      D         d3d_disp.cpp:1206 real_choose_bitmap_format        [   0.30123] Found a format
-d3d      I         d3d_disp.cpp:2378 d3d_create_bitmap                [   0.30125] Chose bitmap format 9
-dtor     D               dtor.c:196  _al_register_destructor          [   0.30146] added dtor for bitmap 0276CB20, func 61CC1C7B
-d3d      D          d3d_bmp.cpp:539  _al_d3d_sync_bitmap              [   0.32406] _al_d3d_sync_bitmap (system) ref count == 1
-d3d      D          d3d_bmp.cpp:545  _al_d3d_sync_bitmap              [   0.32410] _al_d3d_sync_bitmap (video) ref count == 1
-dtor     D               dtor.c:227  _al_unregister_destructor        [   0.34432] removed dtor for bitmap 0276CB20
-audio-dsound D           dsound.cpp:290  _dsound_allocate_voice           [   0.34945] Allocating voice
-audio-dsound D           dsound.cpp:349  _dsound_allocate_voice           [   0.34949] Allocated voice
-dtor     D               dtor.c:196  _al_register_destructor          [   0.34951] added dtor for voice 02755530, func 61DC5398
-dtor     D               dtor.c:196  _al_register_destructor          [   0.34953] added dtor for mixer 0276CB20, func 61DC1429
-audio-dsound D           dsound.cpp:446  _dsound_start_voice              [   0.34955] Starting voice
-audio-dsound D           dsound.cpp:474  _dsound_start_voice              [   0.34956] CreateSoundBuffer
-audio-dsound D           dsound.cpp:483  _dsound_start_voice              [   0.35295] CreateSoundBuffer succeeded
-audio-dsound D           dsound.cpp:489  _dsound_start_voice              [   0.35300] Starting _dsound_update thread
-audio-dsound I           dsound.cpp:499  _dsound_start_voice              [   0.35309] Voice started
-dtor     D               dtor.c:196  _al_register_destructor          [   0.35312] added dtor for sample_instance 0276CE50, func 61DBB8F3
-audio    D          kcm_mixer.c:121  _al_rechannel_matrix             [   0.35314] sample matrix:
-audio    D          kcm_mixer.c:127  _al_rechannel_matrix             [   0.35316] 
-audio    D          kcm_mixer.c:127  _al_rechannel_matrix             [   0.35317] 
-dtor     D               dtor.c:196  _al_register_destructor          [   0.35319] added dtor for sample_instance 0276CF40, func 61DBB8F3
-audio    D          kcm_mixer.c:121  _al_rechannel_matrix             [   0.35321] sample matrix:
-audio    D          kcm_mixer.c:127  _al_rechannel_matrix             [   0.35322] 
-audio    D          kcm_mixer.c:127  _al_rechannel_matrix             [   0.35323] 
-dtor     D               dtor.c:196  _al_register_destructor          [   0.35325] added dtor for sample_instance 0276D030, func 61DBB8F3
-audio    D          kcm_mixer.c:121  _al_rechannel_matrix             [   0.35326] sample matrix:
-audio    D          kcm_mixer.c:127  _al_rechannel_matrix             [   0.35328] 
-audio    D          kcm_mixer.c:127  _al_rechannel_matrix             [   0.35330] 
-dtor     D               dtor.c:196  _al_register_destructor          [   0.35331] added dtor for sample_instance 0276D120, func 61DBB8F3
-audio    D          kcm_mixer.c:121  _al_rechannel_matrix             [   0.35333] sample matrix:
-audio    D          kcm_mixer.c:127  _al_rechannel_matrix             [   0.35334] 
-audio    D          kcm_mixer.c:127  _al_rechannel_matrix             [   0.35335] 
-dtor     D               dtor.c:196  _al_register_destructor          [   0.35337] added dtor for sample_instance 0276D210, func 61DBB8F3
-audio    D          kcm_mixer.c:121  _al_rechannel_matrix             [   0.35338] sample matrix:
-audio    D          kcm_mixer.c:127  _al_rechannel_matrix             [   0.35339] 
-audio    D          kcm_mixer.c:127  _al_rechannel_matrix             [   0.35341] 
-dtor     D               dtor.c:196  _al_register_destructor          [   0.35342] added dtor for sample_instance 0276D300, func 61DBB8F3
-audio    D          kcm_mixer.c:121  _al_rechannel_matrix             [   0.35344] sample matrix:
-audio    D          kcm_mixer.c:127  _al_rechannel_matrix             [   0.35345] 
-audio    D          kcm_mixer.c:127  _al_rechannel_matrix             [   0.35346] 
-dtor     D               dtor.c:196  _al_register_destructor          [   0.35348] added dtor for sample_instance 0276D3F0, func 61DBB8F3
-audio    D          kcm_mixer.c:121  _al_rechannel_matrix             [   0.35349] sample matrix:
-audio    D          kcm_mixer.c:127  _al_rechannel_matrix             [   0.35351] 
-audio    D          kcm_mixer.c:127  _al_rechannel_matrix             [   0.35353] 
-dtor     D               dtor.c:196  _al_register_destructor          [   0.35354] added dtor for sample_instance 0276D9B8, func 61DBB8F3
-audio    D          kcm_mixer.c:121  _al_rechannel_matrix             [   0.35356] sample matrix:
-audio    D          kcm_mixer.c:127  _al_rechannel_matrix             [   0.35357] 
-audio    D          kcm_mixer.c:127  _al_rechannel_matrix             [   0.35358] 
-dtor     D               dtor.c:196  _al_register_destructor          [   0.35360] added dtor for sample_instance 0276DAA8, func 61DBB8F3
-audio    D          kcm_mixer.c:121  _al_rechannel_matrix             [   0.35362] sample matrix:
-audio    D          kcm_mixer.c:127  _al_rechannel_matrix             [   0.35363] 
-audio    D          kcm_mixer.c:127  _al_rechannel_matrix             [   0.35364] 
-dtor     D               dtor.c:196  _al_register_destructor          [   0.35366] added dtor for sample_instance 0276DB98, func 61DBB8F3
-audio    D          kcm_mixer.c:121  _al_rechannel_matrix             [   0.35367] sample matrix:
-audio    D          kcm_mixer.c:127  _al_rechannel_matrix             [   0.35368] 
-audio    D          kcm_mixer.c:127  _al_rechannel_matrix             [   0.35370] 
-dtor     D               dtor.c:196  _al_register_destructor          [   0.35371] added dtor for sample_instance 0276DC88, func 61DBB8F3
-audio    D          kcm_mixer.c:121  _al_rechannel_matrix             [   0.35372] sample matrix:
-audio    D          kcm_mixer.c:127  _al_rechannel_matrix             [   0.35374] 
-audio    D          kcm_mixer.c:127  _al_rechannel_matrix             [   0.35375] 
-dtor     D               dtor.c:196  _al_register_destructor          [   0.35376] added dtor for sample_instance 0276DD78, func 61DBB8F3
-audio    D          kcm_mixer.c:121  _al_rechannel_matrix             [   0.35378] sample matrix:
-audio    D          kcm_mixer.c:127  _al_rechannel_matrix             [   0.35379] 
-audio    D          kcm_mixer.c:127  _al_rechannel_matrix             [   0.35380] 
-dtor     D               dtor.c:196  _al_register_destructor          [   0.35382] added dtor for sample_instance 0276DE68, func 61DBB8F3
-audio    D          kcm_mixer.c:121  _al_rechannel_matrix             [   0.35383] sample matrix:
-audio    D          kcm_mixer.c:127  _al_rechannel_matrix             [   0.35385] 
-audio    D          kcm_mixer.c:127  _al_rechannel_matrix             [   0.35386] 
-dtor     D               dtor.c:196  _al_register_destructor          [   0.35387] added dtor for sample_instance 0276DF58, func 61DBB8F3
-audio    D          kcm_mixer.c:121  _al_rechannel_matrix             [   0.35389] sample matrix:
-audio    D          kcm_mixer.c:127  _al_rechannel_matrix             [   0.35390] 
-audio    D          kcm_mixer.c:127  _al_rechannel_matrix             [   0.35391] 
-dtor     D               dtor.c:196  _al_register_destructor          [   0.35393] added dtor for sample_instance 0276E048, func 61DBB8F3
-audio    D          kcm_mixer.c:121  _al_rechannel_matrix             [   0.35394] sample matrix:
-audio    D          kcm_mixer.c:127  _al_rechannel_matrix             [   0.35396] 
-audio    D          kcm_mixer.c:127  _al_rechannel_matrix             [   0.35397] 
-stdio    D         file_stdio.c:109  file_stdio_fopen                 [   0.35399] opening Sprites/GAMESCREEN/bomb.png rb
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   0.36014] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   0.36019] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   0.36021] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   0.36022] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   0.36023] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   0.36025] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   0.36030] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   0.36031] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   0.36033] Fake format
-d3d      D         d3d_disp.cpp:1196 real_choose_bitmap_format        [   0.36034] Alpha doesn't match
-d3d      D         d3d_disp.cpp:1203 real_choose_bitmap_format        [   0.36035] Adapter format is 23
-d3d      D         d3d_disp.cpp:1206 real_choose_bitmap_format        [   0.36037] Found a format
-d3d      I         d3d_disp.cpp:2378 d3d_create_bitmap                [   0.36039] Chose bitmap format 9
-dtor     D               dtor.c:196  _al_register_destructor          [   0.36065] added dtor for bitmap 0276CC30, func 61CC1C7B
-stdio    D         file_stdio.c:109  file_stdio_fopen                 [   0.36224] opening Fonts/debug.ttf rb
-font     D                ttf.c:937  al_load_ttf_font_stretch_f       [   0.36322] Font Fonts/debug.ttf loaded with pixel size 0 x 10.
-font     D                ttf.c:939  al_load_ttf_font_stretch_f       [   0.36324]     ascent=9.0, descent=-2.0, height=12.0
-dtor     D               dtor.c:196  _al_register_destructor          [   0.36907] added dtor for ttf_font 0276B818, func 61DB9898
-stdio    D         file_stdio.c:109  file_stdio_fopen                 [   0.36910] opening Fonts/bomberman.ttf rb
-font     D                ttf.c:937  al_load_ttf_font_stretch_f       [   0.36971] Font Fonts/bomberman.ttf loaded with pixel size 0 x 45.
-font     D                ttf.c:939  al_load_ttf_font_stretch_f       [   0.36974]     ascent=36.0, descent=-9.0, height=45.0
-dtor     D               dtor.c:196  _al_register_destructor          [   0.36985] added dtor for ttf_font 0276B9F8, func 61DB9898
-stdio    D         file_stdio.c:109  file_stdio_fopen                 [   0.36987] opening Fonts/menu.ttf rb
-font     D                ttf.c:937  al_load_ttf_font_stretch_f       [   0.37045] Font Fonts/menu.ttf loaded with pixel size 0 x 30.
-font     D                ttf.c:939  al_load_ttf_font_stretch_f       [   0.37048]     ascent=21.0, descent=-6.0, height=30.0
-dtor     D               dtor.c:196  _al_register_destructor          [   0.37050] added dtor for ttf_font 0276B8F8, func 61DB9898
-stdio    D         file_stdio.c:109  file_stdio_fopen                 [   0.37053] opening Sounds/SFX/menusound1.wav rb
-dtor     D               dtor.c:196  _al_register_destructor          [   0.37074] added dtor for sample 02762338, func 61DC2689
-stdio    D         file_stdio.c:109  file_stdio_fopen                 [   0.37080] opening Sounds/SFX/menusound2.wav rb
-dtor     D               dtor.c:196  _al_register_destructor          [   0.37098] added dtor for sample 02761FA0, func 61DC2689
-stdio    D         file_stdio.c:109  file_stdio_fopen                 [   0.37141] opening Sprites/MAINMENU/bg.png rb
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   0.37160] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   0.37162] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   0.37163] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   0.37164] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   0.37165] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   0.37167] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   0.37168] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   0.37169] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   0.37170] Fake format
-d3d      D         d3d_disp.cpp:1196 real_choose_bitmap_format        [   0.37171] Alpha doesn't match
-d3d      D         d3d_disp.cpp:1203 real_choose_bitmap_format        [   0.37173] Adapter format is 23
-d3d      D         d3d_disp.cpp:1206 real_choose_bitmap_format        [   0.37175] Found a format
-d3d      I         d3d_disp.cpp:2378 d3d_create_bitmap                [   0.37176] Chose bitmap format 9
-dtor     D               dtor.c:196  _al_register_destructor          [   0.37202] added dtor for bitmap 027B3BA8, func 61CC1C7B
-stdio    D         file_stdio.c:109  file_stdio_fopen                 [   0.42954] opening Sprites/MAINMENU/title.png rb
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   0.46750] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   0.46752] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   0.46754] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   0.46756] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   0.46757] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   0.46759] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   0.46760] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   0.46762] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   0.46763] Fake format
-d3d      D         d3d_disp.cpp:1196 real_choose_bitmap_format        [   0.46765] Alpha doesn't match
-d3d      D         d3d_disp.cpp:1203 real_choose_bitmap_format        [   0.46766] Adapter format is 23
-d3d      D         d3d_disp.cpp:1206 real_choose_bitmap_format        [   0.46768] Found a format
-d3d      I         d3d_disp.cpp:2378 d3d_create_bitmap                [   0.46769] Chose bitmap format 9
-dtor     D               dtor.c:196  _al_register_destructor          [   0.46795] added dtor for bitmap 0F7C9FF0, func 61CC1C7B
-stdio    D         file_stdio.c:109  file_stdio_fopen                 [   0.52840] opening Sprites/MAINMENU/balloon.png rb
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   0.54255] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   0.54257] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   0.54259] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   0.54260] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   0.54262] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   0.54263] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   0.54264] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   0.54266] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   0.54267] Fake format
-d3d      D         d3d_disp.cpp:1196 real_choose_bitmap_format        [   0.54268] Alpha doesn't match
-d3d      D         d3d_disp.cpp:1203 real_choose_bitmap_format        [   0.54270] Adapter format is 23
-d3d      D         d3d_disp.cpp:1206 real_choose_bitmap_format        [   0.54272] Found a format
-d3d      I         d3d_disp.cpp:2378 d3d_create_bitmap                [   0.54273] Chose bitmap format 9
-dtor     D               dtor.c:196  _al_register_destructor          [   0.54318] added dtor for bitmap 0F7CAD90, func 61CC1C7B
-stdio    D         file_stdio.c:109  file_stdio_fopen                 [   0.54963] opening Sprites/MAINMENU/airship1.png rb
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   0.58133] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   0.58136] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   0.58138] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   0.58140] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   0.58142] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   0.58143] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   0.58145] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   0.58148] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   0.58150] Fake format
-d3d      D         d3d_disp.cpp:1196 real_choose_bitmap_format        [   0.58152] Alpha doesn't match
-d3d      D         d3d_disp.cpp:1203 real_choose_bitmap_format        [   0.58153] Adapter format is 23
-d3d      D         d3d_disp.cpp:1206 real_choose_bitmap_format        [   0.58155] Found a format
-d3d      I         d3d_disp.cpp:2378 d3d_create_bitmap                [   0.58156] Chose bitmap format 9
-dtor     D               dtor.c:196  _al_register_destructor          [   0.58179] added dtor for bitmap 027B2E80, func 61CC1C7B
-stdio    D         file_stdio.c:109  file_stdio_fopen                 [   0.58279] opening Sprites/MAINMENU/airship2.png rb
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   0.61751] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   0.61754] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   0.61756] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   0.61757] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   0.61759] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   0.61761] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   0.61762] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   0.61763] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   0.61765] Fake format
-d3d      D         d3d_disp.cpp:1196 real_choose_bitmap_format        [   0.61766] Alpha doesn't match
-d3d      D         d3d_disp.cpp:1203 real_choose_bitmap_format        [   0.61768] Adapter format is 23
-d3d      D         d3d_disp.cpp:1206 real_choose_bitmap_format        [   0.61771] Found a format
-d3d      I         d3d_disp.cpp:2378 d3d_create_bitmap                [   0.61772] Chose bitmap format 9
-dtor     D               dtor.c:196  _al_register_destructor          [   0.61807] added dtor for bitmap 027B2C20, func 61CC1C7B
-acodec   I                ogg.c:204  _al_load_ogg_vorbis              [   0.68078] Loading sample Sounds/BGM/mainmenu.ogg.
-stdio    D         file_stdio.c:109  file_stdio_fopen                 [   0.68081] opening Sounds/BGM/mainmenu.ogg rb
-acodec   D                ogg.c:263  _al_load_ogg_vorbis_f            [   0.68194] channels 2
-acodec   D                ogg.c:264  _al_load_ogg_vorbis_f            [   0.68197] word_size 2
-acodec   D                ogg.c:265  _al_load_ogg_vorbis_f            [   0.68198] rate 44100
-acodec   D                ogg.c:266  _al_load_ogg_vorbis_f            [   0.68199] total_samples 13044736
-acodec   D                ogg.c:267  _al_load_ogg_vorbis_f            [   0.68201] total_size 52178944
-dtor     D               dtor.c:196  _al_register_destructor          [   1.83007] added dtor for sample 0283D398, func 61DC2689
-audio    D          kcm_mixer.c:121  _al_rechannel_matrix             [   1.83091] sample matrix:
-audio    D          kcm_mixer.c:127  _al_rechannel_matrix             [   1.83093]  0.707107 0.000000
-audio    D          kcm_mixer.c:127  _al_rechannel_matrix             [   1.83095]  0.000000 0.707107
-audio    D          kcm_mixer.c:121  _al_rechannel_matrix             [   1.83096] sample matrix:
-audio    D          kcm_mixer.c:127  _al_rechannel_matrix             [   1.83097]  0.050283 0.000000
-audio    D          kcm_mixer.c:127  _al_rechannel_matrix             [   1.83098]  0.000000 0.050283
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   1.86457] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   1.86460] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   1.86462] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   1.86465] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   1.86466] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   1.86468] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   1.86469] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   1.86471] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   1.86472] Fake format
-d3d      D         d3d_disp.cpp:1196 real_choose_bitmap_format        [   1.86473] Alpha doesn't match
-d3d      D         d3d_disp.cpp:1203 real_choose_bitmap_format        [   1.86475] Adapter format is 23
-d3d      D         d3d_disp.cpp:1206 real_choose_bitmap_format        [   1.86476] Found a format
-d3d      I         d3d_disp.cpp:2378 d3d_create_bitmap                [   1.86479] Chose bitmap format 9
-font     D                ttf.c:238  alloc_glyph_region               [   1.86507] Glyph 25: 31x49 (32x52)
-font     D                ttf.c:282  alloc_glyph_region               [   1.86511] Locking glyph region: 02778010 0 0 32 52
-font     D                ttf.c:166  unlock_current_page              [   1.87079] Unlocking page: 02778010
-font     D                ttf.c:238  alloc_glyph_region               [   1.87090] Glyph 21: 27x48 (28x48)
-font     D                ttf.c:282  alloc_glyph_region               [   1.87091] Locking glyph region: 02778010 32 0 28 48
-font     D                ttf.c:166  unlock_current_page              [   1.87096] Unlocking page: 02778010
-font     D                ttf.c:238  alloc_glyph_region               [   1.87102] Glyph 10: 34x47 (36x48)
-font     D                ttf.c:282  alloc_glyph_region               [   1.87103] Locking glyph region: 02778010 60 0 36 48
-font     D                ttf.c:166  unlock_current_page              [   1.87108] Unlocking page: 02778010
-font     D                ttf.c:238  alloc_glyph_region               [   1.87117] Glyph 34: 40x48 (40x48)
-font     D                ttf.c:282  alloc_glyph_region               [   1.87118] Locking glyph region: 02778010 96 0 40 48
-font     D                ttf.c:166  unlock_current_page              [   1.87124] Unlocking page: 02778010
-font     D                ttf.c:238  alloc_glyph_region               [   1.87136] Glyph 14: 31x46 (32x48)
-font     D                ttf.c:282  alloc_glyph_region               [   1.87137] Locking glyph region: 02778010 136 0 32 48
-font     D                ttf.c:166  unlock_current_page              [   1.87151] Unlocking page: 02778010
-font     D                ttf.c:238  alloc_glyph_region               [   1.87161] Glyph 33: 39x47 (40x48)
-font     D                ttf.c:282  alloc_glyph_region               [   1.87162] Locking glyph region: 02778010 168 0 40 48
-font     D                ttf.c:166  unlock_current_page              [   1.87167] Unlocking page: 02778010
-font     D                ttf.c:238  alloc_glyph_region               [   1.87174] Glyph 18: 21x47 (24x48)
-font     D                ttf.c:282  alloc_glyph_region               [   1.87175] Locking glyph region: 02778010 208 0 24 48
-font     D                ttf.c:166  unlock_current_page              [   1.87178] Unlocking page: 02778010
-font     D                ttf.c:238  alloc_glyph_region               [   1.87184] Glyph 29: 34x46 (36x48)
-font     D                ttf.c:282  alloc_glyph_region               [   1.87185] Locking glyph region: 02778010 232 0 36 48
-font     D                ttf.c:166  unlock_current_page              [   1.87189] Unlocking page: 02778010
-d3d      D          d3d_bmp.cpp:539  _al_d3d_sync_bitmap              [   1.87545] _al_d3d_sync_bitmap (system) ref count == 1
-d3d      D          d3d_bmp.cpp:545  _al_d3d_sync_bitmap              [   1.87548] _al_d3d_sync_bitmap (video) ref count == 1
-d3d      D          d3d_bmp.cpp:539  _al_d3d_sync_bitmap              [   1.87648] _al_d3d_sync_bitmap (system) ref count == 1
-d3d      D          d3d_bmp.cpp:545  _al_d3d_sync_bitmap              [   1.87653] _al_d3d_sync_bitmap (video) ref count == 1
-d3d      D          d3d_bmp.cpp:539  _al_d3d_sync_bitmap              [   1.87768] _al_d3d_sync_bitmap (system) ref count == 1
-d3d      D          d3d_bmp.cpp:545  _al_d3d_sync_bitmap              [   1.87770] _al_d3d_sync_bitmap (video) ref count == 1
-d3d      D          d3d_bmp.cpp:539  _al_d3d_sync_bitmap              [   1.88368] _al_d3d_sync_bitmap (system) ref count == 1
-d3d      D          d3d_bmp.cpp:545  _al_d3d_sync_bitmap              [   1.88372] _al_d3d_sync_bitmap (video) ref count == 1
-d3d      D          d3d_bmp.cpp:539  _al_d3d_sync_bitmap              [   1.88673] _al_d3d_sync_bitmap (system) ref count == 1
-d3d      D          d3d_bmp.cpp:545  _al_d3d_sync_bitmap              [   1.88676] _al_d3d_sync_bitmap (video) ref count == 1
-d3d      D          d3d_bmp.cpp:539  _al_d3d_sync_bitmap              [   1.88767] _al_d3d_sync_bitmap (system) ref count == 1
-d3d      D          d3d_bmp.cpp:545  _al_d3d_sync_bitmap              [   1.88770] _al_d3d_sync_bitmap (video) ref count == 1
-d3d      D          d3d_bmp.cpp:539  _al_d3d_sync_bitmap              [   1.88838] _al_d3d_sync_bitmap (system) ref count == 1
-d3d      D          d3d_bmp.cpp:545  _al_d3d_sync_bitmap              [   1.88840] _al_d3d_sync_bitmap (video) ref count == 1
-d3d      D          d3d_bmp.cpp:539  _al_d3d_sync_bitmap              [   1.89381] _al_d3d_sync_bitmap (system) ref count == 1
-d3d      D          d3d_bmp.cpp:545  _al_d3d_sync_bitmap              [   1.89384] _al_d3d_sync_bitmap (video) ref count == 1
-audio    D          kcm_mixer.c:121  _al_rechannel_matrix             [   2.29724] sample matrix:
-audio    D          kcm_mixer.c:127  _al_rechannel_matrix             [   2.29727]  0.707107 0.000000
-audio    D          kcm_mixer.c:127  _al_rechannel_matrix             [   2.29728]  0.000000 0.707107
-dtor     D               dtor.c:227  _al_unregister_destructor        [   2.29734] removed dtor for bitmap 027B3BA8
-dtor     D               dtor.c:227  _al_unregister_destructor        [   2.29828] removed dtor for bitmap 0F7C9FF0
-dtor     D               dtor.c:227  _al_unregister_destructor        [   2.29890] removed dtor for bitmap 0F7CAD90
-dtor     D               dtor.c:227  _al_unregister_destructor        [   2.29912] removed dtor for bitmap 027B2E80
-dtor     D               dtor.c:227  _al_unregister_destructor        [   2.29918] removed dtor for bitmap 027B2C20
-dtor     D               dtor.c:227  _al_unregister_destructor        [   2.30021] removed dtor for sample 0283D398
-stdio    D         file_stdio.c:109  file_stdio_fopen                 [   2.30829] opening Sprites/GAMESCREEN/UI_bar.png rb
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   2.31197] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   2.31200] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   2.31201] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   2.31202] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   2.31203] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   2.31204] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   2.31205] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   2.31205] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   2.31206] Fake format
-d3d      D         d3d_disp.cpp:1196 real_choose_bitmap_format        [   2.31207] Alpha doesn't match
-d3d      D         d3d_disp.cpp:1203 real_choose_bitmap_format        [   2.31208] Adapter format is 23
-d3d      D         d3d_disp.cpp:1206 real_choose_bitmap_format        [   2.31209] Found a format
-d3d      I         d3d_disp.cpp:2378 d3d_create_bitmap                [   2.31210] Chose bitmap format 9
-dtor     D               dtor.c:196  _al_register_destructor          [   2.31266] added dtor for bitmap 027B3BA8, func 61CC1C7B
-stdio    D         file_stdio.c:109  file_stdio_fopen                 [   2.32007] opening Sprites/GAMESCREEN/tiles/grass.png rb
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   2.32027] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   2.32029] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   2.32030] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   2.32031] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   2.32032] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   2.32032] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   2.32033] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   2.32034] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   2.32035] Fake format
-d3d      D         d3d_disp.cpp:1196 real_choose_bitmap_format        [   2.32036] Alpha doesn't match
-d3d      D         d3d_disp.cpp:1203 real_choose_bitmap_format        [   2.32037] Adapter format is 23
-d3d      D         d3d_disp.cpp:1206 real_choose_bitmap_format        [   2.32038] Found a format
-d3d      I         d3d_disp.cpp:2378 d3d_create_bitmap                [   2.32039] Chose bitmap format 9
-dtor     D               dtor.c:196  _al_register_destructor          [   2.32054] added dtor for bitmap 027B2E80, func 61CC1C7B
-stdio    D         file_stdio.c:109  file_stdio_fopen                 [   2.32083] opening Sprites/GAMESCREEN/tiles/brick.png rb
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   2.32096] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   2.32097] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   2.32098] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   2.32099] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   2.32100] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   2.32101] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   2.32102] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   2.32103] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   2.32104] Fake format
-d3d      D         d3d_disp.cpp:1196 real_choose_bitmap_format        [   2.32105] Alpha doesn't match
-d3d      D         d3d_disp.cpp:1203 real_choose_bitmap_format        [   2.32106] Adapter format is 23
-d3d      D         d3d_disp.cpp:1206 real_choose_bitmap_format        [   2.32107] Found a format
-d3d      I         d3d_disp.cpp:2378 d3d_create_bitmap                [   2.32108] Chose bitmap format 9
-dtor     D               dtor.c:196  _al_register_destructor          [   2.32120] added dtor for bitmap 027BBB28, func 61CC1C7B
-stdio    D         file_stdio.c:109  file_stdio_fopen                 [   2.32143] opening Sprites/GAMESCREEN/tiles/block.png rb
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   2.32155] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   2.32156] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   2.32157] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   2.32158] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   2.32159] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   2.32160] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   2.32161] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   2.32162] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   2.32163] Fake format
-d3d      D         d3d_disp.cpp:1196 real_choose_bitmap_format        [   2.32164] Alpha doesn't match
-d3d      D         d3d_disp.cpp:1203 real_choose_bitmap_format        [   2.32165] Adapter format is 23
-d3d      D         d3d_disp.cpp:1206 real_choose_bitmap_format        [   2.32166] Found a format
-d3d      I         d3d_disp.cpp:2378 d3d_create_bitmap                [   2.32167] Chose bitmap format 9
-dtor     D               dtor.c:196  _al_register_destructor          [   2.32177] added dtor for bitmap 0F80A138, func 61CC1C7B
-stdio    D         file_stdio.c:109  file_stdio_fopen                 [   2.32201] opening Sprites/GAMESCREEN/player_static.png rb
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   2.32214] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   2.32215] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   2.32217] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   2.32218] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   2.32218] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   2.32219] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   2.32220] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   2.32221] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   2.32222] Fake format
-d3d      D         d3d_disp.cpp:1196 real_choose_bitmap_format        [   2.32223] Alpha doesn't match
-d3d      D         d3d_disp.cpp:1203 real_choose_bitmap_format        [   2.32224] Adapter format is 23
-d3d      D         d3d_disp.cpp:1206 real_choose_bitmap_format        [   2.32225] Found a format
-d3d      I         d3d_disp.cpp:2378 d3d_create_bitmap                [   2.32226] Chose bitmap format 9
-dtor     D               dtor.c:196  _al_register_destructor          [   2.32237] added dtor for bitmap 0F80A3A8, func 61CC1C7B
-stdio    D         file_stdio.c:109  file_stdio_fopen                 [   2.32274] opening Sprites/GAMESCREEN/enemy_up.png rb
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   2.32841] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   2.32851] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   2.32852] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   2.32854] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   2.32855] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   2.32856] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   2.32858] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   2.32859] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   2.32860] Fake format
-d3d      D         d3d_disp.cpp:1196 real_choose_bitmap_format        [   2.32862] Alpha doesn't match
-d3d      D         d3d_disp.cpp:1203 real_choose_bitmap_format        [   2.32863] Adapter format is 23
-d3d      D         d3d_disp.cpp:1206 real_choose_bitmap_format        [   2.32864] Found a format
-d3d      I         d3d_disp.cpp:2378 d3d_create_bitmap                [   2.32866] Chose bitmap format 9
-dtor     D               dtor.c:196  _al_register_destructor          [   2.32897] added dtor for bitmap 0F7C9FF0, func 61CC1C7B
-stdio    D         file_stdio.c:109  file_stdio_fopen                 [   2.33094] opening Sprites/GAMESCREEN/enemy_down.png rb
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   2.33480] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   2.33482] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   2.33483] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   2.33484] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   2.33485] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   2.33489] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   2.33490] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   2.33491] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   2.33492] Fake format
-d3d      D         d3d_disp.cpp:1196 real_choose_bitmap_format        [   2.33492] Alpha doesn't match
-d3d      D         d3d_disp.cpp:1203 real_choose_bitmap_format        [   2.33493] Adapter format is 23
-d3d      D         d3d_disp.cpp:1206 real_choose_bitmap_format        [   2.33495] Found a format
-d3d      I         d3d_disp.cpp:2378 d3d_create_bitmap                [   2.33496] Chose bitmap format 9
-dtor     D               dtor.c:196  _al_register_destructor          [   2.33520] added dtor for bitmap 027B2C10, func 61CC1C7B
-stdio    D         file_stdio.c:109  file_stdio_fopen                 [   2.33695] opening Sprites/GAMESCREEN/enemy_left.png rb
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   2.34034] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   2.34037] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   2.34038] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   2.34038] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   2.34039] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   2.34040] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   2.34041] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   2.34042] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   2.34043] Fake format
-d3d      D         d3d_disp.cpp:1196 real_choose_bitmap_format        [   2.34044] Alpha doesn't match
-d3d      D         d3d_disp.cpp:1203 real_choose_bitmap_format        [   2.34045] Adapter format is 23
-d3d      D         d3d_disp.cpp:1206 real_choose_bitmap_format        [   2.34046] Found a format
-d3d      I         d3d_disp.cpp:2378 d3d_create_bitmap                [   2.34047] Chose bitmap format 9
-dtor     D               dtor.c:196  _al_register_destructor          [   2.34076] added dtor for bitmap 0F7FBCE8, func 61CC1C7B
-stdio    D         file_stdio.c:109  file_stdio_fopen                 [   2.34248] opening Sprites/GAMESCREEN/enemy_right.png rb
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   2.34679] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   2.34692] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   2.34695] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   2.34696] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   2.34697] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   2.34698] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   2.34699] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   2.34700] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   2.34701] Fake format
-d3d      D         d3d_disp.cpp:1196 real_choose_bitmap_format        [   2.34702] Alpha doesn't match
-d3d      D         d3d_disp.cpp:1203 real_choose_bitmap_format        [   2.34703] Adapter format is 23
-d3d      D         d3d_disp.cpp:1206 real_choose_bitmap_format        [   2.34705] Found a format
-d3d      I         d3d_disp.cpp:2378 d3d_create_bitmap                [   2.34706] Chose bitmap format 9
-dtor     D               dtor.c:196  _al_register_destructor          [   2.34750] added dtor for bitmap 0F7FBE38, func 61CC1C7B
-stdio    D         file_stdio.c:109  file_stdio_fopen                 [   2.34920] opening Sprites/GAMESCREEN/player up.png rb
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   2.35334] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   2.35338] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   2.35339] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   2.35341] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   2.35342] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   2.35344] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   2.35345] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   2.35346] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   2.35348] Fake format
-d3d      D         d3d_disp.cpp:1196 real_choose_bitmap_format        [   2.35350] Alpha doesn't match
-d3d      D         d3d_disp.cpp:1203 real_choose_bitmap_format        [   2.35353] Adapter format is 23
-d3d      D         d3d_disp.cpp:1206 real_choose_bitmap_format        [   2.35355] Found a format
-d3d      I         d3d_disp.cpp:2378 d3d_create_bitmap                [   2.35357] Chose bitmap format 9
-dtor     D               dtor.c:196  _al_register_destructor          [   2.35381] added dtor for bitmap 0F80B4C8, func 61CC1C7B
-stdio    D         file_stdio.c:109  file_stdio_fopen                 [   2.35506] opening Sprites/GAMESCREEN/player down.png rb
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   2.35853] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   2.35856] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   2.35857] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   2.35858] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   2.35859] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   2.35860] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   2.35860] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   2.35861] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   2.35862] Fake format
-d3d      D         d3d_disp.cpp:1196 real_choose_bitmap_format        [   2.35863] Alpha doesn't match
-d3d      D         d3d_disp.cpp:1203 real_choose_bitmap_format        [   2.35864] Adapter format is 23
-d3d      D         d3d_disp.cpp:1206 real_choose_bitmap_format        [   2.35865] Found a format
-d3d      I         d3d_disp.cpp:2378 d3d_create_bitmap                [   2.35866] Chose bitmap format 9
-dtor     D               dtor.c:196  _al_register_destructor          [   2.35889] added dtor for bitmap 0F7FBF88, func 61CC1C7B
-stdio    D         file_stdio.c:109  file_stdio_fopen                 [   2.36018] opening Sprites/GAMESCREEN/player left.png rb
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   2.36423] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   2.36426] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   2.36427] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   2.36428] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   2.36429] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   2.36430] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   2.36431] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   2.36432] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   2.36434] Fake format
-d3d      D         d3d_disp.cpp:1196 real_choose_bitmap_format        [   2.36435] Alpha doesn't match
-d3d      D         d3d_disp.cpp:1203 real_choose_bitmap_format        [   2.36436] Adapter format is 23
-d3d      D         d3d_disp.cpp:1206 real_choose_bitmap_format        [   2.36437] Found a format
-d3d      I         d3d_disp.cpp:2378 d3d_create_bitmap                [   2.36438] Chose bitmap format 9
-dtor     D               dtor.c:196  _al_register_destructor          [   2.36463] added dtor for bitmap 0F80B148, func 61CC1C7B
-stdio    D         file_stdio.c:109  file_stdio_fopen                 [   2.36611] opening Sprites/GAMESCREEN/player right.png rb
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   2.36970] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   2.36972] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   2.36973] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   2.36973] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   2.36974] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   2.36975] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   2.36976] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   2.36977] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   2.36978] Fake format
-d3d      D         d3d_disp.cpp:1196 real_choose_bitmap_format        [   2.36979] Alpha doesn't match
-d3d      D         d3d_disp.cpp:1203 real_choose_bitmap_format        [   2.36980] Adapter format is 23
-d3d      D         d3d_disp.cpp:1206 real_choose_bitmap_format        [   2.36981] Found a format
-d3d      I         d3d_disp.cpp:2378 d3d_create_bitmap                [   2.36982] Chose bitmap format 9
-dtor     D               dtor.c:196  _al_register_destructor          [   2.37007] added dtor for bitmap 0F80B298, func 61CC1C7B
-acodec   I                ogg.c:204  _al_load_ogg_vorbis              [   2.37175] Loading sample Sounds/BGM/gamescreen.ogg.
-stdio    D         file_stdio.c:109  file_stdio_fopen                 [   2.37177] opening Sounds/BGM/gamescreen.ogg rb
-acodec   D                ogg.c:263  _al_load_ogg_vorbis_f            [   2.37263] channels 2
-acodec   D                ogg.c:264  _al_load_ogg_vorbis_f            [   2.37265] word_size 2
-acodec   D                ogg.c:265  _al_load_ogg_vorbis_f            [   2.37266] rate 44100
-acodec   D                ogg.c:266  _al_load_ogg_vorbis_f            [   2.37268] total_samples 22618112
-acodec   D                ogg.c:267  _al_load_ogg_vorbis_f            [   2.37269] total_size 90472448
-dtor     D               dtor.c:196  _al_register_destructor          [   3.92994] added dtor for sample 02846358, func 61DC2689
-stdio    D         file_stdio.c:109  file_stdio_fopen                 [   3.93000] opening Sounds/SFX/put bomb.wav rb
-dtor     D               dtor.c:196  _al_register_destructor          [   3.93020] added dtor for sample 02846100, func 61DC2689
-stdio    D         file_stdio.c:109  file_stdio_fopen                 [   3.93024] opening Sounds/SFX/explosion.wav rb
-dtor     D               dtor.c:196  _al_register_destructor          [   3.93041] added dtor for sample 02846420, func 61DC2689
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   3.96343] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   3.96345] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   3.96346] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   3.96347] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   3.96348] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   3.96349] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   3.96350] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   3.96351] Fake format
-d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   3.96352] Fake format
-d3d      D         d3d_disp.cpp:1196 real_choose_bitmap_format        [   3.96353] Alpha doesn't match
-d3d      D         d3d_disp.cpp:1203 real_choose_bitmap_format        [   3.96354] Adapter format is 23
-d3d      D         d3d_disp.cpp:1206 real_choose_bitmap_format        [   3.96355] Found a format
-d3d      I         d3d_disp.cpp:2378 d3d_create_bitmap                [   3.96356] Chose bitmap format 9
-font     D                ttf.c:238  alloc_glyph_region               [   3.96381] Glyph 19: 33x36 (36x36)
-font     D                ttf.c:282  alloc_glyph_region               [   3.96383] Locking glyph region: 0F936B38 0 0 36 36
-font     D                ttf.c:166  unlock_current_page              [   3.96714] Unlocking page: 0F936B38
-font     D                ttf.c:238  alloc_glyph_region               [   3.96726] Glyph 22: 30x36 (32x36)
-font     D                ttf.c:282  alloc_glyph_region               [   3.96728] Locking glyph region: 0F936B38 36 0 32 36
-font     D                ttf.c:166  unlock_current_page              [   3.96732] Unlocking page: 0F936B38
-font     D                ttf.c:238  alloc_glyph_region               [   3.96739] Glyph 29: 13x25 (16x28)
-font     D                ttf.c:282  alloc_glyph_region               [   3.96740] Locking glyph region: 0F936B38 68 0 16 28
-font     D                ttf.c:166  unlock_current_page              [   3.96743] Unlocking page: 0F936B38
-d3d      D          d3d_bmp.cpp:539  _al_d3d_sync_bitmap              [   3.97117] _al_d3d_sync_bitmap (system) ref count == 1
-d3d      D          d3d_bmp.cpp:545  _al_d3d_sync_bitmap              [   3.97120] _al_d3d_sync_bitmap (video) ref count == 1
-d3d      D          d3d_bmp.cpp:539  _al_d3d_sync_bitmap              [   3.97234] _al_d3d_sync_bitmap (system) ref count == 1
-d3d      D          d3d_bmp.cpp:545  _al_d3d_sync_bitmap              [   3.97237] _al_d3d_sync_bitmap (video) ref count == 1
-d3d      D          d3d_bmp.cpp:539  _al_d3d_sync_bitmap              [   3.97303] _al_d3d_sync_bitmap (system) ref count == 1
-d3d      D          d3d_bmp.cpp:545  _al_d3d_sync_bitmap              [   3.97305] _al_d3d_sync_bitmap (video) ref count == 1
-d3d      D          d3d_bmp.cpp:539  _al_d3d_sync_bitmap              [   3.97363] _al_d3d_sync_bitmap (system) ref count == 1
-d3d      D          d3d_bmp.cpp:545  _al_d3d_sync_bitmap              [   3.97365] _al_d3d_sync_bitmap (video) ref count == 1
-d3d      D          d3d_bmp.cpp:539  _al_d3d_sync_bitmap              [   3.97423] _al_d3d_sync_bitmap (system) ref count == 1
-d3d      D          d3d_bmp.cpp:545  _al_d3d_sync_bitmap              [   3.97425] _al_d3d_sync_bitmap (video) ref count == 1
-d3d      D          d3d_bmp.cpp:539  _al_d3d_sync_bitmap              [   3.97487] _al_d3d_sync_bitmap (system) ref count == 1
-d3d      D          d3d_bmp.cpp:545  _al_d3d_sync_bitmap              [   3.97489] _al_d3d_sync_bitmap (video) ref count == 1
-d3d      D          d3d_bmp.cpp:539  _al_d3d_sync_bitmap              [   3.97559] _al_d3d_sync_bitmap (system) ref count == 1
-d3d      D          d3d_bmp.cpp:545  _al_d3d_sync_bitmap              [   3.97561] _al_d3d_sync_bitmap (video) ref count == 1
-d3d      D          d3d_bmp.cpp:539  _al_d3d_sync_bitmap              [   3.97632] _al_d3d_sync_bitmap (system) ref count == 1
-d3d      D          d3d_bmp.cpp:545  _al_d3d_sync_bitmap              [   3.97634] _al_d3d_sync_bitmap (video) ref count == 1
-d3d      D          d3d_bmp.cpp:539  _al_d3d_sync_bitmap              [   3.97700] _al_d3d_sync_bitmap (system) ref count == 1
-d3d      D          d3d_bmp.cpp:545  _al_d3d_sync_bitmap              [   3.97702] _al_d3d_sync_bitmap (video) ref count == 1
-d3d      D          d3d_bmp.cpp:539  _al_d3d_sync_bitmap              [   3.97769] _al_d3d_sync_bitmap (system) ref count == 1
-d3d      D          d3d_bmp.cpp:545  _al_d3d_sync_bitmap              [   3.97772] _al_d3d_sync_bitmap (video) ref count == 1
-d3d      D          d3d_bmp.cpp:539  _al_d3d_sync_bitmap              [   3.97833] _al_d3d_sync_bitmap (system) ref count == 1
-d3d      D          d3d_bmp.cpp:545  _al_d3d_sync_bitmap              [   3.97836] _al_d3d_sync_bitmap (video) ref count == 1
-d3d      D          d3d_bmp.cpp:539  _al_d3d_sync_bitmap              [   3.97900] _al_d3d_sync_bitmap (system) ref count == 1
-d3d      D          d3d_bmp.cpp:545  _al_d3d_sync_bitmap              [   3.97903] _al_d3d_sync_bitmap (video) ref count == 1
-d3d      D          d3d_bmp.cpp:539  _al_d3d_sync_bitmap              [   3.98004] _al_d3d_sync_bitmap (system) ref count == 1
-d3d      D          d3d_bmp.cpp:545  _al_d3d_sync_bitmap              [   3.98007] _al_d3d_sync_bitmap (video) ref count == 1
-d3d      D          d3d_bmp.cpp:539  _al_d3d_sync_bitmap              [   3.98075] _al_d3d_sync_bitmap (system) ref count == 1
-d3d      D          d3d_bmp.cpp:545  _al_d3d_sync_bitmap              [   3.98077] _al_d3d_sync_bitmap (video) ref count == 1
-font     D                ttf.c:238  alloc_glyph_region               [   4.93182] Glyph 21: 31x36 (32x36)
-font     D                ttf.c:282  alloc_glyph_region               [   4.93186] Locking glyph region: 0F936B38 84 0 32 36
-font     D                ttf.c:166  unlock_current_page              [   4.93191] Unlocking page: 0F936B38
-font     D                ttf.c:238  alloc_glyph_region               [   4.93199] Glyph 24: 31x36 (32x36)
-font     D                ttf.c:282  alloc_glyph_region               [   4.93200] Locking glyph region: 0F936B38 116 0 32 36
-font     D                ttf.c:166  unlock_current_page              [   4.93273] Unlocking page: 0F936B38
-font     D                ttf.c:238  alloc_glyph_region               [   4.93286] Glyph 28: 31x36 (32x36)
-font     D                ttf.c:282  alloc_glyph_region               [   4.93287] Locking glyph region: 0F936B38 148 0 32 36
-font     D                ttf.c:166  unlock_current_page              [   4.93291] Unlocking page: 0F936B38
-d3d      D          d3d_bmp.cpp:539  _al_d3d_sync_bitmap              [   4.93486] _al_d3d_sync_bitmap (system) ref count == 1
-d3d      D          d3d_bmp.cpp:545  _al_d3d_sync_bitmap              [   4.93490] _al_d3d_sync_bitmap (video) ref count == 1
-font     D                ttf.c:238  alloc_glyph_region               [   5.94834] Glyph 27: 32x36 (32x36)
-font     D                ttf.c:282  alloc_glyph_region               [   5.94837] Locking glyph region: 0F936B38 180 0 32 36
-font     D                ttf.c:166  unlock_current_page              [   5.94842] Unlocking page: 0F936B38
-d3d      D          d3d_bmp.cpp:539  _al_d3d_sync_bitmap              [   5.95083] _al_d3d_sync_bitmap (system) ref count == 1
-d3d      D          d3d_bmp.cpp:545  _al_d3d_sync_bitmap              [   5.95087] _al_d3d_sync_bitmap (video) ref count == 1
-audio    D          kcm_mixer.c:121  _al_rechannel_matrix             [   6.66514] sample matrix:
-audio    D          kcm_mixer.c:127  _al_rechannel_matrix             [   6.66517]  0.500000
-audio    D          kcm_mixer.c:127  _al_rechannel_matrix             [   6.66519]  0.500000
-font     D                ttf.c:238  alloc_glyph_region               [   6.96499] Glyph 26: 31x36 (32x36)
-font     D                ttf.c:282  alloc_glyph_region               [   6.96501] Locking glyph region: 0F936B38 212 0 32 36
-font     D                ttf.c:166  unlock_current_page              [   6.96505] Unlocking page: 0F936B38
-d3d      D          d3d_bmp.cpp:539  _al_d3d_sync_bitmap              [   6.96744] _al_d3d_sync_bitmap (system) ref count == 1
-d3d      D          d3d_bmp.cpp:545  _al_d3d_sync_bitmap              [   6.96747] _al_d3d_sync_bitmap (video) ref count == 1
-font     D                ttf.c:238  alloc_glyph_region               [   7.96560] Glyph 25: 32x34 (32x36)
-font     D                ttf.c:282  alloc_glyph_region               [   7.96563] Locking glyph region: 0F936B38 244 0 32 36
-font     D                ttf.c:166  unlock_current_page              [   7.96568] Unlocking page: 0F936B38
-d3d      D          d3d_bmp.cpp:539  _al_d3d_sync_bitmap              [   7.96798] _al_d3d_sync_bitmap (system) ref count == 1
-d3d      D          d3d_bmp.cpp:545  _al_d3d_sync_bitmap              [   7.96802] _al_d3d_sync_bitmap (video) ref count == 1
-font     D                ttf.c:238  alloc_glyph_region               [   9.98194] Glyph 23: 33x35 (36x36)
-font     D                ttf.c:282  alloc_glyph_region               [   9.98197] Locking glyph region: 0F936B38 276 0 36 36
-font     D                ttf.c:166  unlock_current_page              [   9.98201] Unlocking page: 0F936B38
-d3d      D          d3d_bmp.cpp:539  _al_d3d_sync_bitmap              [   9.98432] _al_d3d_sync_bitmap (system) ref count == 1
-d3d      D          d3d_bmp.cpp:545  _al_d3d_sync_bitmap              [   9.98435] _al_d3d_sync_bitmap (video) ref count == 1
-font     D                ttf.c:238  alloc_glyph_region               [  13.01497] Glyph 20: 21x35 (24x36)
-font     D                ttf.c:282  alloc_glyph_region               [  13.01499] Locking glyph region: 0F936B38 312 0 24 36
-font     D                ttf.c:166  unlock_current_page              [  13.01506] Unlocking page: 0F936B38
-d3d      D          d3d_bmp.cpp:539  _al_d3d_sync_bitmap              [  13.01762] _al_d3d_sync_bitmap (system) ref count == 1
-d3d      D          d3d_bmp.cpp:545  _al_d3d_sync_bitmap              [  13.01765] _al_d3d_sync_bitmap (video) ref count == 1
-dtor     D               dtor.c:227  _al_unregister_destructor        [  60.28494] removed dtor for bitmap 027B3BA8
-dtor     D               dtor.c:227  _al_unregister_destructor        [  60.28526] removed dtor for bitmap 027B2E80
-dtor     D               dtor.c:227  _al_unregister_destructor        [  60.28532] removed dtor for bitmap 027BBB28
-dtor     D               dtor.c:227  _al_unregister_destructor        [  60.28540] removed dtor for bitmap 0F80A138
-dtor     D               dtor.c:227  _al_unregister_destructor        [  60.28576] removed dtor for bitmap 0F7C9FF0
-dtor     D               dtor.c:227  _al_unregister_destructor        [  60.28582] removed dtor for bitmap 027B2C10
-dtor     D               dtor.c:227  _al_unregister_destructor        [  60.28591] removed dtor for bitmap 0F7FBCE8
-dtor     D               dtor.c:227  _al_unregister_destructor        [  60.28633] removed dtor for bitmap 0F7FBE38
-dtor     D               dtor.c:227  _al_unregister_destructor        [  60.28649] removed dtor for bitmap 0F80A3A8
-dtor     D               dtor.c:227  _al_unregister_destructor        [  60.28663] removed dtor for bitmap 0F80B4C8
-dtor     D               dtor.c:227  _al_unregister_destructor        [  60.28667] removed dtor for bitmap 0F7FBF88
-dtor     D               dtor.c:227  _al_unregister_destructor        [  60.28680] removed dtor for bitmap 0F80B148
-dtor     D               dtor.c:227  _al_unregister_destructor        [  60.28705] removed dtor for bitmap 0F80B298
-dtor     D               dtor.c:227  _al_unregister_destructor        [  60.28712] removed dtor for sample 02846358
-dtor     D               dtor.c:227  _al_unregister_destructor        [  60.30017] removed dtor for sample 02846100
-dtor     D               dtor.c:227  _al_unregister_destructor        [  60.30021] removed dtor for sample 02846420
-dtor     D               dtor.c:227  _al_unregister_destructor        [  60.30024] removed dtor for bitmap 0276CC30
-dtor     D               dtor.c:227  _al_unregister_destructor        [  60.30031] removed dtor for ttf_font 0276B818
-dtor     D               dtor.c:227  _al_unregister_destructor        [  60.30049] removed dtor for ttf_font 0276B9F8
-dtor     D               dtor.c:227  _al_unregister_destructor        [  60.30201] removed dtor for ttf_font 0276B8F8
-dtor     D               dtor.c:227  _al_unregister_destructor        [  60.30331] removed dtor for sample 02762338
-dtor     D               dtor.c:227  _al_unregister_destructor        [  60.30334] removed dtor for sample 02761FA0
-dtor     D               dtor.c:227  _al_unregister_destructor        [  60.30335] removed dtor for timer 027643C0
-dtor     D               dtor.c:227  _al_unregister_destructor        [  60.30336] removed dtor for queue 0276CA40
-d3d      I         d3d_disp.cpp:901  d3d_destroy_display              [  60.30339] destroying display 02762380 (current 00000000)
-bitmap   D        bitmap_type.c:308  _al_convert_to_memory_bitmap     [  60.30680] converting display bitmap 0276FF70 to memory bitmap
-dtor     D               dtor.c:196  _al_register_destructor          [  60.30685] added dtor for bitmap 0F936B38, func 61CC1C7B
-d3d      D          d3d_bmp.cpp:539  _al_d3d_sync_bitmap              [  60.30688] _al_d3d_sync_bitmap (system) ref count == 1
-d3d      D          d3d_bmp.cpp:545  _al_d3d_sync_bitmap              [  60.30690] _al_d3d_sync_bitmap (video) ref count == 1
-dtor     D               dtor.c:227  _al_unregister_destructor        [  60.30751] removed dtor for bitmap 0F936B38
-d3d      D         d3d_disp.cpp:885  d3d_destroy_display_internals    [  60.30761] waiting for display 02762380's thread to end
-d3d      W         d3d_disp.cpp:595  d3d_destroy_device               [  60.33669] d3d_destroy_device: ref count not 0
-d3d      I         d3d_disp.cpp:1549 d3d_display_thread_proc          [  60.34269] d3d display thread exits
-dtor     D               dtor.c:227  _al_unregister_destructor        [  60.34439] removed dtor for bitmap 0276FF70
-dtor     D               dtor.c:227  _al_unregister_destructor        [  60.34446] removed dtor for sample_instance 0276CE50
-dtor     D               dtor.c:227  _al_unregister_destructor        [  60.34448] removed dtor for sample_instance 0276CF40
-dtor     D               dtor.c:227  _al_unregister_destructor        [  60.34450] removed dtor for sample_instance 0276D030
-dtor     D               dtor.c:227  _al_unregister_destructor        [  60.34451] removed dtor for sample_instance 0276D120
-dtor     D               dtor.c:227  _al_unregister_destructor        [  60.34453] removed dtor for sample_instance 0276D210
-dtor     D               dtor.c:227  _al_unregister_destructor        [  60.34454] removed dtor for sample_instance 0276D300
-dtor     D               dtor.c:227  _al_unregister_destructor        [  60.34456] removed dtor for sample_instance 0276D3F0
-dtor     D               dtor.c:227  _al_unregister_destructor        [  60.34457] removed dtor for sample_instance 0276D9B8
-dtor     D               dtor.c:227  _al_unregister_destructor        [  60.34459] removed dtor for sample_instance 0276DAA8
-dtor     D               dtor.c:227  _al_unregister_destructor        [  60.34460] removed dtor for sample_instance 0276DB98
-dtor     D               dtor.c:227  _al_unregister_destructor        [  60.34462] removed dtor for sample_instance 0276DC88
-dtor     D               dtor.c:227  _al_unregister_destructor        [  60.34463] removed dtor for sample_instance 0276DD78
-dtor     D               dtor.c:227  _al_unregister_destructor        [  60.34465] removed dtor for sample_instance 0276DE68
-dtor     D               dtor.c:227  _al_unregister_destructor        [  60.34466] removed dtor for sample_instance 0276DF58
-dtor     D               dtor.c:227  _al_unregister_destructor        [  60.34468] removed dtor for sample_instance 0276E048
-dtor     D               dtor.c:227  _al_unregister_destructor        [  60.34469] removed dtor for mixer 0276CB20
-audio-dsound D           dsound.cpp:509  _dsound_stop_voice               [  60.34471] Stopping voice
-audio-dsound D           dsound.cpp:526  _dsound_stop_voice               [  60.34472] Joining thread
-audio-dsound D           dsound.cpp:532  _dsound_stop_voice               [  60.35022] Joined thread
-audio-dsound D           dsound.cpp:534  _dsound_stop_voice               [  60.35026] Destroying thread
-audio-dsound D           dsound.cpp:536  _dsound_stop_voice               [  60.35029] Thread destroyed
-audio-dsound D           dsound.cpp:543  _dsound_stop_voice               [  60.35031] Releasing buffer
-audio-dsound I           dsound.cpp:547  _dsound_stop_voice               [  60.35034] Voice stopped
-dtor     D               dtor.c:227  _al_unregister_destructor        [  60.35037] removed dtor for voice 02755530
-audio-dsound D           dsound.cpp:359  _dsound_deallocate_voice         [  60.35039] Deallocating voice
-audio-dsound D           dsound.cpp:364  _dsound_deallocate_voice         [  60.35041] Deallocated voice
-audio-dsound D           dsound.cpp:275  _dsound_close                    [  60.35043] Releasing device
-audio-dsound D           dsound.cpp:277  _dsound_close                    [  60.37020] Released device
-audio-dsound I           dsound.cpp:278  _dsound_close                    [  60.37024] DirectSound closed
-dinput   D         wjoydxnu.cpp:1201 joydx_exit_joystick              [  60.37102] Entering joydx_exit_joystick
-dinput   D         wjoydxnu.cpp:1247 joydx_exit_joystick              [  60.37197] Leaving joydx_exit_joystick
+system   D            wsystem.c:392  win_get_joystick_driver          [   0.00030] Selected combined XInput/DirectInput joystick driver.
+system   D            wsystem.c:771  _al_win_safe_load_library        [   0.00084] PathFindOnPath found: C:\WINDOWS\system32\xinput1_4.dll
+system   D            wsystem.c:682  load_library_at_path             [   0.00088] Calling LoadLibrary C:\WINDOWS\system32\xinput1_4.dll
+system   I            wsystem.c:685  load_library_at_path             [   0.00329] Loaded C:\WINDOWS\system32\xinput1_4.dll
+xinput   I             wjoyxi.c:214  _imp_load_xinput_module_version  [   0.00333] Module "xinput1_4.dll" loaded.
+system   D            wsystem.c:771  _al_win_safe_load_library        [   0.00419] PathFindOnPath found: C:\WINDOWS\system32\dinput8.dll
+system   D            wsystem.c:682  load_library_at_path             [   0.00422] Calling LoadLibrary C:\WINDOWS\system32\dinput8.dll
+system   I            wsystem.c:685  load_library_at_path             [   0.00966] Loaded C:\WINDOWS\system32\dinput8.dll
+dinput   I         wjoydxnu.cpp:1107 joydx_merge                      [   0.04372] Merged, num joysticks=0
+audio-dsound I           dsound.cpp:249  _dsound_open                     [   0.04391] Starting DirectSound...
+audio-dsound D           dsound.cpp:258  _dsound_open                     [   0.08199] DirectSoundCreate8 succeeded
+audio    I              audio.c:347  do_install_audio                 [   0.08957] Using DirectSound driver
+system   D            wsystem.c:771  _al_win_safe_load_library        [   0.09023] PathFindOnPath found: C:\WINDOWS\system32\d3d9.dll
+system   D            wsystem.c:682  load_library_at_path             [   0.09026] Calling LoadLibrary C:\WINDOWS\system32\d3d9.dll
+system   I            wsystem.c:685  load_library_at_path             [   0.09323] Loaded C:\WINDOWS\system32\d3d9.dll
+d3d      I         d3d_disp.cpp:674  d3d_init_display                 [   0.10548] Render-to-texture: 1
+d3d      I         d3d_disp.cpp:1769 d3d_create_display_locked        [   0.10660] faux_fullscreen=0
+d3d      D         d3d_disp.cpp:1770 d3d_create_display_locked        [   0.10663] al_display=02782390
+d3d      D         d3d_disp.cpp:1771 d3d_create_display_locked        [   0.10665] al_display->vt=02781D08
+d3d      I d3d_display_formats.cpp:144  _al_d3d_generate_display_format_list [   0.10938] found 64 format combinations
+display  D   display_settings.c:212  debug_display_settings           [   0.10941] color: 32 (rgba 8880), depth: 0, stencil: 0, acc: 0000, samples: 0/0
+display  D   display_settings.c:527  _al_score_display_settings       [   0.10943] Score is : 897
+display  D   display_settings.c:212  debug_display_settings           [   0.10944] color: 32 (rgba 8880), depth: 0, stencil: 0, acc: 0000, samples: 0/0
+display  D   display_settings.c:527  _al_score_display_settings       [   0.10945] Score is : 897
+display  D   display_settings.c:212  debug_display_settings           [   0.10946] color: 32 (rgba 8880), depth: 24, stencil: 8, acc: 0000, samples: 0/0
+display  D   display_settings.c:527  _al_score_display_settings       [   0.10947] Score is : 897
+display  D   display_settings.c:212  debug_display_settings           [   0.10948] color: 32 (rgba 8880), depth: 24, stencil: 8, acc: 0000, samples: 0/0
+display  D   display_settings.c:527  _al_score_display_settings       [   0.10949] Score is : 897
+display  D   display_settings.c:212  debug_display_settings           [   0.10956] color: 32 (rgba 8880), depth: 24, stencil: 0, acc: 0000, samples: 0/0
+display  D   display_settings.c:527  _al_score_display_settings       [   0.10958] Score is : 897
+display  D   display_settings.c:212  debug_display_settings           [   0.10959] color: 32 (rgba 8880), depth: 24, stencil: 0, acc: 0000, samples: 0/0
+display  D   display_settings.c:527  _al_score_display_settings       [   0.10960] Score is : 897
+display  D   display_settings.c:212  debug_display_settings           [   0.10961] color: 32 (rgba 8880), depth: 16, stencil: 0, acc: 0000, samples: 0/0
+display  D   display_settings.c:527  _al_score_display_settings       [   0.10962] Score is : 897
+display  D   display_settings.c:212  debug_display_settings           [   0.10963] color: 32 (rgba 8880), depth: 16, stencil: 0, acc: 0000, samples: 0/0
+display  D   display_settings.c:527  _al_score_display_settings       [   0.10964] Score is : 897
+display  D   display_settings.c:212  debug_display_settings           [   0.10965] color: 16 (rgba 5650), depth: 0, stencil: 0, acc: 0000, samples: 0/0
+display  D   display_settings.c:527  _al_score_display_settings       [   0.10966] Score is : 897
+display  D   display_settings.c:212  debug_display_settings           [   0.10967] color: 16 (rgba 5650), depth: 0, stencil: 0, acc: 0000, samples: 0/0
+display  D   display_settings.c:527  _al_score_display_settings       [   0.10968] Score is : 897
+display  D   display_settings.c:212  debug_display_settings           [   0.10969] color: 16 (rgba 5650), depth: 24, stencil: 8, acc: 0000, samples: 0/0
+display  D   display_settings.c:527  _al_score_display_settings       [   0.10970] Score is : 897
+display  D   display_settings.c:212  debug_display_settings           [   0.10971] color: 16 (rgba 5650), depth: 24, stencil: 8, acc: 0000, samples: 0/0
+display  D   display_settings.c:527  _al_score_display_settings       [   0.10972] Score is : 897
+display  D   display_settings.c:212  debug_display_settings           [   0.10973] color: 16 (rgba 5650), depth: 24, stencil: 0, acc: 0000, samples: 0/0
+display  D   display_settings.c:527  _al_score_display_settings       [   0.10974] Score is : 897
+display  D   display_settings.c:212  debug_display_settings           [   0.10975] color: 16 (rgba 5650), depth: 24, stencil: 0, acc: 0000, samples: 0/0
+display  D   display_settings.c:527  _al_score_display_settings       [   0.10976] Score is : 897
+display  D   display_settings.c:212  debug_display_settings           [   0.10977] color: 16 (rgba 5650), depth: 16, stencil: 0, acc: 0000, samples: 0/0
+display  D   display_settings.c:527  _al_score_display_settings       [   0.10978] Score is : 897
+display  D   display_settings.c:212  debug_display_settings           [   0.10979] color: 16 (rgba 5650), depth: 16, stencil: 0, acc: 0000, samples: 0/0
+display  D   display_settings.c:527  _al_score_display_settings       [   0.10980] Score is : 897
+display  D   display_settings.c:212  debug_display_settings           [   0.10981] color: 32 (rgba 8880), depth: 0, stencil: 0, acc: 0000, samples: 0/0
+display  D   display_settings.c:398  _al_score_display_settings       [   0.10982] Single Buffer requirement not met.
+display  D   display_settings.c:212  debug_display_settings           [   0.10983] color: 32 (rgba 8880), depth: 0, stencil: 0, acc: 0000, samples: 0/0
+display  D   display_settings.c:398  _al_score_display_settings       [   0.10984] Single Buffer requirement not met.
+display  D   display_settings.c:212  debug_display_settings           [   0.10985] color: 32 (rgba 8880), depth: 24, stencil: 8, acc: 0000, samples: 0/0
+display  D   display_settings.c:398  _al_score_display_settings       [   0.10986] Single Buffer requirement not met.
+display  D   display_settings.c:212  debug_display_settings           [   0.10987] color: 32 (rgba 8880), depth: 24, stencil: 8, acc: 0000, samples: 0/0
+display  D   display_settings.c:398  _al_score_display_settings       [   0.10988] Single Buffer requirement not met.
+display  D   display_settings.c:212  debug_display_settings           [   0.10992] color: 32 (rgba 8880), depth: 24, stencil: 0, acc: 0000, samples: 0/0
+display  D   display_settings.c:398  _al_score_display_settings       [   0.10994] Single Buffer requirement not met.
+display  D   display_settings.c:212  debug_display_settings           [   0.10994] color: 32 (rgba 8880), depth: 24, stencil: 0, acc: 0000, samples: 0/0
+display  D   display_settings.c:398  _al_score_display_settings       [   0.10996] Single Buffer requirement not met.
+display  D   display_settings.c:212  debug_display_settings           [   0.10997] color: 32 (rgba 8880), depth: 16, stencil: 0, acc: 0000, samples: 0/0
+display  D   display_settings.c:398  _al_score_display_settings       [   0.10998] Single Buffer requirement not met.
+display  D   display_settings.c:212  debug_display_settings           [   0.10999] color: 32 (rgba 8880), depth: 16, stencil: 0, acc: 0000, samples: 0/0
+display  D   display_settings.c:398  _al_score_display_settings       [   0.11000] Single Buffer requirement not met.
+display  D   display_settings.c:212  debug_display_settings           [   0.11001] color: 16 (rgba 5650), depth: 0, stencil: 0, acc: 0000, samples: 0/0
+display  D   display_settings.c:398  _al_score_display_settings       [   0.11002] Single Buffer requirement not met.
+display  D   display_settings.c:212  debug_display_settings           [   0.11003] color: 16 (rgba 5650), depth: 0, stencil: 0, acc: 0000, samples: 0/0
+display  D   display_settings.c:398  _al_score_display_settings       [   0.11004] Single Buffer requirement not met.
+display  D   display_settings.c:212  debug_display_settings           [   0.11005] color: 16 (rgba 5650), depth: 24, stencil: 8, acc: 0000, samples: 0/0
+display  D   display_settings.c:398  _al_score_display_settings       [   0.11006] Single Buffer requirement not met.
+display  D   display_settings.c:212  debug_display_settings           [   0.11007] color: 16 (rgba 5650), depth: 24, stencil: 8, acc: 0000, samples: 0/0
+display  D   display_settings.c:398  _al_score_display_settings       [   0.11008] Single Buffer requirement not met.
+display  D   display_settings.c:212  debug_display_settings           [   0.11009] color: 16 (rgba 5650), depth: 24, stencil: 0, acc: 0000, samples: 0/0
+display  D   display_settings.c:398  _al_score_display_settings       [   0.11010] Single Buffer requirement not met.
+display  D   display_settings.c:212  debug_display_settings           [   0.11011] color: 16 (rgba 5650), depth: 24, stencil: 0, acc: 0000, samples: 0/0
+display  D   display_settings.c:398  _al_score_display_settings       [   0.11012] Single Buffer requirement not met.
+display  D   display_settings.c:212  debug_display_settings           [   0.11013] color: 16 (rgba 5650), depth: 16, stencil: 0, acc: 0000, samples: 0/0
+display  D   display_settings.c:398  _al_score_display_settings       [   0.11014] Single Buffer requirement not met.
+display  D   display_settings.c:212  debug_display_settings           [   0.11015] color: 16 (rgba 5650), depth: 16, stencil: 0, acc: 0000, samples: 0/0
+display  D   display_settings.c:398  _al_score_display_settings       [   0.11016] Single Buffer requirement not met.
+display  D   display_settings.c:212  debug_display_settings           [   0.11017] color: 32 (rgba 8880), depth: 0, stencil: 0, acc: 0000, samples: 0/0
+display  D   display_settings.c:527  _al_score_display_settings       [   0.11018] Score is : 769
+display  D   display_settings.c:212  debug_display_settings           [   0.11019] color: 32 (rgba 8880), depth: 0, stencil: 0, acc: 0000, samples: 0/0
+display  D   display_settings.c:527  _al_score_display_settings       [   0.11020] Score is : 769
+display  D   display_settings.c:212  debug_display_settings           [   0.11021] color: 32 (rgba 8880), depth: 24, stencil: 8, acc: 0000, samples: 0/0
+display  D   display_settings.c:527  _al_score_display_settings       [   0.11022] Score is : 769
+display  D   display_settings.c:212  debug_display_settings           [   0.11023] color: 32 (rgba 8880), depth: 24, stencil: 8, acc: 0000, samples: 0/0
+display  D   display_settings.c:527  _al_score_display_settings       [   0.11029] Score is : 769
+display  D   display_settings.c:212  debug_display_settings           [   0.11030] color: 32 (rgba 8880), depth: 24, stencil: 0, acc: 0000, samples: 0/0
+display  D   display_settings.c:527  _al_score_display_settings       [   0.11031] Score is : 769
+display  D   display_settings.c:212  debug_display_settings           [   0.11032] color: 32 (rgba 8880), depth: 24, stencil: 0, acc: 0000, samples: 0/0
+display  D   display_settings.c:527  _al_score_display_settings       [   0.11033] Score is : 769
+display  D   display_settings.c:212  debug_display_settings           [   0.11034] color: 32 (rgba 8880), depth: 16, stencil: 0, acc: 0000, samples: 0/0
+display  D   display_settings.c:527  _al_score_display_settings       [   0.11035] Score is : 769
+display  D   display_settings.c:212  debug_display_settings           [   0.11036] color: 32 (rgba 8880), depth: 16, stencil: 0, acc: 0000, samples: 0/0
+display  D   display_settings.c:527  _al_score_display_settings       [   0.11037] Score is : 769
+display  D   display_settings.c:212  debug_display_settings           [   0.11038] color: 16 (rgba 5650), depth: 0, stencil: 0, acc: 0000, samples: 0/0
+display  D   display_settings.c:527  _al_score_display_settings       [   0.11039] Score is : 769
+display  D   display_settings.c:212  debug_display_settings           [   0.11040] color: 16 (rgba 5650), depth: 0, stencil: 0, acc: 0000, samples: 0/0
+display  D   display_settings.c:527  _al_score_display_settings       [   0.11041] Score is : 769
+display  D   display_settings.c:212  debug_display_settings           [   0.11042] color: 16 (rgba 5650), depth: 24, stencil: 8, acc: 0000, samples: 0/0
+display  D   display_settings.c:527  _al_score_display_settings       [   0.11043] Score is : 769
+display  D   display_settings.c:212  debug_display_settings           [   0.11044] color: 16 (rgba 5650), depth: 24, stencil: 8, acc: 0000, samples: 0/0
+display  D   display_settings.c:527  _al_score_display_settings       [   0.11045] Score is : 769
+display  D   display_settings.c:212  debug_display_settings           [   0.11046] color: 16 (rgba 5650), depth: 24, stencil: 0, acc: 0000, samples: 0/0
+display  D   display_settings.c:527  _al_score_display_settings       [   0.11047] Score is : 769
+display  D   display_settings.c:212  debug_display_settings           [   0.11048] color: 16 (rgba 5650), depth: 24, stencil: 0, acc: 0000, samples: 0/0
+display  D   display_settings.c:527  _al_score_display_settings       [   0.11049] Score is : 769
+display  D   display_settings.c:212  debug_display_settings           [   0.11050] color: 16 (rgba 5650), depth: 16, stencil: 0, acc: 0000, samples: 0/0
+display  D   display_settings.c:527  _al_score_display_settings       [   0.11051] Score is : 769
+display  D   display_settings.c:212  debug_display_settings           [   0.11052] color: 16 (rgba 5650), depth: 16, stencil: 0, acc: 0000, samples: 0/0
+display  D   display_settings.c:527  _al_score_display_settings       [   0.11053] Score is : 769
+display  D   display_settings.c:212  debug_display_settings           [   0.11054] color: 32 (rgba 8880), depth: 0, stencil: 0, acc: 0000, samples: 0/0
+display  D   display_settings.c:398  _al_score_display_settings       [   0.11055] Single Buffer requirement not met.
+display  D   display_settings.c:212  debug_display_settings           [   0.11056] color: 32 (rgba 8880), depth: 0, stencil: 0, acc: 0000, samples: 0/0
+display  D   display_settings.c:398  _al_score_display_settings       [   0.11057] Single Buffer requirement not met.
+display  D   display_settings.c:212  debug_display_settings           [   0.11058] color: 32 (rgba 8880), depth: 24, stencil: 8, acc: 0000, samples: 0/0
+display  D   display_settings.c:398  _al_score_display_settings       [   0.11059] Single Buffer requirement not met.
+display  D   display_settings.c:212  debug_display_settings           [   0.11060] color: 32 (rgba 8880), depth: 24, stencil: 8, acc: 0000, samples: 0/0
+display  D   display_settings.c:398  _al_score_display_settings       [   0.11061] Single Buffer requirement not met.
+display  D   display_settings.c:212  debug_display_settings           [   0.11062] color: 32 (rgba 8880), depth: 24, stencil: 0, acc: 0000, samples: 0/0
+display  D   display_settings.c:398  _al_score_display_settings       [   0.11063] Single Buffer requirement not met.
+display  D   display_settings.c:212  debug_display_settings           [   0.11064] color: 32 (rgba 8880), depth: 24, stencil: 0, acc: 0000, samples: 0/0
+display  D   display_settings.c:398  _al_score_display_settings       [   0.11065] Single Buffer requirement not met.
+display  D   display_settings.c:212  debug_display_settings           [   0.11066] color: 32 (rgba 8880), depth: 16, stencil: 0, acc: 0000, samples: 0/0
+display  D   display_settings.c:398  _al_score_display_settings       [   0.11067] Single Buffer requirement not met.
+display  D   display_settings.c:212  debug_display_settings           [   0.11068] color: 32 (rgba 8880), depth: 16, stencil: 0, acc: 0000, samples: 0/0
+display  D   display_settings.c:398  _al_score_display_settings       [   0.11069] Single Buffer requirement not met.
+display  D   display_settings.c:212  debug_display_settings           [   0.11070] color: 16 (rgba 5650), depth: 0, stencil: 0, acc: 0000, samples: 0/0
+display  D   display_settings.c:398  _al_score_display_settings       [   0.11071] Single Buffer requirement not met.
+display  D   display_settings.c:212  debug_display_settings           [   0.11072] color: 16 (rgba 5650), depth: 0, stencil: 0, acc: 0000, samples: 0/0
+display  D   display_settings.c:398  _al_score_display_settings       [   0.11073] Single Buffer requirement not met.
+display  D   display_settings.c:212  debug_display_settings           [   0.11074] color: 16 (rgba 5650), depth: 24, stencil: 8, acc: 0000, samples: 0/0
+display  D   display_settings.c:398  _al_score_display_settings       [   0.11075] Single Buffer requirement not met.
+display  D   display_settings.c:212  debug_display_settings           [   0.11076] color: 16 (rgba 5650), depth: 24, stencil: 8, acc: 0000, samples: 0/0
+display  D   display_settings.c:398  _al_score_display_settings       [   0.11077] Single Buffer requirement not met.
+display  D   display_settings.c:212  debug_display_settings           [   0.11078] color: 16 (rgba 5650), depth: 24, stencil: 0, acc: 0000, samples: 0/0
+display  D   display_settings.c:398  _al_score_display_settings       [   0.11080] Single Buffer requirement not met.
+display  D   display_settings.c:212  debug_display_settings           [   0.11080] color: 16 (rgba 5650), depth: 24, stencil: 0, acc: 0000, samples: 0/0
+display  D   display_settings.c:398  _al_score_display_settings       [   0.11082] Single Buffer requirement not met.
+display  D   display_settings.c:212  debug_display_settings           [   0.11082] color: 16 (rgba 5650), depth: 16, stencil: 0, acc: 0000, samples: 0/0
+display  D   display_settings.c:398  _al_score_display_settings       [   0.11084] Single Buffer requirement not met.
+display  D   display_settings.c:212  debug_display_settings           [   0.11084] color: 16 (rgba 5650), depth: 16, stencil: 0, acc: 0000, samples: 0/0
+display  D   display_settings.c:398  _al_score_display_settings       [   0.11086] Single Buffer requirement not met.
+d3d      D         d3d_disp.cpp:1669 d3d_create_display_internals     [   0.11087] Trying format 0.
+d3d      I         d3d_disp.cpp:1344 d3d_display_thread_proc          [   0.11112] Chose a display format: 23
+d3d      I         d3d_disp.cpp:1413 d3d_display_thread_proc          [   0.11115] Normal window.
+d3d      I         d3d_disp.cpp:781  d3d_create_device                [   0.14691] Using no depth stencil buffer
+d3d      D         d3d_disp.cpp:839  d3d_create_device                [   0.16467] BeginScene succeeded in create_device
+d3d      D         d3d_disp.cpp:847  d3d_create_device                [   0.16469] Success
+d3d      D         d3d_disp.cpp:1692 d3d_create_display_internals     [   0.16473] Resumed after wait.
+d3d      I         d3d_disp.cpp:1725 d3d_create_display_internals     [   0.16476] Format 0 succeeded.
+d3d      D         d3d_disp.cpp:1756 d3d_create_display_internals     [   0.16480] Returning d3d_display: 02782390
+d3d      D         d3d_disp.cpp:1781 d3d_create_display_locked        [   0.16481] al_display=02782390
+d3d      D         d3d_disp.cpp:1782 d3d_create_display_locked        [   0.16483] al_display->vt=02781D08
+system   W            wsystem.c:775  _al_win_safe_load_library        [   0.16657] PathFindOnPath failed to find d3dx9_43.dll
+system   W            wsystem.c:775  _al_win_safe_load_library        [   0.16824] PathFindOnPath failed to find d3dx9_42.dll
+system   W            wsystem.c:775  _al_win_safe_load_library        [   0.17095] PathFindOnPath failed to find d3dx9_41.dll
+system   W            wsystem.c:775  _al_win_safe_load_library        [   0.17212] PathFindOnPath failed to find d3dx9_40.dll
+system   W            wsystem.c:775  _al_win_safe_load_library        [   0.17339] PathFindOnPath failed to find d3dx9_39.dll
+system   W            wsystem.c:775  _al_win_safe_load_library        [   0.17487] PathFindOnPath failed to find d3dx9_38.dll
+system   W            wsystem.c:775  _al_win_safe_load_library        [   0.17677] PathFindOnPath failed to find d3dx9_37.dll
+system   W            wsystem.c:775  _al_win_safe_load_library        [   0.17832] PathFindOnPath failed to find d3dx9_36.dll
+system   W            wsystem.c:775  _al_win_safe_load_library        [   0.17969] PathFindOnPath failed to find d3dx9_35.dll
+system   W            wsystem.c:775  _al_win_safe_load_library        [   0.18101] PathFindOnPath failed to find d3dx9_34.dll
+system   W            wsystem.c:775  _al_win_safe_load_library        [   0.18243] PathFindOnPath failed to find d3dx9_33.dll
+system   W            wsystem.c:775  _al_win_safe_load_library        [   0.18397] PathFindOnPath failed to find d3dx9_32.dll
+system   W            wsystem.c:775  _al_win_safe_load_library        [   0.18651] PathFindOnPath failed to find d3dx9_31.dll
+system   W            wsystem.c:775  _al_win_safe_load_library        [   0.18796] PathFindOnPath failed to find d3dx9_30.dll
+system   W            wsystem.c:775  _al_win_safe_load_library        [   0.18905] PathFindOnPath failed to find d3dx9_29.dll
+system   W            wsystem.c:775  _al_win_safe_load_library        [   0.19006] PathFindOnPath failed to find d3dx9_28.dll
+system   W            wsystem.c:775  _al_win_safe_load_library        [   0.19103] PathFindOnPath failed to find d3dx9_27.dll
+system   W            wsystem.c:775  _al_win_safe_load_library        [   0.19203] PathFindOnPath failed to find d3dx9_26.dll
+system   W            wsystem.c:775  _al_win_safe_load_library        [   0.19302] PathFindOnPath failed to find d3dx9_25.dll
+system   W            wsystem.c:775  _al_win_safe_load_library        [   0.19398] PathFindOnPath failed to find d3dx9_24.dll
+d3dx9    E        d3d_d3dx9.cpp:121  _al_load_d3dx9_module            [   0.19400] Failed to load D3DX9 library. Library is not installed.dtor     D               dtor.c:196  _al_register_destructor          [   0.19407] added dtor for queue 0278CA50, func 61CE5C4F
+dtor     D               dtor.c:196  _al_register_destructor          [   0.19409] added dtor for timer 02784530, func 61CF628F
+stdio    D         file_stdio.c:109  file_stdio_fopen                 [   0.19635] opening Sprites/icon.png rb
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   0.19674] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   0.19676] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   0.19678] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   0.19679] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   0.19681] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   0.19683] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   0.19685] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   0.19687] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   0.19688] Fake format
+d3d      D         d3d_disp.cpp:1196 real_choose_bitmap_format        [   0.19690] Alpha doesn't match
+d3d      D         d3d_disp.cpp:1203 real_choose_bitmap_format        [   0.19691] Adapter format is 23
+d3d      D         d3d_disp.cpp:1206 real_choose_bitmap_format        [   0.19693] Found a format
+d3d      I         d3d_disp.cpp:2378 d3d_create_bitmap                [   0.19695] Chose bitmap format 9
+dtor     D               dtor.c:196  _al_register_destructor          [   0.19727] added dtor for bitmap 0278FF80, func 61CC1C7B
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   0.19873] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   0.19876] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   0.19878] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   0.19879] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   0.19880] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   0.19882] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   0.19883] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   0.19884] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   0.19885] Fake format
+d3d      D         d3d_disp.cpp:1196 real_choose_bitmap_format        [   0.19886] Alpha doesn't match
+d3d      D         d3d_disp.cpp:1203 real_choose_bitmap_format        [   0.19887] Adapter format is 23
+d3d      D         d3d_disp.cpp:1206 real_choose_bitmap_format        [   0.19888] Found a format
+d3d      I         d3d_disp.cpp:2378 d3d_create_bitmap                [   0.19889] Chose bitmap format 9
+dtor     D               dtor.c:196  _al_register_destructor          [   0.19927] added dtor for bitmap 0278CB30, func 61CC1C7B
+d3d      D          d3d_bmp.cpp:539  _al_d3d_sync_bitmap              [   0.20975] _al_d3d_sync_bitmap (system) ref count == 1
+d3d      D          d3d_bmp.cpp:545  _al_d3d_sync_bitmap              [   0.20978] _al_d3d_sync_bitmap (video) ref count == 1
+dtor     D               dtor.c:227  _al_unregister_destructor        [   0.21272] removed dtor for bitmap 0278CB30
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   0.21317] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   0.21320] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   0.21322] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   0.21324] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   0.21326] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   0.21327] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   0.21329] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   0.21330] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   0.21331] Fake format
+d3d      D         d3d_disp.cpp:1196 real_choose_bitmap_format        [   0.21332] Alpha doesn't match
+d3d      D         d3d_disp.cpp:1203 real_choose_bitmap_format        [   0.21333] Adapter format is 23
+d3d      D         d3d_disp.cpp:1206 real_choose_bitmap_format        [   0.21334] Found a format
+d3d      I         d3d_disp.cpp:2378 d3d_create_bitmap                [   0.21335] Chose bitmap format 9
+dtor     D               dtor.c:196  _al_register_destructor          [   0.21351] added dtor for bitmap 0278CB30, func 61CC1C7B
+d3d      D          d3d_bmp.cpp:539  _al_d3d_sync_bitmap              [   0.23031] _al_d3d_sync_bitmap (system) ref count == 1
+d3d      D          d3d_bmp.cpp:545  _al_d3d_sync_bitmap              [   0.23035] _al_d3d_sync_bitmap (video) ref count == 1
+dtor     D               dtor.c:227  _al_unregister_destructor        [   0.23951] removed dtor for bitmap 0278CB30
+audio-dsound D           dsound.cpp:290  _dsound_allocate_voice           [   0.24104] Allocating voice
+audio-dsound D           dsound.cpp:349  _dsound_allocate_voice           [   0.24107] Allocated voice
+dtor     D               dtor.c:196  _al_register_destructor          [   0.24109] added dtor for voice 02775280, func 61DC5398
+dtor     D               dtor.c:196  _al_register_destructor          [   0.24110] added dtor for mixer 0278CB30, func 61DC1429
+audio-dsound D           dsound.cpp:446  _dsound_start_voice              [   0.24112] Starting voice
+audio-dsound D           dsound.cpp:474  _dsound_start_voice              [   0.24113] CreateSoundBuffer
+audio-dsound D           dsound.cpp:483  _dsound_start_voice              [   0.24386] CreateSoundBuffer succeeded
+audio-dsound D           dsound.cpp:489  _dsound_start_voice              [   0.24390] Starting _dsound_update thread
+audio-dsound I           dsound.cpp:499  _dsound_start_voice              [   0.24398] Voice started
+dtor     D               dtor.c:196  _al_register_destructor          [   0.24400] added dtor for sample_instance 0278CE60, func 61DBB8F3
+audio    D          kcm_mixer.c:121  _al_rechannel_matrix             [   0.24402] sample matrix:
+audio    D          kcm_mixer.c:127  _al_rechannel_matrix             [   0.24403] 
+audio    D          kcm_mixer.c:127  _al_rechannel_matrix             [   0.24404] 
+dtor     D               dtor.c:196  _al_register_destructor          [   0.24405] added dtor for sample_instance 0278CF50, func 61DBB8F3
+audio    D          kcm_mixer.c:121  _al_rechannel_matrix             [   0.24406] sample matrix:
+audio    D          kcm_mixer.c:127  _al_rechannel_matrix             [   0.24407] 
+audio    D          kcm_mixer.c:127  _al_rechannel_matrix             [   0.24408] 
+dtor     D               dtor.c:196  _al_register_destructor          [   0.24409] added dtor for sample_instance 0278D260, func 61DBB8F3
+audio    D          kcm_mixer.c:121  _al_rechannel_matrix             [   0.24410] sample matrix:
+audio    D          kcm_mixer.c:127  _al_rechannel_matrix             [   0.24411] 
+audio    D          kcm_mixer.c:127  _al_rechannel_matrix             [   0.24412] 
+dtor     D               dtor.c:196  _al_register_destructor          [   0.24413] added dtor for sample_instance 0278D350, func 61DBB8F3
+audio    D          kcm_mixer.c:121  _al_rechannel_matrix             [   0.24414] sample matrix:
+audio    D          kcm_mixer.c:127  _al_rechannel_matrix             [   0.24415] 
+audio    D          kcm_mixer.c:127  _al_rechannel_matrix             [   0.24415] 
+dtor     D               dtor.c:196  _al_register_destructor          [   0.24416] added dtor for sample_instance 0278D440, func 61DBB8F3
+audio    D          kcm_mixer.c:121  _al_rechannel_matrix             [   0.24433] sample matrix:
+audio    D          kcm_mixer.c:127  _al_rechannel_matrix             [   0.24434] 
+audio    D          kcm_mixer.c:127  _al_rechannel_matrix             [   0.24435] 
+dtor     D               dtor.c:196  _al_register_destructor          [   0.24436] added dtor for sample_instance 0278CC40, func 61DBB8F3
+audio    D          kcm_mixer.c:121  _al_rechannel_matrix             [   0.24437] sample matrix:
+audio    D          kcm_mixer.c:127  _al_rechannel_matrix             [   0.24438] 
+audio    D          kcm_mixer.c:127  _al_rechannel_matrix             [   0.24439] 
+dtor     D               dtor.c:196  _al_register_destructor          [   0.24440] added dtor for sample_instance 0278CD30, func 61DBB8F3
+audio    D          kcm_mixer.c:121  _al_rechannel_matrix             [   0.24441] sample matrix:
+audio    D          kcm_mixer.c:127  _al_rechannel_matrix             [   0.24442] 
+audio    D          kcm_mixer.c:127  _al_rechannel_matrix             [   0.24443] 
+dtor     D               dtor.c:196  _al_register_destructor          [   0.24444] added dtor for sample_instance 0278DBE8, func 61DBB8F3
+audio    D          kcm_mixer.c:121  _al_rechannel_matrix             [   0.24445] sample matrix:
+audio    D          kcm_mixer.c:127  _al_rechannel_matrix             [   0.24446] 
+audio    D          kcm_mixer.c:127  _al_rechannel_matrix             [   0.24447] 
+dtor     D               dtor.c:196  _al_register_destructor          [   0.24448] added dtor for sample_instance 0278DCD8, func 61DBB8F3
+audio    D          kcm_mixer.c:121  _al_rechannel_matrix             [   0.24449] sample matrix:
+audio    D          kcm_mixer.c:127  _al_rechannel_matrix             [   0.24450] 
+audio    D          kcm_mixer.c:127  _al_rechannel_matrix             [   0.24451] 
+dtor     D               dtor.c:196  _al_register_destructor          [   0.24452] added dtor for sample_instance 0278DDC8, func 61DBB8F3
+audio    D          kcm_mixer.c:121  _al_rechannel_matrix             [   0.24453] sample matrix:
+audio    D          kcm_mixer.c:127  _al_rechannel_matrix             [   0.24454] 
+audio    D          kcm_mixer.c:127  _al_rechannel_matrix             [   0.24455] 
+dtor     D               dtor.c:196  _al_register_destructor          [   0.24456] added dtor for sample_instance 0278DEB8, func 61DBB8F3
+audio    D          kcm_mixer.c:121  _al_rechannel_matrix             [   0.24457] sample matrix:
+audio    D          kcm_mixer.c:127  _al_rechannel_matrix             [   0.24458] 
+audio    D          kcm_mixer.c:127  _al_rechannel_matrix             [   0.24459] 
+dtor     D               dtor.c:196  _al_register_destructor          [   0.24460] added dtor for sample_instance 0278DFA8, func 61DBB8F3
+audio    D          kcm_mixer.c:121  _al_rechannel_matrix             [   0.24461] sample matrix:
+audio    D          kcm_mixer.c:127  _al_rechannel_matrix             [   0.24462] 
+audio    D          kcm_mixer.c:127  _al_rechannel_matrix             [   0.24462] 
+dtor     D               dtor.c:196  _al_register_destructor          [   0.24463] added dtor for sample_instance 0278E098, func 61DBB8F3
+audio    D          kcm_mixer.c:121  _al_rechannel_matrix             [   0.24465] sample matrix:
+audio    D          kcm_mixer.c:127  _al_rechannel_matrix             [   0.24465] 
+audio    D          kcm_mixer.c:127  _al_rechannel_matrix             [   0.24466] 
+dtor     D               dtor.c:196  _al_register_destructor          [   0.24467] added dtor for sample_instance 0278E188, func 61DBB8F3
+audio    D          kcm_mixer.c:121  _al_rechannel_matrix             [   0.24468] sample matrix:
+audio    D          kcm_mixer.c:127  _al_rechannel_matrix             [   0.24469] 
+audio    D          kcm_mixer.c:127  _al_rechannel_matrix             [   0.24470] 
+dtor     D               dtor.c:196  _al_register_destructor          [   0.24471] added dtor for sample_instance 0278E278, func 61DBB8F3
+audio    D          kcm_mixer.c:121  _al_rechannel_matrix             [   0.24472] sample matrix:
+audio    D          kcm_mixer.c:127  _al_rechannel_matrix             [   0.24473] 
+audio    D          kcm_mixer.c:127  _al_rechannel_matrix             [   0.24474] 
+stdio    D         file_stdio.c:109  file_stdio_fopen                 [   0.24475] opening Sprites/GAMESCREEN/bomb.png rb
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   0.24821] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   0.24824] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   0.24825] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   0.24826] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   0.24827] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   0.24828] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   0.24829] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   0.24830] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   0.24831] Fake format
+d3d      D         d3d_disp.cpp:1196 real_choose_bitmap_format        [   0.24832] Alpha doesn't match
+d3d      D         d3d_disp.cpp:1203 real_choose_bitmap_format        [   0.24833] Adapter format is 23
+d3d      D         d3d_disp.cpp:1206 real_choose_bitmap_format        [   0.24834] Found a format
+d3d      I         d3d_disp.cpp:2378 d3d_create_bitmap                [   0.24835] Chose bitmap format 9
+dtor     D               dtor.c:196  _al_register_destructor          [   0.24854] added dtor for bitmap 0278FB98, func 61CC1C7B
+stdio    D         file_stdio.c:109  file_stdio_fopen                 [   0.24969] opening Fonts/debug.ttf rb
+font     D                ttf.c:937  al_load_ttf_font_stretch_f       [   0.25041] Font Fonts/debug.ttf loaded with pixel size 0 x 10.
+font     D                ttf.c:939  al_load_ttf_font_stretch_f       [   0.25043]     ascent=9.0, descent=-2.0, height=12.0
+dtor     D               dtor.c:196  _al_register_destructor          [   0.25045] added dtor for ttf_font 0278B948, func 61DB9898
+stdio    D         file_stdio.c:109  file_stdio_fopen                 [   0.25047] opening Fonts/bomberman.ttf rb
+font     D                ttf.c:937  al_load_ttf_font_stretch_f       [   0.25090] Font Fonts/bomberman.ttf loaded with pixel size 0 x 45.
+font     D                ttf.c:939  al_load_ttf_font_stretch_f       [   0.25091]     ascent=36.0, descent=-9.0, height=45.0
+dtor     D               dtor.c:196  _al_register_destructor          [   0.25094] added dtor for ttf_font 0278B9C8, func 61DB9898
+stdio    D         file_stdio.c:109  file_stdio_fopen                 [   0.25095] opening Fonts/menu.ttf rb
+font     D                ttf.c:937  al_load_ttf_font_stretch_f       [   0.25142] Font Fonts/menu.ttf loaded with pixel size 0 x 30.
+font     D                ttf.c:939  al_load_ttf_font_stretch_f       [   0.25146]     ascent=21.0, descent=-6.0, height=30.0
+dtor     D               dtor.c:196  _al_register_destructor          [   0.25150] added dtor for ttf_font 0278B9E8, func 61DB9898
+stdio    D         file_stdio.c:109  file_stdio_fopen                 [   0.25156] opening Sounds/SFX/menusound1.wav rb
+dtor     D               dtor.c:196  _al_register_destructor          [   0.25210] added dtor for sample 02782140, func 61DC2689
+stdio    D         file_stdio.c:109  file_stdio_fopen                 [   0.25226] opening Sounds/SFX/menusound2.wav rb
+dtor     D               dtor.c:196  _al_register_destructor          [   0.25292] added dtor for sample 02782000, func 61DC2689
+stdio    D         file_stdio.c:109  file_stdio_fopen                 [   0.25351] opening Sprites/MAINMENU/bg.png rb
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   0.25374] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   0.25375] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   0.25376] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   0.25377] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   0.25378] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   0.25378] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   0.25379] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   0.25380] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   0.25381] Fake format
+d3d      D         d3d_disp.cpp:1196 real_choose_bitmap_format        [   0.25382] Alpha doesn't match
+d3d      D         d3d_disp.cpp:1203 real_choose_bitmap_format        [   0.25383] Adapter format is 23
+d3d      D         d3d_disp.cpp:1206 real_choose_bitmap_format        [   0.25384] Found a format
+d3d      I         d3d_disp.cpp:2378 d3d_create_bitmap                [   0.25386] Chose bitmap format 9
+dtor     D               dtor.c:196  _al_register_destructor          [   0.25434] added dtor for bitmap 027D4AE0, func 61CC1C7B
+stdio    D         file_stdio.c:109  file_stdio_fopen                 [   0.30869] opening Sprites/MAINMENU/title.png rb
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   0.31209] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   0.31212] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   0.31213] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   0.31214] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   0.31215] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   0.31216] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   0.31217] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   0.31218] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   0.31219] Fake format
+d3d      D         d3d_disp.cpp:1196 real_choose_bitmap_format        [   0.31220] Alpha doesn't match
+d3d      D         d3d_disp.cpp:1203 real_choose_bitmap_format        [   0.31221] Adapter format is 23
+d3d      D         d3d_disp.cpp:1206 real_choose_bitmap_format        [   0.31223] Found a format
+d3d      I         d3d_disp.cpp:2378 d3d_create_bitmap                [   0.31224] Chose bitmap format 9
+dtor     D               dtor.c:196  _al_register_destructor          [   0.31258] added dtor for bitmap 027D48F8, func 61CC1C7B
+stdio    D         file_stdio.c:109  file_stdio_fopen                 [   0.35305] opening Sprites/MAINMENU/balloon.png rb
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   0.35649] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   0.35652] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   0.35653] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   0.35653] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   0.35654] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   0.35655] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   0.35656] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   0.35657] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   0.35658] Fake format
+d3d      D         d3d_disp.cpp:1196 real_choose_bitmap_format        [   0.35659] Alpha doesn't match
+d3d      D         d3d_disp.cpp:1203 real_choose_bitmap_format        [   0.35660] Adapter format is 23
+d3d      D         d3d_disp.cpp:1206 real_choose_bitmap_format        [   0.35661] Found a format
+d3d      I         d3d_disp.cpp:2378 d3d_create_bitmap                [   0.35662] Chose bitmap format 9
+dtor     D               dtor.c:196  _al_register_destructor          [   0.35696] added dtor for bitmap 027D4748, func 61CC1C7B
+stdio    D         file_stdio.c:109  file_stdio_fopen                 [   0.36239] opening Sprites/MAINMENU/airship1.png rb
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   0.36599] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   0.36602] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   0.36603] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   0.36605] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   0.36606] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   0.36608] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   0.36610] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   0.36612] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   0.36615] Fake format
+d3d      D         d3d_disp.cpp:1196 real_choose_bitmap_format        [   0.36617] Alpha doesn't match
+d3d      D         d3d_disp.cpp:1203 real_choose_bitmap_format        [   0.36618] Adapter format is 23
+d3d      D         d3d_disp.cpp:1206 real_choose_bitmap_format        [   0.36621] Found a format
+d3d      I         d3d_disp.cpp:2378 d3d_create_bitmap                [   0.36623] Chose bitmap format 9
+dtor     D               dtor.c:196  _al_register_destructor          [   0.36651] added dtor for bitmap 0FFC1490, func 61CC1C7B
+stdio    D         file_stdio.c:109  file_stdio_fopen                 [   0.36778] opening Sprites/MAINMENU/airship2.png rb
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   0.37270] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   0.37273] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   0.37275] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   0.37276] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   0.37278] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   0.37279] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   0.37281] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   0.37282] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   0.37284] Fake format
+d3d      D         d3d_disp.cpp:1196 real_choose_bitmap_format        [   0.37285] Alpha doesn't match
+d3d      D         d3d_disp.cpp:1203 real_choose_bitmap_format        [   0.37286] Adapter format is 23
+d3d      D         d3d_disp.cpp:1206 real_choose_bitmap_format        [   0.37289] Found a format
+d3d      I         d3d_disp.cpp:2378 d3d_create_bitmap                [   0.37290] Chose bitmap format 9
+dtor     D               dtor.c:196  _al_register_destructor          [   0.37329] added dtor for bitmap 0FFBFBD8, func 61CC1C7B
+acodec   I                ogg.c:204  _al_load_ogg_vorbis              [   0.42739] Loading sample Sounds/BGM/mainmenu.ogg.
+stdio    D         file_stdio.c:109  file_stdio_fopen                 [   0.42742] opening Sounds/BGM/mainmenu.ogg rb
+acodec   D                ogg.c:263  _al_load_ogg_vorbis_f            [   0.42829] channels 2
+acodec   D                ogg.c:264  _al_load_ogg_vorbis_f            [   0.42830] word_size 2
+acodec   D                ogg.c:265  _al_load_ogg_vorbis_f            [   0.42831] rate 44100
+acodec   D                ogg.c:266  _al_load_ogg_vorbis_f            [   0.42832] total_samples 13044736
+acodec   D                ogg.c:267  _al_load_ogg_vorbis_f            [   0.42833] total_size 52178944
+dtor     D               dtor.c:196  _al_register_destructor          [   1.24454] added dtor for sample 0FFFC600, func 61DC2689
+audio    D          kcm_mixer.c:121  _al_rechannel_matrix             [   1.24522] sample matrix:
+audio    D          kcm_mixer.c:127  _al_rechannel_matrix             [   1.24524]  0.707107 0.000000
+audio    D          kcm_mixer.c:127  _al_rechannel_matrix             [   1.24526]  0.000000 0.707107
+audio    D          kcm_mixer.c:121  _al_rechannel_matrix             [   1.24528] sample matrix:
+audio    D          kcm_mixer.c:127  _al_rechannel_matrix             [   1.24529]  0.050283 0.000000
+audio    D          kcm_mixer.c:127  _al_rechannel_matrix             [   1.24530]  0.000000 0.050283
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   1.27891] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   1.27894] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   1.27895] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   1.27897] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   1.27898] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   1.27899] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   1.27900] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   1.27901] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   1.27902] Fake format
+d3d      D         d3d_disp.cpp:1196 real_choose_bitmap_format        [   1.27903] Alpha doesn't match
+d3d      D         d3d_disp.cpp:1203 real_choose_bitmap_format        [   1.27904] Adapter format is 23
+d3d      D         d3d_disp.cpp:1206 real_choose_bitmap_format        [   1.27905] Found a format
+d3d      I         d3d_disp.cpp:2378 d3d_create_bitmap                [   1.27906] Chose bitmap format 9
+font     D                ttf.c:238  alloc_glyph_region               [   1.27928] Glyph 25: 31x49 (32x52)
+font     D                ttf.c:282  alloc_glyph_region               [   1.27929] Locking glyph region: 027D27F0 0 0 32 52
+font     D                ttf.c:166  unlock_current_page              [   1.28515] Unlocking page: 027D27F0
+font     D                ttf.c:238  alloc_glyph_region               [   1.28525] Glyph 21: 27x48 (28x48)
+font     D                ttf.c:282  alloc_glyph_region               [   1.28527] Locking glyph region: 027D27F0 32 0 28 48
+font     D                ttf.c:166  unlock_current_page              [   1.28532] Unlocking page: 027D27F0
+font     D                ttf.c:238  alloc_glyph_region               [   1.28539] Glyph 10: 34x47 (36x48)
+font     D                ttf.c:282  alloc_glyph_region               [   1.28540] Locking glyph region: 027D27F0 60 0 36 48
+font     D                ttf.c:166  unlock_current_page              [   1.28545] Unlocking page: 027D27F0
+font     D                ttf.c:238  alloc_glyph_region               [   1.28553] Glyph 34: 40x48 (40x48)
+font     D                ttf.c:282  alloc_glyph_region               [   1.28554] Locking glyph region: 027D27F0 96 0 40 48
+font     D                ttf.c:166  unlock_current_page              [   1.28563] Unlocking page: 027D27F0
+font     D                ttf.c:238  alloc_glyph_region               [   1.28577] Glyph 14: 31x46 (32x48)
+font     D                ttf.c:282  alloc_glyph_region               [   1.28578] Locking glyph region: 027D27F0 136 0 32 48
+font     D                ttf.c:166  unlock_current_page              [   1.28593] Unlocking page: 027D27F0
+font     D                ttf.c:238  alloc_glyph_region               [   1.28602] Glyph 33: 39x47 (40x48)
+font     D                ttf.c:282  alloc_glyph_region               [   1.28603] Locking glyph region: 027D27F0 168 0 40 48
+font     D                ttf.c:166  unlock_current_page              [   1.28608] Unlocking page: 027D27F0
+font     D                ttf.c:238  alloc_glyph_region               [   1.28615] Glyph 18: 21x47 (24x48)
+font     D                ttf.c:282  alloc_glyph_region               [   1.28616] Locking glyph region: 027D27F0 208 0 24 48
+font     D                ttf.c:166  unlock_current_page              [   1.28621] Unlocking page: 027D27F0
+font     D                ttf.c:238  alloc_glyph_region               [   1.28626] Glyph 29: 34x46 (36x48)
+font     D                ttf.c:282  alloc_glyph_region               [   1.28628] Locking glyph region: 027D27F0 232 0 36 48
+font     D                ttf.c:166  unlock_current_page              [   1.28632] Unlocking page: 027D27F0
+d3d      D          d3d_bmp.cpp:539  _al_d3d_sync_bitmap              [   1.28987] _al_d3d_sync_bitmap (system) ref count == 1
+d3d      D          d3d_bmp.cpp:545  _al_d3d_sync_bitmap              [   1.28993] _al_d3d_sync_bitmap (video) ref count == 1
+d3d      D          d3d_bmp.cpp:539  _al_d3d_sync_bitmap              [   1.29112] _al_d3d_sync_bitmap (system) ref count == 1
+d3d      D          d3d_bmp.cpp:545  _al_d3d_sync_bitmap              [   1.29115] _al_d3d_sync_bitmap (video) ref count == 1
+d3d      D          d3d_bmp.cpp:539  _al_d3d_sync_bitmap              [   1.29232] _al_d3d_sync_bitmap (system) ref count == 1
+d3d      D          d3d_bmp.cpp:545  _al_d3d_sync_bitmap              [   1.29234] _al_d3d_sync_bitmap (video) ref count == 1
+d3d      D          d3d_bmp.cpp:539  _al_d3d_sync_bitmap              [   1.29717] _al_d3d_sync_bitmap (system) ref count == 1
+d3d      D          d3d_bmp.cpp:545  _al_d3d_sync_bitmap              [   1.29720] _al_d3d_sync_bitmap (video) ref count == 1
+d3d      D          d3d_bmp.cpp:539  _al_d3d_sync_bitmap              [   1.30099] _al_d3d_sync_bitmap (system) ref count == 1
+d3d      D          d3d_bmp.cpp:545  _al_d3d_sync_bitmap              [   1.30108] _al_d3d_sync_bitmap (video) ref count == 1
+d3d      D          d3d_bmp.cpp:539  _al_d3d_sync_bitmap              [   1.30210] _al_d3d_sync_bitmap (system) ref count == 1
+d3d      D          d3d_bmp.cpp:545  _al_d3d_sync_bitmap              [   1.30213] _al_d3d_sync_bitmap (video) ref count == 1
+d3d      D          d3d_bmp.cpp:539  _al_d3d_sync_bitmap              [   1.30281] _al_d3d_sync_bitmap (system) ref count == 1
+d3d      D          d3d_bmp.cpp:545  _al_d3d_sync_bitmap              [   1.30284] _al_d3d_sync_bitmap (video) ref count == 1
+d3d      D          d3d_bmp.cpp:539  _al_d3d_sync_bitmap              [   1.30857] _al_d3d_sync_bitmap (system) ref count == 1
+d3d      D          d3d_bmp.cpp:545  _al_d3d_sync_bitmap              [   1.30860] _al_d3d_sync_bitmap (video) ref count == 1
+audio    D          kcm_mixer.c:121  _al_rechannel_matrix             [   1.71141] sample matrix:
+audio    D          kcm_mixer.c:127  _al_rechannel_matrix             [   1.71144]  0.707107 0.000000
+audio    D          kcm_mixer.c:127  _al_rechannel_matrix             [   1.71145]  0.000000 0.707107
+dtor     D               dtor.c:227  _al_unregister_destructor        [   1.71147] removed dtor for bitmap 027D4AE0
+dtor     D               dtor.c:227  _al_unregister_destructor        [   1.71232] removed dtor for bitmap 027D48F8
+dtor     D               dtor.c:227  _al_unregister_destructor        [   1.71281] removed dtor for bitmap 027D4748
+dtor     D               dtor.c:227  _al_unregister_destructor        [   1.71301] removed dtor for bitmap 0FFC1490
+dtor     D               dtor.c:227  _al_unregister_destructor        [   1.71316] removed dtor for bitmap 0FFBFBD8
+dtor     D               dtor.c:227  _al_unregister_destructor        [   1.71402] removed dtor for sample 0FFFC600
+stdio    D         file_stdio.c:109  file_stdio_fopen                 [   1.72120] opening Sprites/GAMESCREEN/UI_bar.png rb
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   1.72468] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   1.72470] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   1.72471] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   1.72472] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   1.72473] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   1.72474] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   1.72475] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   1.72476] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   1.72476] Fake format
+d3d      D         d3d_disp.cpp:1196 real_choose_bitmap_format        [   1.72477] Alpha doesn't match
+d3d      D         d3d_disp.cpp:1203 real_choose_bitmap_format        [   1.72478] Adapter format is 23
+d3d      D         d3d_disp.cpp:1206 real_choose_bitmap_format        [   1.72479] Found a format
+d3d      I         d3d_disp.cpp:2378 d3d_create_bitmap                [   1.72480] Chose bitmap format 9
+dtor     D               dtor.c:196  _al_register_destructor          [   1.72533] added dtor for bitmap 0FFC1470, func 61CC1C7B
+stdio    D         file_stdio.c:109  file_stdio_fopen                 [   1.73275] opening Sprites/GAMESCREEN/tiles/grass.png rb
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   1.73302] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   1.73303] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   1.73304] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   1.73305] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   1.73306] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   1.73307] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   1.73308] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   1.73309] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   1.73310] Fake format
+d3d      D         d3d_disp.cpp:1196 real_choose_bitmap_format        [   1.73311] Alpha doesn't match
+d3d      D         d3d_disp.cpp:1203 real_choose_bitmap_format        [   1.73312] Adapter format is 23
+d3d      D         d3d_disp.cpp:1206 real_choose_bitmap_format        [   1.73313] Found a format
+d3d      I         d3d_disp.cpp:2378 d3d_create_bitmap                [   1.73314] Chose bitmap format 9
+dtor     D               dtor.c:196  _al_register_destructor          [   1.73330] added dtor for bitmap 10071CE0, func 61CC1C7B
+stdio    D         file_stdio.c:109  file_stdio_fopen                 [   1.73359] opening Sprites/GAMESCREEN/tiles/brick.png rb
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   1.73375] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   1.73376] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   1.73377] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   1.73378] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   1.73379] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   1.73380] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   1.73381] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   1.73381] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   1.73382] Fake format
+d3d      D         d3d_disp.cpp:1196 real_choose_bitmap_format        [   1.73383] Alpha doesn't match
+d3d      D         d3d_disp.cpp:1203 real_choose_bitmap_format        [   1.73384] Adapter format is 23
+d3d      D         d3d_disp.cpp:1206 real_choose_bitmap_format        [   1.73385] Found a format
+d3d      I         d3d_disp.cpp:2378 d3d_create_bitmap                [   1.73386] Chose bitmap format 9
+dtor     D               dtor.c:196  _al_register_destructor          [   1.73399] added dtor for bitmap 027D4868, func 61CC1C7B
+stdio    D         file_stdio.c:109  file_stdio_fopen                 [   1.73423] opening Sprites/GAMESCREEN/tiles/block.png rb
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   1.73437] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   1.73438] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   1.73439] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   1.73440] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   1.73441] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   1.73442] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   1.73443] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   1.73443] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   1.73445] Fake format
+d3d      D         d3d_disp.cpp:1196 real_choose_bitmap_format        [   1.73446] Alpha doesn't match
+d3d      D         d3d_disp.cpp:1203 real_choose_bitmap_format        [   1.73447] Adapter format is 23
+d3d      D         d3d_disp.cpp:1206 real_choose_bitmap_format        [   1.73448] Found a format
+d3d      I         d3d_disp.cpp:2378 d3d_create_bitmap                [   1.73449] Chose bitmap format 9
+dtor     D               dtor.c:196  _al_register_destructor          [   1.73460] added dtor for bitmap 0FF84738, func 61CC1C7B
+stdio    D         file_stdio.c:109  file_stdio_fopen                 [   1.73485] opening Sprites/GAMESCREEN/player_static.png rb
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   1.73498] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   1.73500] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   1.73501] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   1.73502] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   1.73503] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   1.73504] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   1.73505] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   1.73506] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   1.73507] Fake format
+d3d      D         d3d_disp.cpp:1196 real_choose_bitmap_format        [   1.73507] Alpha doesn't match
+d3d      D         d3d_disp.cpp:1203 real_choose_bitmap_format        [   1.73508] Adapter format is 23
+d3d      D         d3d_disp.cpp:1206 real_choose_bitmap_format        [   1.73509] Found a format
+d3d      I         d3d_disp.cpp:2378 d3d_create_bitmap                [   1.73510] Chose bitmap format 9
+dtor     D               dtor.c:196  _al_register_destructor          [   1.73522] added dtor for bitmap 0FF84888, func 61CC1C7B
+stdio    D         file_stdio.c:109  file_stdio_fopen                 [   1.73556] opening Sprites/GAMESCREEN/enemy_up.png rb
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   1.74129] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   1.74131] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   1.74133] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   1.74133] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   1.74134] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   1.74135] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   1.74136] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   1.74137] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   1.74138] Fake format
+d3d      D         d3d_disp.cpp:1196 real_choose_bitmap_format        [   1.74139] Alpha doesn't match
+d3d      D         d3d_disp.cpp:1203 real_choose_bitmap_format        [   1.74140] Adapter format is 23
+d3d      D         d3d_disp.cpp:1206 real_choose_bitmap_format        [   1.74141] Found a format
+d3d      I         d3d_disp.cpp:2378 d3d_create_bitmap                [   1.74142] Chose bitmap format 9
+dtor     D               dtor.c:196  _al_register_destructor          [   1.74164] added dtor for bitmap 0FFBFBD8, func 61CC1C7B
+stdio    D         file_stdio.c:109  file_stdio_fopen                 [   1.74337] opening Sprites/GAMESCREEN/enemy_down.png rb
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   1.74666] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   1.74668] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   1.74669] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   1.74676] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   1.74677] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   1.74678] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   1.74679] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   1.74680] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   1.74681] Fake format
+d3d      D         d3d_disp.cpp:1196 real_choose_bitmap_format        [   1.74682] Alpha doesn't match
+d3d      D         d3d_disp.cpp:1203 real_choose_bitmap_format        [   1.74683] Adapter format is 23
+d3d      D         d3d_disp.cpp:1206 real_choose_bitmap_format        [   1.74684] Found a format
+d3d      I         d3d_disp.cpp:2378 d3d_create_bitmap                [   1.74685] Chose bitmap format 9
+dtor     D               dtor.c:196  _al_register_destructor          [   1.74708] added dtor for bitmap 0FF849D8, func 61CC1C7B
+stdio    D         file_stdio.c:109  file_stdio_fopen                 [   1.74882] opening Sprites/GAMESCREEN/enemy_left.png rb
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   1.75502] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   1.75505] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   1.75506] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   1.75507] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   1.75508] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   1.75509] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   1.75510] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   1.75511] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   1.75512] Fake format
+d3d      D         d3d_disp.cpp:1196 real_choose_bitmap_format        [   1.75512] Alpha doesn't match
+d3d      D         d3d_disp.cpp:1203 real_choose_bitmap_format        [   1.75513] Adapter format is 23
+d3d      D         d3d_disp.cpp:1206 real_choose_bitmap_format        [   1.75515] Found a format
+d3d      I         d3d_disp.cpp:2378 d3d_create_bitmap                [   1.75516] Chose bitmap format 9
+dtor     D               dtor.c:196  _al_register_destructor          [   1.75541] added dtor for bitmap 0FF87560, func 61CC1C7B
+stdio    D         file_stdio.c:109  file_stdio_fopen                 [   1.75708] opening Sprites/GAMESCREEN/enemy_right.png rb
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   1.75989] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   1.75991] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   1.75992] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   1.75993] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   1.75994] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   1.75995] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   1.75996] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   1.75996] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   1.75997] Fake format
+d3d      D         d3d_disp.cpp:1196 real_choose_bitmap_format        [   1.75998] Alpha doesn't match
+d3d      D         d3d_disp.cpp:1203 real_choose_bitmap_format        [   1.75999] Adapter format is 23
+d3d      D         d3d_disp.cpp:1206 real_choose_bitmap_format        [   1.76000] Found a format
+d3d      I         d3d_disp.cpp:2378 d3d_create_bitmap                [   1.76001] Chose bitmap format 9
+dtor     D               dtor.c:196  _al_register_destructor          [   1.76028] added dtor for bitmap 0FF876B0, func 61CC1C7B
+stdio    D         file_stdio.c:109  file_stdio_fopen                 [   1.76198] opening Sprites/GAMESCREEN/tiles/brick explosion.png rb
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   1.76533] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   1.76535] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   1.76536] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   1.76537] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   1.76538] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   1.76539] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   1.76540] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   1.76541] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   1.76542] Fake format
+d3d      D         d3d_disp.cpp:1196 real_choose_bitmap_format        [   1.76543] Alpha doesn't match
+d3d      D         d3d_disp.cpp:1203 real_choose_bitmap_format        [   1.76544] Adapter format is 23
+d3d      D         d3d_disp.cpp:1206 real_choose_bitmap_format        [   1.76545] Found a format
+d3d      I         d3d_disp.cpp:2378 d3d_create_bitmap                [   1.76546] Chose bitmap format 9
+dtor     D               dtor.c:196  _al_register_destructor          [   1.76587] added dtor for bitmap 0FF87100, func 61CC1C7B
+stdio    D         file_stdio.c:109  file_stdio_fopen                 [   1.76734] opening Sprites/GAMESCREEN/player up.png rb
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   1.77083] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   1.77085] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   1.77086] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   1.77087] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   1.77088] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   1.77089] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   1.77090] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   1.77091] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   1.77092] Fake format
+d3d      D         d3d_disp.cpp:1196 real_choose_bitmap_format        [   1.77093] Alpha doesn't match
+d3d      D         d3d_disp.cpp:1203 real_choose_bitmap_format        [   1.77094] Adapter format is 23
+d3d      D         d3d_disp.cpp:1206 real_choose_bitmap_format        [   1.77095] Found a format
+d3d      I         d3d_disp.cpp:2378 d3d_create_bitmap                [   1.77096] Chose bitmap format 9
+dtor     D               dtor.c:196  _al_register_destructor          [   1.77114] added dtor for bitmap 0FF87250, func 61CC1C7B
+stdio    D         file_stdio.c:109  file_stdio_fopen                 [   1.77236] opening Sprites/GAMESCREEN/player down.png rb
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   1.77548] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   1.77550] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   1.77551] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   1.77552] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   1.77553] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   1.77554] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   1.77555] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   1.77556] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   1.77557] Fake format
+d3d      D         d3d_disp.cpp:1196 real_choose_bitmap_format        [   1.77559] Alpha doesn't match
+d3d      D         d3d_disp.cpp:1203 real_choose_bitmap_format        [   1.77559] Adapter format is 23
+d3d      D         d3d_disp.cpp:1206 real_choose_bitmap_format        [   1.77561] Found a format
+d3d      I         d3d_disp.cpp:2378 d3d_create_bitmap                [   1.77562] Chose bitmap format 9
+dtor     D               dtor.c:196  _al_register_destructor          [   1.77586] added dtor for bitmap 0FF873A0, func 61CC1C7B
+stdio    D         file_stdio.c:109  file_stdio_fopen                 [   1.77709] opening Sprites/GAMESCREEN/player left.png rb
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   1.78017] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   1.78019] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   1.78020] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   1.78021] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   1.78022] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   1.78023] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   1.78024] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   1.78024] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   1.78025] Fake format
+d3d      D         d3d_disp.cpp:1196 real_choose_bitmap_format        [   1.78026] Alpha doesn't match
+d3d      D         d3d_disp.cpp:1203 real_choose_bitmap_format        [   1.78027] Adapter format is 23
+d3d      D         d3d_disp.cpp:1206 real_choose_bitmap_format        [   1.78028] Found a format
+d3d      I         d3d_disp.cpp:2378 d3d_create_bitmap                [   1.78029] Chose bitmap format 9
+dtor     D               dtor.c:196  _al_register_destructor          [   1.78057] added dtor for bitmap 0284A920, func 61CC1C7B
+stdio    D         file_stdio.c:109  file_stdio_fopen                 [   1.78228] opening Sprites/GAMESCREEN/player right.png rb
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   1.78664] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   1.78667] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   1.78668] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   1.78669] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   1.78669] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   1.78670] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   1.78671] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   1.78672] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   1.78673] Fake format
+d3d      D         d3d_disp.cpp:1196 real_choose_bitmap_format        [   1.78674] Alpha doesn't match
+d3d      D         d3d_disp.cpp:1203 real_choose_bitmap_format        [   1.78675] Adapter format is 23
+d3d      D         d3d_disp.cpp:1206 real_choose_bitmap_format        [   1.78676] Found a format
+d3d      I         d3d_disp.cpp:2378 d3d_create_bitmap                [   1.78677] Chose bitmap format 9
+dtor     D               dtor.c:196  _al_register_destructor          [   1.78704] added dtor for bitmap 027D9CE8, func 61CC1C7B
+acodec   I                ogg.c:204  _al_load_ogg_vorbis              [   1.78836] Loading sample Sounds/BGM/gamescreen.ogg.
+stdio    D         file_stdio.c:109  file_stdio_fopen                 [   1.78838] opening Sounds/BGM/gamescreen.ogg rb
+acodec   D                ogg.c:263  _al_load_ogg_vorbis_f            [   1.78920] channels 2
+acodec   D                ogg.c:264  _al_load_ogg_vorbis_f            [   1.78921] word_size 2
+acodec   D                ogg.c:265  _al_load_ogg_vorbis_f            [   1.78922] rate 44100
+acodec   D                ogg.c:266  _al_load_ogg_vorbis_f            [   1.78923] total_samples 22618112
+acodec   D                ogg.c:267  _al_load_ogg_vorbis_f            [   1.78924] total_size 90472448
+dtor     D               dtor.c:196  _al_register_destructor          [   3.19856] added dtor for sample 0FF85BA0, func 61DC2689
+stdio    D         file_stdio.c:109  file_stdio_fopen                 [   3.19862] opening Sounds/SFX/put bomb.wav rb
+dtor     D               dtor.c:196  _al_register_destructor          [   3.19882] added dtor for sample 0FF860C8, func 61DC2689
+stdio    D         file_stdio.c:109  file_stdio_fopen                 [   3.19887] opening Sounds/SFX/explosion.wav rb
+dtor     D               dtor.c:196  _al_register_destructor          [   3.19900] added dtor for sample 0FF85E20, func 61DC2689
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   3.23168] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   3.23170] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   3.23171] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   3.23172] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   3.23173] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   3.23174] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   3.23175] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   3.23176] Fake format
+d3d      D         d3d_disp.cpp:1188 real_choose_bitmap_format        [   3.23177] Fake format
+d3d      D         d3d_disp.cpp:1196 real_choose_bitmap_format        [   3.23178] Alpha doesn't match
+d3d      D         d3d_disp.cpp:1203 real_choose_bitmap_format        [   3.23178] Adapter format is 23
+d3d      D         d3d_disp.cpp:1206 real_choose_bitmap_format        [   3.23180] Found a format
+d3d      I         d3d_disp.cpp:2378 d3d_create_bitmap                [   3.23181] Chose bitmap format 9
+font     D                ttf.c:238  alloc_glyph_region               [   3.23206] Glyph 19: 33x36 (36x36)
+font     D                ttf.c:282  alloc_glyph_region               [   3.23208] Locking glyph region: 100F6FC0 0 0 36 36
+font     D                ttf.c:166  unlock_current_page              [   3.23580] Unlocking page: 100F6FC0
+font     D                ttf.c:238  alloc_glyph_region               [   3.23593] Glyph 22: 30x36 (32x36)
+font     D                ttf.c:282  alloc_glyph_region               [   3.23594] Locking glyph region: 100F6FC0 36 0 32 36
+font     D                ttf.c:166  unlock_current_page              [   3.23599] Unlocking page: 100F6FC0
+font     D                ttf.c:238  alloc_glyph_region               [   3.23605] Glyph 29: 13x25 (16x28)
+font     D                ttf.c:282  alloc_glyph_region               [   3.23607] Locking glyph region: 100F6FC0 68 0 16 28
+font     D                ttf.c:166  unlock_current_page              [   3.23609] Unlocking page: 100F6FC0
+d3d      D          d3d_bmp.cpp:539  _al_d3d_sync_bitmap              [   3.23919] _al_d3d_sync_bitmap (system) ref count == 1
+d3d      D          d3d_bmp.cpp:545  _al_d3d_sync_bitmap              [   3.23923] _al_d3d_sync_bitmap (video) ref count == 1
+d3d      D          d3d_bmp.cpp:539  _al_d3d_sync_bitmap              [   3.24052] _al_d3d_sync_bitmap (system) ref count == 1
+d3d      D          d3d_bmp.cpp:545  _al_d3d_sync_bitmap              [   3.24055] _al_d3d_sync_bitmap (video) ref count == 1
+d3d      D          d3d_bmp.cpp:539  _al_d3d_sync_bitmap              [   3.24120] _al_d3d_sync_bitmap (system) ref count == 1
+d3d      D          d3d_bmp.cpp:545  _al_d3d_sync_bitmap              [   3.24122] _al_d3d_sync_bitmap (video) ref count == 1
+d3d      D          d3d_bmp.cpp:539  _al_d3d_sync_bitmap              [   3.24183] _al_d3d_sync_bitmap (system) ref count == 1
+d3d      D          d3d_bmp.cpp:545  _al_d3d_sync_bitmap              [   3.24185] _al_d3d_sync_bitmap (video) ref count == 1
+d3d      D          d3d_bmp.cpp:539  _al_d3d_sync_bitmap              [   3.24245] _al_d3d_sync_bitmap (system) ref count == 1
+d3d      D          d3d_bmp.cpp:545  _al_d3d_sync_bitmap              [   3.24247] _al_d3d_sync_bitmap (video) ref count == 1
+d3d      D          d3d_bmp.cpp:539  _al_d3d_sync_bitmap              [   3.24304] _al_d3d_sync_bitmap (system) ref count == 1
+d3d      D          d3d_bmp.cpp:545  _al_d3d_sync_bitmap              [   3.24306] _al_d3d_sync_bitmap (video) ref count == 1
+d3d      D          d3d_bmp.cpp:539  _al_d3d_sync_bitmap              [   3.24378] _al_d3d_sync_bitmap (system) ref count == 1
+d3d      D          d3d_bmp.cpp:545  _al_d3d_sync_bitmap              [   3.24380] _al_d3d_sync_bitmap (video) ref count == 1
+d3d      D          d3d_bmp.cpp:539  _al_d3d_sync_bitmap              [   3.24448] _al_d3d_sync_bitmap (system) ref count == 1
+d3d      D          d3d_bmp.cpp:545  _al_d3d_sync_bitmap              [   3.24450] _al_d3d_sync_bitmap (video) ref count == 1
+d3d      D          d3d_bmp.cpp:539  _al_d3d_sync_bitmap              [   3.24522] _al_d3d_sync_bitmap (system) ref count == 1
+d3d      D          d3d_bmp.cpp:545  _al_d3d_sync_bitmap              [   3.24524] _al_d3d_sync_bitmap (video) ref count == 1
+d3d      D          d3d_bmp.cpp:539  _al_d3d_sync_bitmap              [   3.24591] _al_d3d_sync_bitmap (system) ref count == 1
+d3d      D          d3d_bmp.cpp:545  _al_d3d_sync_bitmap              [   3.24593] _al_d3d_sync_bitmap (video) ref count == 1
+d3d      D          d3d_bmp.cpp:539  _al_d3d_sync_bitmap              [   3.24661] _al_d3d_sync_bitmap (system) ref count == 1
+d3d      D          d3d_bmp.cpp:545  _al_d3d_sync_bitmap              [   3.24662] _al_d3d_sync_bitmap (video) ref count == 1
+d3d      D          d3d_bmp.cpp:539  _al_d3d_sync_bitmap              [   3.24732] _al_d3d_sync_bitmap (system) ref count == 1
+d3d      D          d3d_bmp.cpp:545  _al_d3d_sync_bitmap              [   3.24734] _al_d3d_sync_bitmap (video) ref count == 1
+d3d      D          d3d_bmp.cpp:539  _al_d3d_sync_bitmap              [   3.24807] _al_d3d_sync_bitmap (system) ref count == 1
+d3d      D          d3d_bmp.cpp:545  _al_d3d_sync_bitmap              [   3.24809] _al_d3d_sync_bitmap (video) ref count == 1
+d3d      D          d3d_bmp.cpp:539  _al_d3d_sync_bitmap              [   3.24880] _al_d3d_sync_bitmap (system) ref count == 1
+d3d      D          d3d_bmp.cpp:545  _al_d3d_sync_bitmap              [   3.24882] _al_d3d_sync_bitmap (video) ref count == 1
+d3d      D          d3d_bmp.cpp:539  _al_d3d_sync_bitmap              [   3.24945] _al_d3d_sync_bitmap (system) ref count == 1
+d3d      D          d3d_bmp.cpp:545  _al_d3d_sync_bitmap              [   3.24947] _al_d3d_sync_bitmap (video) ref count == 1
+font     D                ttf.c:238  alloc_glyph_region               [   4.20041] Glyph 21: 31x36 (32x36)
+font     D                ttf.c:282  alloc_glyph_region               [   4.20048] Locking glyph region: 100F6FC0 84 0 32 36
+font     D                ttf.c:166  unlock_current_page              [   4.20053] Unlocking page: 100F6FC0
+font     D                ttf.c:238  alloc_glyph_region               [   4.20062] Glyph 24: 31x36 (32x36)
+font     D                ttf.c:282  alloc_glyph_region               [   4.20063] Locking glyph region: 100F6FC0 116 0 32 36
+font     D                ttf.c:166  unlock_current_page              [   4.20143] Unlocking page: 100F6FC0
+font     D                ttf.c:238  alloc_glyph_region               [   4.20155] Glyph 28: 31x36 (32x36)
+font     D                ttf.c:282  alloc_glyph_region               [   4.20156] Locking glyph region: 100F6FC0 148 0 32 36
+font     D                ttf.c:166  unlock_current_page              [   4.20160] Unlocking page: 100F6FC0
+d3d      D          d3d_bmp.cpp:539  _al_d3d_sync_bitmap              [   4.20378] _al_d3d_sync_bitmap (system) ref count == 1
+d3d      D          d3d_bmp.cpp:545  _al_d3d_sync_bitmap              [   4.20382] _al_d3d_sync_bitmap (video) ref count == 1
+font     D                ttf.c:238  alloc_glyph_region               [   5.20064] Glyph 27: 32x36 (32x36)
+font     D                ttf.c:282  alloc_glyph_region               [   5.20066] Locking glyph region: 100F6FC0 180 0 32 36
+font     D                ttf.c:166  unlock_current_page              [   5.20071] Unlocking page: 100F6FC0
+d3d      D          d3d_bmp.cpp:539  _al_d3d_sync_bitmap              [   5.20331] _al_d3d_sync_bitmap (system) ref count == 1
+d3d      D          d3d_bmp.cpp:545  _al_d3d_sync_bitmap              [   5.20335] _al_d3d_sync_bitmap (video) ref count == 1
+font     D                ttf.c:238  alloc_glyph_region               [   6.21700] Glyph 26: 31x36 (32x36)
+font     D                ttf.c:282  alloc_glyph_region               [   6.21707] Locking glyph region: 100F6FC0 212 0 32 36
+font     D                ttf.c:166  unlock_current_page              [   6.21715] Unlocking page: 100F6FC0
+d3d      D          d3d_bmp.cpp:539  _al_d3d_sync_bitmap              [   6.21966] _al_d3d_sync_bitmap (system) ref count == 1
+d3d      D          d3d_bmp.cpp:545  _al_d3d_sync_bitmap              [   6.21969] _al_d3d_sync_bitmap (video) ref count == 1
+audio    D          kcm_mixer.c:121  _al_rechannel_matrix             [   6.42341] sample matrix:
+audio    D          kcm_mixer.c:127  _al_rechannel_matrix             [   6.42344]  0.500000
+audio    D          kcm_mixer.c:127  _al_rechannel_matrix             [   6.42345]  0.500000
+font     D                ttf.c:238  alloc_glyph_region               [   7.21687] Glyph 25: 32x34 (32x36)
+font     D                ttf.c:282  alloc_glyph_region               [   7.21691] Locking glyph region: 100F6FC0 244 0 32 36
+font     D                ttf.c:166  unlock_current_page              [   7.21696] Unlocking page: 100F6FC0
+d3d      D          d3d_bmp.cpp:539  _al_d3d_sync_bitmap              [   7.21977] _al_d3d_sync_bitmap (system) ref count == 1
+d3d      D          d3d_bmp.cpp:545  _al_d3d_sync_bitmap              [   7.21981] _al_d3d_sync_bitmap (video) ref count == 1
+audio    D          kcm_mixer.c:121  _al_rechannel_matrix             [   7.24095] sample matrix:
+audio    D          kcm_mixer.c:127  _al_rechannel_matrix             [   7.24097]  0.500000
+audio    D          kcm_mixer.c:127  _al_rechannel_matrix             [   7.24098]  0.500000
+font     D                ttf.c:238  alloc_glyph_region               [   9.21730] Glyph 23: 33x35 (36x36)
+font     D                ttf.c:282  alloc_glyph_region               [   9.21733] Locking glyph region: 100F6FC0 276 0 36 36
+font     D                ttf.c:166  unlock_current_page              [   9.21737] Unlocking page: 100F6FC0
+d3d      D          d3d_bmp.cpp:539  _al_d3d_sync_bitmap              [   9.21988] _al_d3d_sync_bitmap (system) ref count == 1
+d3d      D          d3d_bmp.cpp:545  _al_d3d_sync_bitmap              [   9.21991] _al_d3d_sync_bitmap (video) ref count == 1
+audio    D          kcm_mixer.c:121  _al_rechannel_matrix             [   9.75009] sample matrix:
+audio    D          kcm_mixer.c:127  _al_rechannel_matrix             [   9.75018]  0.500000
+audio    D          kcm_mixer.c:127  _al_rechannel_matrix             [   9.75021]  0.500000
+font     D                ttf.c:238  alloc_glyph_region               [  12.25065] Glyph 20: 21x35 (24x36)
+font     D                ttf.c:282  alloc_glyph_region               [  12.25067] Locking glyph region: 100F6FC0 312 0 24 36
+font     D                ttf.c:166  unlock_current_page              [  12.25070] Unlocking page: 100F6FC0
+d3d      D          d3d_bmp.cpp:539  _al_d3d_sync_bitmap              [  12.25326] _al_d3d_sync_bitmap (system) ref count == 1
+d3d      D          d3d_bmp.cpp:545  _al_d3d_sync_bitmap              [  12.25329] _al_d3d_sync_bitmap (video) ref count == 1
+dtor     D               dtor.c:227  _al_unregister_destructor        [  75.93705] removed dtor for bitmap 0FFC1470
+dtor     D               dtor.c:227  _al_unregister_destructor        [  75.93738] removed dtor for bitmap 10071CE0
+dtor     D               dtor.c:227  _al_unregister_destructor        [  75.93745] removed dtor for bitmap 027D4868
+dtor     D               dtor.c:227  _al_unregister_destructor        [  75.93750] removed dtor for bitmap 0FF84738
+dtor     D               dtor.c:227  _al_unregister_destructor        [  75.93754] removed dtor for bitmap 0FFBFBD8
+dtor     D               dtor.c:227  _al_unregister_destructor        [  75.93795] removed dtor for bitmap 0FF849D8
+dtor     D               dtor.c:227  _al_unregister_destructor        [  75.93805] removed dtor for bitmap 0FF87560
+dtor     D               dtor.c:227  _al_unregister_destructor        [  75.93847] removed dtor for bitmap 0FF876B0
+dtor     D               dtor.c:227  _al_unregister_destructor        [  75.93855] removed dtor for bitmap 0FF87100
+dtor     D               dtor.c:227  _al_unregister_destructor        [  75.93860] removed dtor for bitmap 0FF84888
+dtor     D               dtor.c:227  _al_unregister_destructor        [  75.93869] removed dtor for bitmap 0FF87250
+dtor     D               dtor.c:227  _al_unregister_destructor        [  75.93909] removed dtor for bitmap 0FF873A0
+dtor     D               dtor.c:227  _al_unregister_destructor        [  75.93915] removed dtor for bitmap 0284A920
+dtor     D               dtor.c:227  _al_unregister_destructor        [  75.93972] removed dtor for bitmap 027D9CE8
+dtor     D               dtor.c:227  _al_unregister_destructor        [  75.93983] removed dtor for sample 0FF85BA0
+dtor     D               dtor.c:227  _al_unregister_destructor        [  75.95370] removed dtor for sample 0FF860C8
+dtor     D               dtor.c:227  _al_unregister_destructor        [  75.95373] removed dtor for sample 0FF85E20
+dtor     D               dtor.c:227  _al_unregister_destructor        [  75.95380] removed dtor for bitmap 0278FB98
+dtor     D               dtor.c:227  _al_unregister_destructor        [  75.95387] removed dtor for ttf_font 0278B948
+dtor     D               dtor.c:227  _al_unregister_destructor        [  75.95399] removed dtor for ttf_font 0278B9C8
+dtor     D               dtor.c:227  _al_unregister_destructor        [  75.95547] removed dtor for ttf_font 0278B9E8
+dtor     D               dtor.c:227  _al_unregister_destructor        [  75.95675] removed dtor for sample 02782140
+dtor     D               dtor.c:227  _al_unregister_destructor        [  75.95678] removed dtor for sample 02782000
+dtor     D               dtor.c:227  _al_unregister_destructor        [  75.95679] removed dtor for timer 02784530
+dtor     D               dtor.c:227  _al_unregister_destructor        [  75.95680] removed dtor for queue 0278CA50
+d3d      I         d3d_disp.cpp:901  d3d_destroy_display              [  75.95682] destroying display 02782390 (current 00000000)
+bitmap   D        bitmap_type.c:308  _al_convert_to_memory_bitmap     [  75.96052] converting display bitmap 0278FF80 to memory bitmap
+dtor     D               dtor.c:196  _al_register_destructor          [  75.96056] added dtor for bitmap 100F6E68, func 61CC1C7B
+d3d      D          d3d_bmp.cpp:539  _al_d3d_sync_bitmap              [  75.96059] _al_d3d_sync_bitmap (system) ref count == 1
+d3d      D          d3d_bmp.cpp:545  _al_d3d_sync_bitmap              [  75.96061] _al_d3d_sync_bitmap (video) ref count == 1
+dtor     D               dtor.c:227  _al_unregister_destructor        [  75.96125] removed dtor for bitmap 100F6E68
+d3d      D         d3d_disp.cpp:885  d3d_destroy_display_internals    [  75.96132] waiting for display 02782390's thread to end
+d3d      W         d3d_disp.cpp:595  d3d_destroy_device               [  75.98939] d3d_destroy_device: ref count not 0
+d3d      W         d3d_disp.cpp:595  d3d_destroy_device               [  75.98942] d3d_destroy_device: ref count not 0
+d3d      I         d3d_disp.cpp:1549 d3d_display_thread_proc          [  75.99710] d3d display thread exits
+dtor     D               dtor.c:227  _al_unregister_destructor        [  75.99905] removed dtor for bitmap 0278FF80
+dtor     D               dtor.c:227  _al_unregister_destructor        [  75.99917] removed dtor for sample_instance 0278CE60
+dtor     D               dtor.c:227  _al_unregister_destructor        [  75.99921] removed dtor for sample_instance 0278CF50
+dtor     D               dtor.c:227  _al_unregister_destructor        [  75.99923] removed dtor for sample_instance 0278D260
+dtor     D               dtor.c:227  _al_unregister_destructor        [  75.99929] removed dtor for sample_instance 0278D350
+dtor     D               dtor.c:227  _al_unregister_destructor        [  75.99932] removed dtor for sample_instance 0278D440
+dtor     D               dtor.c:227  _al_unregister_destructor        [  75.99933] removed dtor for sample_instance 0278CC40
+dtor     D               dtor.c:227  _al_unregister_destructor        [  75.99935] removed dtor for sample_instance 0278CD30
+dtor     D               dtor.c:227  _al_unregister_destructor        [  75.99937] removed dtor for sample_instance 0278DBE8
+dtor     D               dtor.c:227  _al_unregister_destructor        [  75.99939] removed dtor for sample_instance 0278DCD8
+dtor     D               dtor.c:227  _al_unregister_destructor        [  75.99941] removed dtor for sample_instance 0278DDC8
+dtor     D               dtor.c:227  _al_unregister_destructor        [  75.99943] removed dtor for sample_instance 0278DEB8
+dtor     D               dtor.c:227  _al_unregister_destructor        [  75.99945] removed dtor for sample_instance 0278DFA8
+dtor     D               dtor.c:227  _al_unregister_destructor        [  75.99947] removed dtor for sample_instance 0278E098
+dtor     D               dtor.c:227  _al_unregister_destructor        [  75.99948] removed dtor for sample_instance 0278E188
+dtor     D               dtor.c:227  _al_unregister_destructor        [  75.99950] removed dtor for sample_instance 0278E278
+dtor     D               dtor.c:227  _al_unregister_destructor        [  75.99952] removed dtor for mixer 0278CB30
+audio-dsound D           dsound.cpp:509  _dsound_stop_voice               [  75.99954] Stopping voice
+audio-dsound D           dsound.cpp:526  _dsound_stop_voice               [  75.99956] Joining thread
+audio-dsound D           dsound.cpp:532  _dsound_stop_voice               [  76.00666] Joined thread
+audio-dsound D           dsound.cpp:534  _dsound_stop_voice               [  76.00669] Destroying thread
+audio-dsound D           dsound.cpp:536  _dsound_stop_voice               [  76.00670] Thread destroyed
+audio-dsound D           dsound.cpp:543  _dsound_stop_voice               [  76.00671] Releasing buffer
+audio-dsound I           dsound.cpp:547  _dsound_stop_voice               [  76.00673] Voice stopped
+dtor     D               dtor.c:227  _al_unregister_destructor        [  76.00677] removed dtor for voice 02775280
+audio-dsound D           dsound.cpp:359  _dsound_deallocate_voice         [  76.00679] Deallocating voice
+audio-dsound D           dsound.cpp:364  _dsound_deallocate_voice         [  76.00681] Deallocated voice
+audio-dsound D           dsound.cpp:275  _dsound_close                    [  76.00683] Releasing device
+audio-dsound D           dsound.cpp:277  _dsound_close                    [  76.03011] Released device
+audio-dsound I           dsound.cpp:278  _dsound_close                    [  76.03014] DirectSound closed
+dinput   D         wjoydxnu.cpp:1201 joydx_exit_joystick              [  76.03080] Entering joydx_exit_joystick
+dinput   D         wjoydxnu.cpp:1247 joydx_exit_joystick              [  76.03175] Leaving joydx_exit_joystick

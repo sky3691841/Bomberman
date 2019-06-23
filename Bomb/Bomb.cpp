@@ -31,7 +31,20 @@ bool Bomb::CheckObstaclesOnTile(Tilemap &map, int i, int j){
 
 void Bomb::draw(){
     anim.Draw(pos_x, pos_y, 1.0, 1.0, 0, al_map_rgba(255, 255, 255, 255));
+
+    if(debug_mode){
+
+
+
+            al_draw_textf(font_debug, al_map_rgb(0, 0, 0), pos_x, pos_y+25, ALLEGRO_ALIGN_CENTER, "POS I: %d, POS J: %d", tile_i, tile_j);
+
+            al_draw_textf(font_debug, al_map_rgb(0, 0, 0), pos_x, pos_y+35, ALLEGRO_ALIGN_CENTER, "x: %d, y: %d", pos_x, pos_y);
+
+
+
+        }
 }
+
 void Bomb::exploded(Tilemap &map){
     appear = false;
     map.SetBombPos(tile_i,tile_j,0);

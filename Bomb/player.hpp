@@ -7,11 +7,12 @@
 #include "Bomb.hpp"
 #include "Collision.hpp"
 #include "content.hpp"
+#include "Explosion.hpp"
 //to be revised
 #define start_pos_x 75
 #define start_pos_y 150
 #define start_speed 4
-#define max_bomb_num 2
+#define max_bomb_num 5
 
 class player{
 protected:
@@ -27,6 +28,8 @@ protected:
     BoundingBox box[4];
     std::list<Bomb> bomb_list;
     std::list<Bomb>::iterator it;
+    std::list<Explosion> explosion_list;
+    std::list<Explosion>::iterator ex_it;
 
 public:
 

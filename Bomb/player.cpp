@@ -26,6 +26,15 @@ void player::initial(int x,int y){
     this->speed = start_speed;
     this->bomb_num = max_bomb_num;
 }
+
+void player::put_bomb(Tilemap &map){
+    if(bomb_list.size() < (unsigned)bomb_num && map.GetBombPos(posI, posJ) == 0){
+        al_play_sample(SFX_put_bomb, volSFX, 0, 1, ALLEGRO_PLAYMODE_ONCE, NULL);
+        Bomb add;
+        add.initial(((x-MAP_X0)/TILESIZE)*TILESIZE + MAP_X0 + TILESIZE/2, ((y-MAP_Y0)/TILESIZE)*TILESIZE + TILESIZE/2 + MAP_Y0, 2.5, map);
+        bomb_list.push_back(add);
+    }
+}
 bool player::PathBlocked(Tilemap &map,int i, int j) {
 	if(map.GetTileID(i, j) != GRASS || map.GetBombPos(i, j) == 1){
         return box[dir].CollisionWithTiles( j*TILESIZE + MAP_X0, i*TILESIZE + MAP_Y0, TILESIZE, TILESIZE);
@@ -35,14 +44,6 @@ bool player::PathBlocked(Tilemap &map,int i, int j) {
 bool player::Blocked(Tilemap &map,int i, int j){
     if(map.GetTileID(i, j) != GRASS) return true;
     return false;
-}
-void player::put_bomb(Tilemap &map){
-    if(bomb_list.size() < (unsigned)bomb_num && map.GetBombPos(posI, posJ) == 0){
-        al_play_sample(SFX_put_bomb, volSFX, 0, 1, ALLEGRO_PLAYMODE_ONCE, NULL);
-        Bomb add;
-        add.initial(((x-MAP_X0)/TILESIZE)*TILESIZE + MAP_X0 + TILESIZE/2, ((y-MAP_Y0)/TILESIZE)*TILESIZE + TILESIZE/2 + MAP_Y0, 2.5, map);
-        bomb_list.push_back(add);
-    }
 }
 
 void player::walk(Tilemap &map){
@@ -132,12 +133,20 @@ void player::update(Tilemap &map){
     anim[dir].Update();
 
     //bomb
-    for(it = bomb_list.begin(); it != bomb_list.end(); it++){
+    it = bomb_list.begin();
+    while(it != bomb_list.end()){
         (*it).update(map);
 
         if((*it).get_appear()==false){
             //set explosion
+            Explosion create;
+            create.Initialize(bomb_list, map, 1, (*it).get_tile_i(), (*it).get_tile_j(), during_explode);
+            explosion_list.push_back(create);
+
             it = bomb_list.erase(it);
+        }
+        else{
+            it++;
         }
     }
 
@@ -146,11 +155,14 @@ void player::update(Tilemap &map){
 
 void player::draw(){
     //bomb
+    if(bomb_list.size()!=0)
     for(it = bomb_list.begin(); it != bomb_list.end(); it++){
         (*it).draw();
     }
     //explode
-
+    for(ex_it = explosion_list.begin(); ex_it != explosion_list.end(); ex_it++){
+        (*ex_it).Draw();
+    }
     //player
     anim[dir].Draw(x, y-15, 0.9, 0.9, 0, al_map_rgba(255, 255, 255, 255));
 

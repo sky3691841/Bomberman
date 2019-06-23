@@ -31,6 +31,7 @@ public:
 
 	// other functions
 	int GetTileID(int i, int j); // get status of tile
+	void SetTileID(int i, int j, int ID) { map[i][j] = ID; }
 	int GetEnemyPos(int i, int j);
 	void SetEnemyPos(int i, int j, bool value);
 	int GetBombPos(int i, int j);

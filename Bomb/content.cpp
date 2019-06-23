@@ -21,8 +21,8 @@ ALLEGRO_BITMAP* game_enemy_left;
 ALLEGRO_BITMAP* game_enemy_right;
 
 
-/*ALLEGRO_BITMAP* game_brick_explosion;
-ALLEGRO_BITMAP* game_portal;*/
+ALLEGRO_BITMAP* game_brick_explosion;
+/*ALLEGRO_BITMAP* game_portal;*/
 ALLEGRO_BITMAP* game_player_up;
 ALLEGRO_BITMAP* game_player_down;
 ALLEGRO_BITMAP* game_player_left;
@@ -156,7 +156,6 @@ void LoadGameSceneContent()
 	game_tile[2] = al_load_bitmap("Sprites/GAMESCREEN/tiles/block.png");
 	game_tile[3] = game_tile[0];
 
-
     player_static = al_load_bitmap("Sprites/GAMESCREEN/player_static.png");
 
 	/// Enemy
@@ -166,8 +165,8 @@ void LoadGameSceneContent()
 	game_enemy_right = al_load_bitmap("Sprites/GAMESCREEN/enemy_right.png");
 
 
-	/*game_brick_explosion = al_load_bitmap("Sprites/GAMESCREEN/tiles/brick explosion.png");
-	game_portal = al_load_bitmap("Sprites/GAMESCREEN/portal.png");*/
+	game_brick_explosion = al_load_bitmap("Sprites/GAMESCREEN/tiles/brick explosion.png");
+	/*game_portal = al_load_bitmap("Sprites/GAMESCREEN/portal.png");*/
 	game_player_up = al_load_bitmap("Sprites/GAMESCREEN/player up.png");
 	game_player_down = al_load_bitmap("Sprites/GAMESCREEN/player down.png");
 	game_player_left = al_load_bitmap("Sprites/GAMESCREEN/player left.png");
@@ -205,8 +204,8 @@ void UnloadGameSceneContent()
 	al_destroy_bitmap(game_enemy_left);
 	al_destroy_bitmap(game_enemy_right);
 
-	/*al_destroy_bitmap(game_brick_explosion);
-	al_destroy_bitmap(game_portal);
+	al_destroy_bitmap(game_brick_explosion);
+	/*al_destroy_bitmap(game_portal);
 
 	al_destroy_bitmap(game_barra_superior);*/
 	al_destroy_bitmap(player_static);

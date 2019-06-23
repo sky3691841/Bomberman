@@ -19,6 +19,7 @@ void Tilemap::init() {
 		for (int i = 0; i < TILES_H; i++) {
 			for (int j = 0; j < TILES_W; j++) {
 				fscanf(map_txt, "%d", &map[i][j]);
+				bomb_map[i][j] = 0;
 			}
 		}
 	}

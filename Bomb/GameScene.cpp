@@ -3,7 +3,7 @@
 
 GameScene::GameScene() {
 	LoadGameSceneContent();
-	al_play_sample(BGM_gamescreen, volBGM / 3, 0, 1, ALLEGRO_PLAYMODE_LOOP, &BGM_gamescreen_id);
+	al_play_sample(BGM_gamescreen, volBGM *2/3, 0, 1, ALLEGRO_PLAYMODE_LOOP, &BGM_gamescreen_id);
 	exit_scene = false;
 
 	// init player

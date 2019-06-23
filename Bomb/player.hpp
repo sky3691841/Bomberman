@@ -13,7 +13,7 @@
 #define start_pos_y 150
 #define start_speed 4
 #define max_bomb_num 5
-#define leave_timer 0.7
+#define leave_timer 1
 
 class player{
 protected:
@@ -49,9 +49,12 @@ public:
     void update(Tilemap &map);
     void put_bomb(Tilemap &map);
 
-    bool PathBlocked(Tilemap &map,int i, int j) ;
+    //block series
+    //bool PathBlocked(Tilemap &map,int i, int j) ;
     bool Blocked(Tilemap &map,int i, int j);
     bool Bomb_Block(Tilemap &map, int i,int j);
+    bool vertical_block(Tilemap &map,int dir);
+    bool horizon_block(Tilemap &map);
 
 	std::list<Explosion> GetExplosionList() { return explosion_list; }
     //bool haveobstacles(Tilemap map, int x, int y);

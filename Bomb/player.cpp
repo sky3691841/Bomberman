@@ -45,14 +45,28 @@ void player::put_bomb(Tilemap &map){
 }
 
 //PATH BLOCKED SERIES
-bool player::PathBlocked(Tilemap &map,int i, int j) {
-	if(map.GetTileID(i, j) != GRASS || map.GetBombPos(i, j) == 1){
-        return box[dir].CollisionWithTiles( j*TILESIZE + MAP_X0, i*TILESIZE + MAP_Y0, TILESIZE, TILESIZE);
-	}
-	return false;
-}
 bool player::Blocked(Tilemap &map,int i, int j){
     if(map.GetTileID(i, j) != GRASS) return true;
+    return false;
+}
+bool player::vertical_block(Tilemap &map,int dir){
+    if(dir == UP || dir == DOWN){
+        int tmp_j1 = (x + 15  - MAP_X0) / TILESIZE; //right
+        int tmp_j2 = (x - 15  - MAP_X0) / TILESIZE; //left
+        if((tmp_j1 == posJ + 1) && map.GetTileID(posI, posJ+1) != GRASS){
+            return true;
+        }
+        else if((tmp_j2 == posJ - 1) && map.GetTileID(posI, posJ-1) != GRASS){
+            return true;
+        }
+    }
+    return false;
+}
+bool player::horizon_block(Tilemap &map){
+    int tmp_i =(y + 15 - MAP_Y0) / TILESIZE;
+    if((tmp_i == posI + 1)&& map.GetTileID(posI + 1, posJ) != GRASS ){
+        return true;
+    }
     return false;
 }
 bool player::Bomb_Block(Tilemap &map, int i,int j){
@@ -73,39 +87,32 @@ void player::walk(Tilemap &map){
 
     //std::cout<<pos_x<<" "<<pos_y <<'\n';
     if(key_state[ALLEGRO_KEY_UP]){
-        //this->w = al_get_bitmap_width(game_player_up);
         y -= speed;
         dir = UP;
-        //tmp_j1 = (x - 0.1*w - MAP_X0) / TILESIZE;//left
-        //tmp_j2 = (x + 0.1*w - MAP_X0) / TILESIZE;//right
         posI = (y - MAP_Y0) / TILESIZE;
         posJ = (x - MAP_X0) / TILESIZE;
         if(Blocked(map, posI, posJ)
            ||Bomb_Block(map, posI, posJ)
+           ||vertical_block(map,dir)
            //||Blocked(map, posI-1, tmp_j1)
             //||Blocked(map, posI-1, tmp_j2)
-       //|| PathBlocked(map, posI-1, posJ-1)
-
-       /*|| PathBlocked(map, posI-1, posJ+1)  */){
+                                            ){
             y = pre_y;
             x = pre_x;
         }
     }
     else if(key_state[ALLEGRO_KEY_DOWN]){
-        //this->w = al_get_bitmap_width(game_player_up);
         y += speed;
         dir = DOWN;
-        //tmp_j1 = (x - 0.1*w - MAP_X0) / TILESIZE;
-        //tmp_j2 = (x + 0.1*w - MAP_X0) / TILESIZE;
-        posI = (y - MAP_Y0 +15) / TILESIZE;
+        posI = (y - MAP_Y0 ) / TILESIZE;
         posJ = (x - MAP_X0) / TILESIZE;
         if(Blocked(map, posI, posJ)
            ||Bomb_Block(map, posI, posJ)
+           ||vertical_block(map,dir)
+           ||horizon_block(map)
            //||Blocked(map, posI+1, tmp_j1)
             //||Blocked(map, posI+1, tmp_j2)
-       //|| PathBlocked(map, posI+1, posJ-1)
-
-       /*|| PathBlocked(map, posI+1, posJ+1) */ ){
+                                        ){
             y = pre_y;
             x = pre_x;
         }
@@ -120,8 +127,7 @@ void player::walk(Tilemap &map){
         if(Blocked(map, posI, posJ)
            ||Bomb_Block(map, posI, posJ)
            ||Blocked(map, posI, tmp_j1)
-       //|| PathBlocked(map, posI-1, posJ-1)
-      /* || PathBlocked(map, posI+1, posJ-1) */ ){
+           ||horizon_block(map)){
             y = pre_y;
             x = pre_x;
         }
@@ -136,9 +142,7 @@ void player::walk(Tilemap &map){
         if(Blocked(map, posI, posJ)
            ||Bomb_Block(map, posI, posJ)
            ||Blocked(map, posI, tmp_j2)
-       //|| PathBlocked(map, posI-1, posJ+1)
-
-       /*|| PathBlocked(map, posI+1, posJ+1) */ ){
+           ||horizon_block(map)){
             y = pre_y;
             x = pre_x;
         }

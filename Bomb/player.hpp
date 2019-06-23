@@ -36,11 +36,14 @@ protected:
     std::list<Explosion> explosion_list;
     std::list<Explosion>::iterator ex_it;
 
+    bool dead;
+
 public:
 
     player();
     ~player();
     void initial(int ,int);
+    void die();
     void walk(Tilemap &map);
     void draw();
     void update(Tilemap &map);
@@ -52,6 +55,10 @@ public:
 
 	std::list<Explosion> GetExplosionList() { return explosion_list; }
     //bool haveobstacles(Tilemap map, int x, int y);
+
+    int get_posI(){return posI;}
+    int get_posJ(){return posJ;}
+    bool get_dead(){return dead;}
 
 };
 

@@ -33,7 +33,7 @@ public:
 	Enemy();
 	~Enemy();
 	void init(int i, int j);
-	void update(Tilemap &map, std::list<Explosion> explosion_list); 
+	void update(Tilemap &map, std::list<Explosion> explosion_list);
 	void draw();
 
 	/// functions for enemy movement ==============
@@ -45,6 +45,8 @@ public:
 
 	bool CollisionWith(Tilemap &map, int i, int j);
 	bool getActive() { return active; }
+	int get_posi(){return pos_i;}
+	int get_posj(){return pos_j;}
 	BoundingBox GetBox() { return box[dir]; }
 };
 

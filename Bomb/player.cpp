@@ -11,6 +11,7 @@ player::~player(){
 void player::initial(int x,int y){
     this->x = x;
     this->y = y;
+    this->dead = false;
 
     this->dir = DOWN;
     this->anim[UP].Initialize(game_player_up, 4, 0.1, true);
@@ -26,6 +27,10 @@ void player::initial(int x,int y){
     this->speed = start_speed;
     this->bomb_num = max_bomb_num;
     this->walkout = false;
+}
+
+void player::die(){
+    this->dead = true;
 }
 
 void player::put_bomb(Tilemap &map){

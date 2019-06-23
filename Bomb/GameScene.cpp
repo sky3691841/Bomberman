@@ -105,6 +105,9 @@ void GameScene::update() {
 		if ((*enemy_it).getActive() == false) {
 			enemy_it = enemy_list.erase(enemy_it);
 		}
+		else if((enemy_it->get_posi() == player1.get_posI()) && (enemy_it->get_posj() == player1.get_posJ())){
+            player1.die();
+		}
 		else {
 			enemy_it++;
 		}
@@ -117,6 +120,10 @@ void GameScene::update() {
 
     //update player motion
     player1.update(map);
+    if(player1.get_dead()){
+        exit_scene = true;
+		scenestate = GAMEOVER;
+    }
 
 	// update game time
 	if (al_get_time() - get_game_timer >= 1.0) {

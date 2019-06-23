@@ -88,7 +88,7 @@ void GameScene::on_key_down(int keycode) {
 	// for debug purpose, delete later
 	else if (keycode == ALLEGRO_KEY_LCTRL) {
 		exit_scene = true;
-		scenestate = GAMEOVER;
+		scenestate = VICTORY;
 	}
 	else if (keycode == ALLEGRO_KEY_SPACE ) {
         //put a bomb on the ground
@@ -113,7 +113,7 @@ void GameScene::update() {
 
 	if (enemy_list.empty()) {
 		exit_scene = true;
-		scenestate = GAMEOVER;
+		scenestate = VICTORY;
 	}
 
     //update player motion
